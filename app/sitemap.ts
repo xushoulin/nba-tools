@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { TOOLS, SITE_URL } from "@/lib/tools";
 import { INITIAL_TEAMS } from "@/lib/salary-data";
+import { allPlayerSlugs } from "@/lib/player-profiles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -28,5 +29,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
-  return [...pages, teamsIndex, ...tools, ...teamPages];
+  const playerPages = allPlayerSlugs().map((slug) => ({
+    url: `${SITE_URL}/players/${slug}`,
+    lastModified: now,
+    changeFrequency: "monthly" as const,
+    priority: 0.6,
+  }));
+  return [...pages, teamsIndex, ...tools, ...teamPages, ...playerPages];
 }

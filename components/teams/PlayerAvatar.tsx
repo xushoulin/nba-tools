@@ -8,15 +8,19 @@ type Props = {
   teamAbbr: string;
   size?: number;
   className?: string;
+  /** ESPN athlete id — authoritative when we have a player profile. */
+  espnId?: number;
 };
 
 /**
  * Player headshot with an initials badge as the base layer. If the headshot is
  * missing or blocked, the badge stays visible — no broken-image icons.
  */
-export default function PlayerAvatar({ name, teamAbbr, size = 44, className = "" }: Props) {
+export default function PlayerAvatar({ name, teamAbbr, size = 44, className = "", espnId }: Props) {
   const [failed, setFailed] = useState(false);
-  const url = playerHeadshotUrl(name);
+  const url = espnId
+    ? `https://a.espncdn.com/i/headshots/nba/players/full/${espnId}.png`
+    : playerHeadshotUrl(name);
   const color = teamColor(teamAbbr);
 
   return (

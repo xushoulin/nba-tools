@@ -13,6 +13,7 @@ import {
 } from "@/lib/salary-data";
 import { statusSentence, teamSummary } from "@/lib/team-view";
 import { TEAM_ASSETS, teamColor, teamHeroColor } from "@/lib/team-assets";
+import { profileFor } from "@/lib/player-profiles";
 import { SITE_URL } from "@/lib/tools";
 
 type Params = { params: Promise<{ id: string }> };
@@ -69,11 +70,17 @@ export default async function TeamPage({ params }: Params) {
         sport: "Basketball",
         url: `${SITE_URL}/teams/${team.id}`,
         memberOf: { "@type": "SportsOrganization", name: "NBA" },
-        athlete: team.players.map((p) => ({
-          "@type": "Person",
-          name: p.name,
-          jobTitle: p.pos,
-        })),
+        athlete: team.players.map((p) => {
+          const profile = profileFor(team.abbr, p.name);
+          return {
+            "@type": "Person",
+            name: p.name,
+            jobTitle: p.pos,
+            ...(profile
+              ? { url: `${SITE_URL}/players/${profile.slug}`, identifier: profile.id }
+              : {}),
+          };
+        }),
       },
       {
         "@type": "BreadcrumbList",
@@ -194,6 +201,7 @@ export default async function TeamPage({ params }: Params) {
               <thead>
                 <tr className="border-b border-gray-200 bg-gray-50 text-left text-xs uppercase tracking-wide text-gray-500">
                   <th className="px-4 py-3 font-semibold">Player</th>
+                  <th className="px-2 py-3 text-center font-semibold">No.</th>
                   <th className="px-3 py-3 font-semibold">Pos</th>
                   <th className="px-3 py-3 text-right font-semibold">2026-27</th>
                   <th className="px-3 py-3 text-right font-semibold">Years</th>
@@ -206,14 +214,25 @@ export default async function TeamPage({ params }: Params) {
                   .sort((a, b) => b.salary - a.salary)
                   .map((p) => {
                     const share = (p.salary / maxSalary) * 100;
+                    const profile = profileFor(team.abbr, p.name);
+                    const href = profile ? `/players/${profile.slug}` : null;
                     return (
-                      <tr key={p.id} className="transition hover:bg-orange-50/40">
+                      <tr
+                        key={p.id}
+                        className="group relative cursor-pointer transition hover:bg-orange-50/60"
+                      >
                         <td className="px-4 py-3">
-                          <div className="flex items-center gap-3">
-                            <PlayerAvatar name={p.name} teamAbbr={team.abbr} size={40} />
+                          <Link
+                            href={href ?? "/teams"}
+                            className="flex items-center gap-3 before:absolute before:inset-0 before:content-['']"
+                            aria-label={
+                              href ? `Open ${p.name} career profile` : `${p.name} profile unavailable`
+                            }
+                          >
+                            <PlayerAvatar name={p.name} teamAbbr={team.abbr} size={40} espnId={profile?.id} />
                             <div className="min-w-0">
-                              <div className="flex flex-wrap items-center gap-1.5 font-semibold text-ink">
-                                <span className="truncate">{p.name}</span>
+                              <div className="flex flex-wrap items-center gap-1.5 font-semibold text-ink group-hover:text-orange-700">
+                                <span className="truncate group-hover:underline">{p.name}</span>
                                 {p.noTradeClause && (
                                   <span className="rounded bg-red-100 px-1.5 py-0.5 text-[10px] font-bold uppercase text-red-700">
                                     NTC
@@ -225,8 +244,19 @@ export default async function TeamPage({ params }: Params) {
                                   </span>
                                 )}
                               </div>
+                              <div className="mt-0.5 text-[11px] font-medium text-gray-400">
+                                {profile?.exp ?? "Career profile"}
+                                {profile && profile.seasons.length > 0
+                                  ? ` · ${profile.seasons.length} seasons logged`
+                                  : ""}
+                              </div>
                             </div>
-                          </div>
+                          </Link>
+                        </td>
+                        <td className="px-2 py-3 text-center">
+                          <span className="inline-flex min-w-[2rem] justify-center rounded-md bg-gray-100 px-1.5 py-0.5 text-xs font-bold tabular-nums text-gray-700">
+                            {profile?.jersey ? `#${profile.jersey}` : "—"}
+                          </span>
                         </td>
                         <td className="px-3 py-3">
                           <span className="rounded-md bg-gray-100 px-2 py-0.5 text-xs font-semibold text-gray-600">
@@ -241,11 +271,16 @@ export default async function TeamPage({ params }: Params) {
                           ${p.totalValue.toFixed(1)}M
                         </td>
                         <td className="px-4 py-3">
-                          <div className="h-2 w-24 overflow-hidden rounded-full bg-gray-100">
-                            <div
-                              className="h-full rounded-full"
-                              style={{ width: `${share}%`, backgroundColor: primary }}
-                            />
+                          <div className="flex items-center justify-end gap-2">
+                            <div className="h-2 w-24 overflow-hidden rounded-full bg-gray-100">
+                              <div
+                                className="h-full rounded-full"
+                                style={{ width: `${share}%`, backgroundColor: primary }}
+                              />
+                            </div>
+                            <span aria-hidden className="text-gray-300">
+                              ›
+                            </span>
                           </div>
                         </td>
                       </tr>
@@ -254,7 +289,7 @@ export default async function TeamPage({ params }: Params) {
               </tbody>
               <tfoot>
                 <tr className="border-t-2 border-gray-200 bg-gray-50 font-bold text-ink">
-                  <td className="px-4 py-3" colSpan={2}>
+                  <td className="px-4 py-3" colSpan={3}>
                     Total listed
                   </td>
                   <td className="px-3 py-3 text-right">${s.listed.toFixed(2)}M</td>
@@ -270,9 +305,11 @@ export default async function TeamPage({ params }: Params) {
         </div>
 
         <p className="mt-3 text-xs leading-relaxed text-gray-400">
-          Listed contracts sum to ${s.listed.toFixed(1)}M, below the official team cap hit
-          of ${s.official.toFixed(1)}M. The difference covers minimum-salary players,
-          incomplete roster charges and dead money not shown in this trimmed roster.
+          Tap any player to open his career profile — bio, awards, team history and
+          season-by-season stats. Listed contracts sum to ${s.listed.toFixed(1)}M, below the
+          official team cap hit of ${s.official.toFixed(1)}M. The difference covers
+          minimum-salary players, incomplete roster charges and dead money not shown in this
+          trimmed roster.
         </p>
       </section>
 
