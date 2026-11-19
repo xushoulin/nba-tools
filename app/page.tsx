@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import TeamLogo from "@/components/teams/TeamLogo";
 import { TOOLS } from "@/lib/tools";
+import { INITIAL_TEAMS, LEAGUE } from "@/lib/salary-data";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -46,6 +48,44 @@ export default function Home() {
               <p className="mt-2 text-sm leading-relaxed text-gray-600">{tool.description}</p>
             </Link>
           ))}
+        </div>
+      </section>
+
+      <section id="teams" className="border-y border-gray-200 bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-14">
+          <div className="flex flex-wrap items-end justify-between gap-3">
+            <div>
+              <h2 className="text-2xl font-bold text-ink">Team payrolls &amp; rosters</h2>
+              <p className="mt-2 max-w-2xl text-gray-600">
+                All 30 teams split by conference, with real {LEAGUE.season} cap hits,
+                cap space and apron status. Open a team for every contract, salary and
+                remaining year.
+              </p>
+            </div>
+            <Link
+              href="/teams"
+              className="rounded-xl bg-ink px-5 py-2.5 font-semibold text-white transition hover:bg-gray-800"
+            >
+              Browse all 30 teams →
+            </Link>
+          </div>
+
+          <div className="mt-8 grid grid-cols-5 gap-3 sm:grid-cols-10">
+            {INITIAL_TEAMS.map((team) => (
+              <Link
+                key={team.id}
+                href={`/teams/${team.id}`}
+                title={`${team.city} ${team.name}`}
+                className="group flex aspect-square items-center justify-center rounded-xl border border-gray-100 bg-gray-50 p-2 transition hover:-translate-y-0.5 hover:border-court hover:bg-white hover:shadow"
+              >
+                <TeamLogo
+                  abbr={team.abbr}
+                  size={40}
+                  className="transition duration-200 group-hover:scale-110"
+                />
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

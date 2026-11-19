@@ -1,11 +1,12 @@
 "use client";
 
 import { useState } from "react";
+import { LEAGUE } from "@/lib/salary-data";
 
-const CAP = 154.6; // 2025-26 projected cap, $M
-const TAX = 187.9;
-const APRON1 = 195.2;
-const APRON2 = 207.8;
+const CAP = LEAGUE.salaryCap; // 2026-27 official, $M
+const TAX = LEAGUE.luxuryTax;
+const APRON1 = LEAGUE.firstApron;
+const APRON2 = LEAGUE.secondApron;
 
 type Row = { id: number; name: string; salary: string };
 
@@ -40,7 +41,7 @@ export default function SalaryCapCalculator() {
       <div>
         <label className="label">Salary cap ($M)</label>
         <input className="input" value={cap} onChange={(e) => setCap(e.target.value)} inputMode="decimal" />
-        <p className="mt-1 text-xs text-gray-400">2025–26 cap ≈ $154.6M · tax ≈ $187.9M</p>
+        <p className="mt-1 text-xs text-gray-400">2026–27 official cap ${CAP.toFixed(1)}M · tax ${TAX.toFixed(1)}M</p>
 
         <div className="mt-5 flex items-center justify-between">
           <h3 className="font-bold text-ink">Player contracts</h3>
@@ -79,11 +80,11 @@ export default function SalaryCapCalculator() {
           <div className={`mt-1 font-bold ${statusColor}`}>{status}</div>
         </div>
         <div className="mt-3 space-y-2 text-sm">
-          <div className="flex justify-between"><span className="text-gray-600">Tax line ($187.9M)</span><span className="font-semibold">{overTax > 0 ? `+$${overTax.toFixed(1)}M over` : "Under"}</span></div>
-          <div className="flex justify-between"><span className="text-gray-600">1st apron ($195.2M)</span><span className="font-semibold">{total >= APRON1 ? "Exceeded" : "OK"}</span></div>
-          <div className="flex justify-between"><span className="text-gray-600">2nd apron ($207.8M)</span><span className="font-semibold">{total >= APRON2 ? "Exceeded" : "OK"}</span></div>
+          <div className="flex justify-between"><span className="text-gray-600">Tax line (${TAX.toFixed(1)}M)</span><span className="font-semibold">{overTax > 0 ? `+$${overTax.toFixed(1)}M over` : "Under"}</span></div>
+          <div className="flex justify-between"><span className="text-gray-600">1st apron (${APRON1.toFixed(1)}M)</span><span className="font-semibold">{total >= APRON1 ? "Exceeded" : "OK"}</span></div>
+          <div className="flex justify-between"><span className="text-gray-600">2nd apron (${APRON2.toFixed(1)}M)</span><span className="font-semibold">{total >= APRON2 ? "Exceeded" : "OK"}</span></div>
         </div>
-        <p className="mt-4 text-xs leading-relaxed text-gray-400">Estimates for entertainment. Figures use 2025–26 projections and may differ from official NBA numbers.</p>
+        <p className="mt-4 text-xs leading-relaxed text-gray-400">Thresholds are the official 2026–27 NBA figures. Your inputs are never sent anywhere.</p>
       </div>
     </div>
   );

@@ -5,12 +5,12 @@ export const TOOL_CONTENT: Record<string, { steps: Step[]; faqs: Faq[] }> = {
   "salary-cap-calculator": {
     steps: [
       { title: "Enter contracts", body: "Add each player's annual salary. You can add or remove rows as needed." },
-      { title: "Set the cap", body: "The 2025–26 cap is preset. Adjust it any time to model future seasons." },
+      { title: "Set the cap", body: "The official 2026–27 cap is preset. Adjust it any time to model future seasons." },
       { title: "Read the results", body: "See total payroll, remaining cap space, and your luxury tax position instantly." },
     ],
     faqs: [
-      { q: "What is the NBA salary cap?", a: "The salary cap is the limit on how much a team can spend on player salaries in a season. For 2025–26 the cap is approximately $154.6 million, and the luxury tax threshold is about $187.9 million." },
-      { q: "Can a team go over the cap?", a: "Yes. Teams can exceed the cap using exceptions such as the Bird exception, mid-level exception, and by re-signing their own players. Going over the first apron ($195.2M) and second apron ($207.8M) triggers increasingly strict roster restrictions." },
+      { q: "What is the NBA salary cap?", a: "The salary cap is the limit on how much a team can spend on player salaries in a season. For 2026–27 the cap is $164.961 million, the luxury tax line is $200.428 million, and the minimum team salary is $148.465 million." },
+      { q: "Can a team go over the cap?", a: "Yes. Teams can exceed the cap using exceptions such as the Bird exception, mid-level exception, and by re-signing their own players. Going over the first apron ($209.015M) and second apron ($221.686M) triggers increasingly strict roster restrictions." },
       { q: "Is this calculator official?", a: "No. NBA Tools is independent and not affiliated with the NBA. Figures are for estimation and entertainment purposes." },
       { q: "Does my data leave my browser?", a: "No. All calculations happen locally in your browser. Nothing is stored or transmitted." },
     ],
@@ -18,7 +18,7 @@ export const TOOL_CONTENT: Record<string, { steps: Step[]; faqs: Faq[] }> = {
   "luxury-tax-calculator": {
     steps: [
       { title: "Enter team salary", body: "Input your team's total payroll for the season." },
-      { title: "Set the tax line", body: "The 2025–26 luxury tax threshold is preset at roughly $187.9 million." },
+      { title: "Set the tax line", body: "The official 2026–27 luxury tax threshold is preset at $200.428 million." },
       { title: "Pick taxpayer status", body: "Repeat taxpayers pay higher rates. Choose your status to see the correct bill." },
     ],
     faqs: [
@@ -85,6 +85,20 @@ export const TOOL_CONTENT: Record<string, { steps: Step[]; faqs: Faq[] }> = {
       { q: "How does the simulator pick winners?", a: "By default it weights the higher seed as more likely to win, but adds randomness so upsets happen — just like real playoffs." },
       { q: "Can I run my own picks?", a: "Yes. Click any team to advance them. You can mix manual picks with simulated rounds." },
       { q: "Is this a real playoff bracket?", a: "It is a generic simulator. It does not use live NBA playoff data and is not affiliated with the NBA." },
+    ],
+  },
+  "team-salary-trade-simulator": {
+    steps: [
+      { title: "Explore payrolls", body: "Browse all 30 teams. Expand a team to see every contract's salary, years and total value. Edit any figure to model your own scenario." },
+      { title: "Build a trade", body: "Switch to the Trade Simulator, pick two teams, then select players, cash and draft picks each side sends." },
+      { title: "Check legality", body: "See a verdict and rule-by-rule breakdown: salary matching, roster size, apron hard caps, cash limits, no-trade clauses and pick inventory." },
+    ],
+    faqs: [
+      { q: "How does salary matching work?", a: "Teams below the first apron can take back 200% + $250K of outgoing salary under $7.5M, outgoing + $7.5M between $7.5M and $29M, or 125% + $250K above $29M. Apron teams are limited to roughly 100% matching." },
+      { q: "What are the first and second aprons?", a: "Thresholds above the tax line that trigger roster restrictions. For 2026–27 the first apron is $209.015M and the second apron is $221.686M. Second-apron teams face the harshest limits, including no cash trades and no salary aggregation." },
+      { q: "Can I add my own rules?", a: "Yes. The rule engine is a registry of pure functions. Developers can call registerRule() with a custom evaluate function — see the developer note at the bottom of the tool." },
+      { q: "Is the data real?", a: "The player salaries are real 2026–27 cap figures sourced from HoopsHype and pulled on 19 Nov 2026; league thresholds are the official NBA 2026–27 numbers. Only the top 10–12 contracts per team are listed, so a team's editable roster total runs a little below its official cap hit — both figures are shown. Every value can be edited." },
+      { q: "Does this cover every CBA rule?", a: "No. It models the major headline rules. Real trades also involve BYC, trade exceptions, poison-pill contracts, the Stepien rule and more. Always consult official sources." },
     ],
   },
   "player-comparison": {

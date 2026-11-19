@@ -80,6 +80,15 @@ export const TOOLS: Tool[] = [
     category: "Analyzer",
     icon: "⚔️",
   },
+  {
+    slug: "team-salary-trade-simulator",
+    title: "NBA Salary & Trade Simulator",
+    shortTitle: "Salary & Trade Simulator",
+    description:
+      "Explore every team's payroll, cap space and tax status, then simulate trades between two teams with real-time salary-cap and CBA rule validation.",
+    category: "Simulator",
+    icon: "💼",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

@@ -20,6 +20,8 @@ export default function SiteFooter() {
               <h3 className="mb-3 font-semibold text-gray-900">Site</h3>
               <div className="flex flex-col gap-2 text-gray-500">
                 <Link href="/" className="hover:text-court">Home</Link>
+                <Link href="/teams" className="hover:text-court">All 30 teams</Link>
+                <Link href="/team-salary-trade-simulator" className="hover:text-court">Trade simulator</Link>
                 <Link href="/about" className="hover:text-court">About</Link>
                 <Link href="/privacy" className="hover:text-court">Privacy Policy</Link>
               </div>

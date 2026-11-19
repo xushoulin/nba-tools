@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { TOOLS, SITE_URL } from "@/lib/tools";
+import { INITIAL_TEAMS } from "@/lib/salary-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -15,5 +16,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
     priority: 0.8,
   }));
-  return [...pages, ...tools];
+  const teamsIndex = {
+    url: `${SITE_URL}/teams`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
+  };
+  const teamPages = INITIAL_TEAMS.map((t) => ({
+    url: `${SITE_URL}/teams/${t.id}`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.7,
+  }));
+  return [...pages, teamsIndex, ...tools, ...teamPages];
 }

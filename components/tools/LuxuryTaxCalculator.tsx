@@ -1,8 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { LEAGUE } from "@/lib/salary-data";
 
-const TAX_LINE = 187.9; // 2025-26
+const TAX_LINE = LEAGUE.luxuryTax; // 2026-27 official
 
 // Progressive tax brackets: [over-amount start, over-amount end, rate per $1M over]
 // First-time taxpayer rates; repeat taxpayer adds the surcharge.
@@ -45,7 +46,7 @@ export default function LuxuryTaxCalculator() {
         <input className="input" value={salary} onChange={(e) => setSalary(e.target.value)} inputMode="decimal" />
         <label className="label mt-4">Luxury tax line ($M)</label>
         <input className="input" value={taxLine} onChange={(e) => setTaxLine(e.target.value)} inputMode="decimal" />
-        <p className="mt-1 text-xs text-gray-400">2025–26 tax line ≈ $187.9M</p>
+        <p className="mt-1 text-xs text-gray-400">2026–27 official tax line ${TAX_LINE.toFixed(1)}M</p>
 
         <label className="mt-5 flex cursor-pointer items-center gap-3 rounded-lg border border-gray-200 p-3">
           <input type="checkbox" checked={repeat} onChange={(e) => setRepeat(e.target.checked)} className="h-4 w-4 accent-orange-500" />
