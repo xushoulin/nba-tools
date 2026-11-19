@@ -89,6 +89,15 @@ export const TOOLS: Tool[] = [
     category: "Simulator",
     icon: "💼",
   },
+  {
+    slug: "honours-comparison",
+    title: "NBA Player Honours Comparison",
+    shortTitle: "Honours Comparison",
+    description:
+      "Compare the trophy cases of up to four NBA players side by side — MVP awards, Finals MVPs, All-NBA and All-Defensive teams, All-Star MVPs and college honours, with counts, years and a full written report.",
+    category: "Analyzer",
+    icon: "🏅",
+  },
 ];
 
 export function getTool(slug: string): Tool | undefined {

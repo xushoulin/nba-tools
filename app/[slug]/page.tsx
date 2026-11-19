@@ -12,6 +12,7 @@ import RecordPredictor from "@/components/tools/RecordPredictor";
 import PlayoffBracketSimulator from "@/components/tools/PlayoffBracketSimulator";
 import PlayerComparison from "@/components/tools/PlayerComparison";
 import TeamSalaryTradeSimulator from "@/components/tools/TeamSalaryTradeSimulator";
+import HonoursComparison from "@/components/tools/HonoursComparison";
 
 const COMPONENTS: Record<string, React.ComponentType> = {
   "salary-cap-calculator": SalaryCapCalculator,
@@ -23,6 +24,7 @@ const COMPONENTS: Record<string, React.ComponentType> = {
   "playoff-bracket-simulator": PlayoffBracketSimulator,
   "player-comparison": PlayerComparison,
   "team-salary-trade-simulator": TeamSalaryTradeSimulator,
+  "honours-comparison": HonoursComparison,
 };
 
 export function generateStaticParams() {

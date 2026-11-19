@@ -113,4 +113,18 @@ export const TOOL_CONTENT: Record<string, { steps: Step[]; faqs: Faq[] }> = {
       { q: "Does it account for minutes?", a: "You can compare raw per-game numbers or enter per-36 figures yourself for a minutes-adjusted comparison." },
     ],
   },
+  "honours-comparison": {
+    steps: [
+      { title: "Pick your players", body: "Search the 355 players on 2026–27 rosters and add two to four of them to the comparison — like stacking laptops side by side." },
+      { title: "Filter and sort", body: "Narrow the table to one award category — MVP, Finals MVP, All-NBA, All-Defensive, NBA Cup, college national and more — hide the honours everyone shares, and sort by wins, name or recency." },
+      { title: "Read the verdict", body: "Rows where the players differ are highlighted and the leader in each row is tagged. The report underneath sums up shared honours, exclusive wins and the year-by-year distribution." },
+    ],
+    faqs: [
+      { q: "What counts as an honour?", a: "All-NBA, All-Defensive and All-Rookie teams, regular-season MVP, Finals MVP, All-Star Game MVP, Conference Finals MVP, the annual awards (Rookie of the Year, Defensive Player of the Year, Sixth Man, Most Improved, Clutch Player, Teammate of the Year), NBA Cup honours and college national awards such as the Wooden and Naismith Awards, All-American teams and Final Four MOP. Championship rings, All-Star selections and Hall of Fame induction are not in the source feed." },
+      { q: "Where does the data come from?", a: "ESPN's public athlete records, retrieved on 19 November 2026 and matched to the 2026–27 rosters used across this site. 168 of the 355 listed players have at least one honour on record." },
+      { q: "Why do the totals sometimes look low?", a: "Counts are award selections, not seasons, and only what the source records is counted. A four-time champion still shows zero rings here because team titles are not part of the dataset, and older honours can be missing entirely." },
+      { q: "Can I compare more than two players?", a: "Yes — up to four side by side. On a phone the comparison table scrolls sideways while the honour names stay pinned to the left edge." },
+      { q: "Does this settle who is the better player?", a: "No. It compares recorded honours only. Role, era, minutes, team success and playoff context are not weighted, so treat the result as reference material rather than a ranking." },
+    ],
+  },
 };

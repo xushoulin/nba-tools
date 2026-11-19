@@ -147,3 +147,31 @@ console.log(
 );
 console.log(`file ${(fs.statSync(dest).size / 1024).toFixed(0)} KB`);
 console.log("sample:", JSON.stringify(players["damian-lillard"]).slice(0, 700));
+
+// ---- compact honours index for the comparison tool (client-side bundle) ----
+const honours = list
+  .map((p) => ({
+    i: p.id,
+    s: p.slug,
+    n: p.name,
+    t: p.team,
+    p: p.pos,
+    j: p.jersey,
+    a: p.awards.map(([name, count, seasons]) => [name, count, seasons]),
+  }))
+  .sort((a, b) => {
+    const total = (x) => x.a.reduce((s, [, c]) => s + c, 0);
+    return total(b) - total(a) || a.n.localeCompare(b.n);
+  });
+
+const honoursDest = path.join(PROJ, "lib", "data", "honours.json");
+fs.writeFileSync(
+  honoursDest,
+  JSON.stringify({
+    meta: { source: "ESPN", retrieved: out.meta.retrieved },
+    players: honours,
+  })
+);
+console.log(
+  `honours file ${(fs.statSync(honoursDest).size / 1024).toFixed(0)} KB · ${honours.length} players · ${honours.filter((p) => p.a.length).length} with honours`
+);
