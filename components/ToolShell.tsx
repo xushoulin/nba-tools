@@ -1,6 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
-import { relatedTools } from "@/lib/tools";
+import { relatedTools, SITE_URL } from "@/lib/tools";
 
 type Faq = { q: string; a: string };
 type Step = { title: string; body: string };
@@ -18,8 +18,35 @@ type Props = {
 export default function ToolShell({ title, description, icon, slug, children, steps, faqs }: Props) {
   const related = relatedTools(slug);
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebApplication",
+        name: title,
+        description,
+        url: `${SITE_URL}/${slug}`,
+        applicationCategory: "UtilitiesApplication",
+        operatingSystem: "Any",
+        offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
+      },
+    ],
+  };
+
   return (
     <main className="mx-auto max-w-6xl px-4 py-10">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       {/* Hero */}
       <div className="mb-8">
         <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-700">

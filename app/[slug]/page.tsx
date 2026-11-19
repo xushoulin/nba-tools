@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ToolShell from "@/components/ToolShell";
-import { TOOLS, getTool } from "@/lib/tools";
+import { TOOLS, getTool, SITE_URL } from "@/lib/tools";
 import { TOOL_CONTENT } from "@/lib/tool-content";
 import SalaryCapCalculator from "@/components/tools/SalaryCapCalculator";
 import LuxuryTaxCalculator from "@/components/tools/LuxuryTaxCalculator";
@@ -34,7 +34,13 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: tool.title,
     description: tool.description,
-    openGraph: { title: tool.title, description: tool.description },
+    alternates: { canonical: `/${slug}` },
+    openGraph: {
+      title: tool.title,
+      description: tool.description,
+      url: `/${slug}`,
+      type: "website",
+    },
   };
 }
 

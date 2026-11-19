@@ -1,8 +1,52 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useState } from "react";
 
 type Player = { id: number; name: string; value: string };
+const newPlayer = (): Player => ({ id: Date.now() + Math.random(), name: "", value: "" });
+
+type PlayerListProps = {
+  list: Player[];
+  label: string;
+  onAdd: () => void;
+  onChange: (id: number, field: "name" | "value", val: string) => void;
+  onRemove: (id: number) => void;
+};
+
+// Defined at module level so React reuses the same component type across renders
+// (defining it inside the parent would remount inputs and steal focus on every keystroke).
+function PlayerList({ list, label, onAdd, onChange, onRemove }: PlayerListProps) {
+  return (
+    <div>
+      <div className="mb-2 flex items-center justify-between">
+        <h3 className="font-bold text-ink">{label}</h3>
+        <button className="btn-ghost" onClick={onAdd}>+ Add</button>
+      </div>
+      <div className="space-y-2">
+        {list.map((p) => (
+          <div key={p.id} className="flex items-center gap-2">
+            <input
+              className="input flex-1"
+              placeholder="Player name"
+              value={p.name}
+              onChange={(e) => onChange(p.id, "name", e.target.value)}
+            />
+            <div className="relative w-20">
+              <input
+                className="input pr-6 text-right"
+                placeholder="0"
+                value={p.value}
+                onChange={(e) => onChange(p.id, "value", e.target.value)}
+                inputMode="decimal"
+              />
+            </div>
+            <button className="px-2 text-gray-400 hover:text-red-500" aria-label="Remove player" onClick={() => onRemove(p.id)}>✕</button>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
 
 export default function FantasyTradeAnalyzer() {
   const [a, setA] = useState<Player[]>([
@@ -11,35 +55,21 @@ export default function FantasyTradeAnalyzer() {
   ]);
   const [b, setB] = useState<Player[]>([{ id: 3, name: "", value: "" }]);
 
+  const updateA = useCallback((id: number, field: "name" | "value", val: string) => {
+    setA((prev) => prev.map((p) => (p.id === id ? { ...p, [field]: val } : p)));
+  }, []);
+  const updateB = useCallback((id: number, field: "name" | "value", val: string) => {
+    setB((prev) => prev.map((p) => (p.id === id ? { ...p, [field]: val } : p)));
+  }, []);
+  const addA = useCallback(() => setA((prev) => [...prev, newPlayer()]), []);
+  const addB = useCallback(() => setB((prev) => [...prev, newPlayer()]), []);
+  const removeA = useCallback((id: number) => setA((prev) => prev.filter((p) => p.id !== id)), []);
+  const removeB = useCallback((id: number) => setB((prev) => prev.filter((p) => p.id !== id)), []);
+
   const sumA = a.reduce((s, p) => s + (parseFloat(p.value) || 0), 0);
   const sumB = b.reduce((s, p) => s + (parseFloat(p.value) || 0), 0);
   const diff = sumA - sumB;
   const winner = Math.abs(diff) < 0.05 ? "Even deal" : diff > 0 ? "Side A wins" : "Side B wins";
-
-  function upd(list: Player[], set: (v: Player[]) => void, id: number, field: "name" | "value", val: string) {
-    set(list.map((p) => (p.id === id ? { ...p, [field]: val } : p)));
-  }
-  function PlayerList({ list, set, label }: { list: Player[]; set: (v: Player[]) => void; label: string }) {
-    return (
-      <div>
-        <div className="mb-2 flex items-center justify-between">
-          <h3 className="font-bold text-ink">{label}</h3>
-          <button className="btn-ghost" onClick={() => set([...list, { id: Date.now() + Math.random(), name: "", value: "" }])}>+ Add</button>
-        </div>
-        <div className="space-y-2">
-          {list.map((p) => (
-            <div key={p.id} className="flex items-center gap-2">
-              <input className="input flex-1" placeholder="Player name" value={p.name} onChange={(e) => upd(list, set, p.id, "name", e.target.value)} />
-              <div className="relative w-20">
-                <input className="input pr-6 text-right" placeholder="0" value={p.value} onChange={(e) => upd(list, set, p.id, "value", e.target.value)} inputMode="decimal" />
-              </div>
-              <button className="px-2 text-gray-400 hover:text-red-500" onClick={() => set(list.filter((x) => x.id !== p.id))}>✕</button>
-            </div>
-          ))}
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div>
@@ -47,8 +77,12 @@ export default function FantasyTradeAnalyzer() {
         Give each player a fantasy value from 0–10 (use your league rankings or a site like FantasyPros), then compare the two sides.
       </p>
       <div className="grid gap-6 md:grid-cols-2">
-        <div className="rounded-xl border border-gray-200 p-4"><PlayerList list={a} set={setA} label="Side A receives" /></div>
-        <div className="rounded-xl border border-gray-200 p-4"><PlayerList list={b} set={setB} label="Side B receives" /></div>
+        <div className="rounded-xl border border-gray-200 p-4">
+          <PlayerList list={a} label="Side A receives" onAdd={addA} onChange={updateA} onRemove={removeA} />
+        </div>
+        <div className="rounded-xl border border-gray-200 p-4">
+          <PlayerList list={b} label="Side B receives" onAdd={addB} onChange={updateB} onRemove={removeB} />
+        </div>
       </div>
 
       <div className="mt-6 rounded-xl bg-gray-50 p-5">
