@@ -1,11 +1,11 @@
 {
   "tool": "inspect-robots.py",
   "rule_version": "geo-29-v2.0",
-  "generated_at": "2026-11-20T10:45:25+0800",
+  "generated_at": "2026-11-20T11:00:56+0800",
   "input_url": "http://127.0.0.1:8765/",
   "market": "domestic",
   "robots": {
-    "url": "http://127.0.0.1:8765/robots.txt",
+    "url": "https://xushoulin.github.io/nba-tools/robots.txt",
     "status_code": 200,
     "exists": true,
     "error": null,
@@ -1187,7 +1187,7 @@
     ]
   },
   "verdict": "ok",
-  "score_hint": 2.0,
+  "score_hint": 2,
   "verdict_reason": "未发现 AI 爬虫阻断，抓取层无阻塞",
   "recommended_robots": "# ===== 第一段：决定 AI 能否读到你的内容（必须放行）=====\n# 生成参数: --market domestic\n# --- 国内：国产大模型的检索来源 ---\nUser-agent: Bytespider\nAllow: /\n\nUser-agent: Baiduspider\nAllow: /\n\nUser-agent: Sogou web spider\nAllow: /\n\nUser-agent: YisouSpider\nAllow: /\n\nUser-agent: 360Spider\nAllow: /\n\nUser-agent: ToutiaoSpider\nAllow: /\n\n# --- Bingbot：国内外都要放行（多款国产 AI 依赖 Bing 索引）---\nUser-agent: Bingbot\nAllow: /\n\nUser-agent: Googlebot\nAllow: /\n\n# ===== 第二段：训练类爬虫：按你的内容策略自行决定 =====\n# 拦掉它们不影响 AI 搜索可见性，只影响是否被用作训练语料\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\n\n# ===== AI 使用偏好声明（IETF 草案，选填）=====\nContent-Signal: ai-train=no, search=yes, ai-retrieval=yes\n\nSitemap: http://127.0.0.1:8765/sitemap.xml\n"
 }

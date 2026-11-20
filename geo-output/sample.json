@@ -1,7 +1,7 @@
 {
   "tool": "fetch-page.py",
   "rule_version": "geo-29-v2.0",
-  "generated_at": "2026-11-20T10:45:19+0800",
+  "generated_at": "2026-11-20T11:00:49+0800",
   "input_url": "http://127.0.0.1:8765/",
   "mode": "sample",
   "sample": {
@@ -18,10 +18,25 @@
         "status_code": 200,
         "error": null,
         "title": "NBA Tools — Free NBA & Fantasy Basketball Tools",
-        "effective_chars": 2364,
-        "jsonld_types": [],
+        "effective_chars": 4144,
+        "jsonld_types": [
+          "FAQPage",
+          "Question",
+          "Answer",
+          "Question",
+          "Answer",
+          "Question",
+          "Answer",
+          "Question",
+          "Answer",
+          "Question",
+          "Answer",
+          "Organization",
+          "WebApplication",
+          "Organization"
+        ],
         "h1_count": 1,
-        "citability_average": 25.3,
+        "citability_average": 27.3,
         "optimal_length_count": 0
       },
       {
@@ -144,8 +159,8 @@
     "bottom_pages": [
       {
         "url": "https://xushoulin.github.io/nba-tools",
-        "citability": 25.3,
-        "chars": 2364
+        "citability": 27.3,
+        "chars": 4144
       },
       {
         "url": "https://xushoulin.github.io/nba-tools/players/james-harden",

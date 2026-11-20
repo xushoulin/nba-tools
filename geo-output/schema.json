@@ -1,10 +1,27 @@
 {
   "tool": "inspect-schema.py",
   "rule_version": "geo-29-v2.0",
-  "generated_at": "2026-11-20T10:45:29+0800",
+  "generated_at": "2026-11-20T11:00:57+0800",
   "input_url": "http://127.0.0.1:8765/",
-  "detected": [],
-  "detected_types": [],
+  "detected": [
+    {
+      "@type": [
+        "Answer",
+        "FAQPage",
+        "Organization",
+        "Question",
+        "WebApplication"
+      ],
+      "bytes": 2349
+    }
+  ],
+  "detected_types": [
+    "Answer",
+    "FAQPage",
+    "Organization",
+    "Question",
+    "WebApplication"
+  ],
   "parse_errors": [],
   "page_role": "homepage",
   "role_basis": "URL 为站点根路径",
@@ -15,7 +32,6 @@
     "WebSite"
   ],
   "missing_types": [
-    "Organization",
     "WebSite"
   ],
   "extracted": {
@@ -30,27 +46,6 @@
   "generate": [
     {
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "NBA Tools — Free NBA & Fantasy Basketball Tools",
-      "url": "https://127.0.0.1:8765/",
-      "logo": "https://127.0.0.1:8765/REPLACE_ME_logo.png",
-      "description": "REPLACE_ME_一句话说明做什么、服务谁",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "REPLACE_ME_详细地址",
-        "addressLocality": "REPLACE_ME_城市",
-        "addressRegion": "REPLACE_ME_省",
-        "addressCountry": "CN"
-      },
-      "telephone": "REPLACE_ME_对外电话",
-      "sameAs": [
-        "REPLACE_ME_公众号主页",
-        "REPLACE_ME_地图标注页",
-        "REPLACE_ME_企业信用页"
-      ]
-    },
-    {
-      "@context": "https://schema.org",
       "@type": "WebSite",
       "name": "NBA Tools — Free NBA & Fantasy Basketball Tools",
       "url": "https://127.0.0.1:8765/",
@@ -62,122 +57,83 @@
       }
     }
   ],
-  "visibility_note": "检测到 microdata/RDFa 标记，但没有 JSON-LD。大模型对 JSON-LD 的解析成本最低，建议额外补一份 JSON-LD，而不是依赖 microdata。",
+  "visibility_note": "已有 5 种类型，但缺少 ['WebSite']。",
   "errors": [],
   "w3c_validation": {
     "specs": {
       "jsonld": "https://www.w3.org/TR/json-ld11/",
       "schema": "https://schema.org/"
     },
-    "blocks_checked": 0,
+    "blocks_checked": 1,
     "summary": {
       "errors": 0,
-      "warnings": 0,
-      "infos": 0
+      "warnings": 3,
+      "infos": 2
     },
-    "score": null,
-    "grade": null,
-    "per_block": [],
-    "note": "页面没有 JSON-LD，无从校验合规性"
+    "score": 83,
+    "grade": "B",
+    "per_block": [
+      {
+        "specs": {
+          "jsonld": "https://www.w3.org/TR/json-ld11/",
+          "schema": "https://schema.org/"
+        },
+        "findings": [
+          {
+            "severity": "warning",
+            "path": "@graph[0]",
+            "type": "UnknownType",
+            "rule": "@type",
+            "message": "类型 'WebApplication' 不在已知的 schema.org 类型表内，无法离线核验",
+            "fix": "到 https://schema.org/WebApplication 核对拼写；自定义类型不会被主流解析器认识"
+          },
+          {
+            "severity": "info",
+            "path": "@graph[0].publisher",
+            "type": "MissingRecommended",
+            "rule": "schema.org/Organization",
+            "message": "Organization 建议再补: logo、description、sameAs",
+            "fix": "这些字段不影响合法性，但直接影响富结果/摘要展示概率"
+          },
+          {
+            "severity": "warning",
+            "path": "@graph[0].sameAs",
+            "type": "SameAsNotArray",
+            "rule": "sameAs",
+            "message": "sameAs 建议写成数组（一个主体通常有多个外部身份页）",
+            "fix": "改成 [\"https://...\", \"https://...\"]"
+          },
+          {
+            "severity": "info",
+            "path": "@graph[1]",
+            "type": "MissingRecommended",
+            "rule": "schema.org/Organization",
+            "message": "Organization 建议再补: logo、description",
+            "fix": "这些字段不影响合法性，但直接影响富结果/摘要展示概率"
+          },
+          {
+            "severity": "warning",
+            "path": "@graph[1].sameAs",
+            "type": "SameAsNotArray",
+            "rule": "sameAs",
+            "message": "sameAs 建议写成数组（一个主体通常有多个外部身份页）",
+            "fix": "改成 [\"https://...\", \"https://...\"]"
+          }
+        ],
+        "summary": {
+          "errors": 0,
+          "warnings": 3,
+          "infos": 2
+        },
+        "score": 83,
+        "grade": "B",
+        "index": 0,
+        "type": null
+      }
+    ],
+    "note": "判定依据：JSON-LD 1.1 (w3.org/TR/json-ld11) + schema.org 类型定义。离线校验，不联网；类型若不在本地白名单内只提示、不判错。"
   },
   "draft_validation": [
-    {
-      "specs": {
-        "jsonld": "https://www.w3.org/TR/json-ld11/",
-        "schema": "https://schema.org/"
-      },
-      "findings": [
-        {
-          "severity": "error",
-          "path": "logo",
-          "type": "Placeholder",
-          "rule": "反伪造约束",
-          "message": "字段值里留有占位符痕迹: 'https://127.0.0.1:8765/REPLACE_ME_logo.png'",
-          "fix": "上线前必须替换成真实内容；带占位符的 JSON-LD 会把噪声喂给模型"
-        },
-        {
-          "severity": "error",
-          "path": "description",
-          "type": "Placeholder",
-          "rule": "反伪造约束",
-          "message": "字段值里留有占位符痕迹: 'REPLACE_ME_一句话说明做什么、服务谁'",
-          "fix": "上线前必须替换成真实内容；带占位符的 JSON-LD 会把噪声喂给模型"
-        },
-        {
-          "severity": "error",
-          "path": "address.streetAddress",
-          "type": "Placeholder",
-          "rule": "反伪造约束",
-          "message": "字段值里留有占位符痕迹: 'REPLACE_ME_详细地址'",
-          "fix": "上线前必须替换成真实内容；带占位符的 JSON-LD 会把噪声喂给模型"
-        },
-        {
-          "severity": "error",
-          "path": "address.addressLocality",
-          "type": "Placeholder",
-          "rule": "反伪造约束",
-          "message": "字段值里留有占位符痕迹: 'REPLACE_ME_城市'",
-          "fix": "上线前必须替换成真实内容；带占位符的 JSON-LD 会把噪声喂给模型"
-        },
-        {
-          "severity": "error",
-          "path": "address.addressRegion",
-          "type": "Placeholder",
-          "rule": "反伪造约束",
-          "message": "字段值里留有占位符痕迹: 'REPLACE_ME_省'",
-          "fix": "上线前必须替换成真实内容；带占位符的 JSON-LD 会把噪声喂给模型"
-        },
-        {
-          "severity": "error",
-          "path": "telephone",
-          "type": "Placeholder",
-          "rule": "反伪造约束",
-          "message": "字段值里留有占位符痕迹: 'REPLACE_ME_对外电话'",
-          "fix": "上线前必须替换成真实内容；带占位符的 JSON-LD 会把噪声喂给模型"
-        },
-        {
-          "severity": "error",
-          "path": "sameAs",
-          "type": "RelativeUrl",
-          "rule": "sameAs",
-          "message": "URL 字段 sameAs 用了相对路径 'REPLACE_ME_公众号主页'",
-          "fix": "改成绝对 https URL；相对 IRI 会被解析到当前文档地址下"
-        },
-        {
-          "severity": "error",
-          "path": "sameAs",
-          "type": "RelativeUrl",
-          "rule": "sameAs",
-          "message": "URL 字段 sameAs 用了相对路径 'REPLACE_ME_地图标注页'",
-          "fix": "改成绝对 https URL；相对 IRI 会被解析到当前文档地址下"
-        },
-        {
-          "severity": "error",
-          "path": "sameAs",
-          "type": "RelativeUrl",
-          "rule": "sameAs",
-          "message": "URL 字段 sameAs 用了相对路径 'REPLACE_ME_企业信用页'",
-          "fix": "改成绝对 https URL；相对 IRI 会被解析到当前文档地址下"
-        },
-        {
-          "severity": "error",
-          "path": "sameAs",
-          "type": "Placeholder",
-          "rule": "反伪造约束",
-          "message": "数组元素里留有占位符痕迹: 'REPLACE_ME_公众号主页'",
-          "fix": "替换成真实内容后再上线"
-        }
-      ],
-      "summary": {
-        "errors": 10,
-        "warnings": 0,
-        "infos": 0
-      },
-      "score": 0,
-      "grade": "F",
-      "index": 0,
-      "type": "Organization"
-    },
     {
       "specs": {
         "jsonld": "https://www.w3.org/TR/json-ld11/",
@@ -200,9 +156,8 @@
       },
       "score": 99,
       "grade": "A",
-      "index": 1,
+      "index": 0,
       "type": "WebSite"
     }
-  ],
-  "draft_note": "生成的模板带 10 处占位符告警，这是刻意的：所有 REPLACE_ME_ 都必须替换成真实信息后才能上线，带占位符上线等于主动把噪声喂给模型。"
+  ]
 }

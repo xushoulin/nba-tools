@@ -1,24 +1,24 @@
 {
   "tool": "fetch-page.py",
   "rule_version": "geo-29-v2.0",
-  "generated_at": "2026-11-20T10:45:15+0800",
-  "input_url": "http://127.0.0.1:8765/",
+  "generated_at": "2026-11-20T11:00:44+0800",
+  "input_url": "https://xushoulin.github.io/nba-tools/",
   "mode": "full",
   "page": {
-    "url": "http://127.0.0.1:8765/",
-    "final_url": "http://127.0.0.1:8765/",
+    "url": "https://xushoulin.github.io/nba-tools/",
+    "final_url": "https://xushoulin.github.io/nba-tools/",
     "status_code": 200,
     "error": null,
     "timing": {
-      "ttfb_ms": 475.8,
-      "total_ms": 476.0
+      "ttfb_ms": 484.3,
+      "total_ms": 484.7
     },
     "headers": {
       "Content-Type": "text/html; charset=utf-8",
       "Content-Encoding": null,
       "Server": "GitHub.com",
       "Cache-Control": "max-age=600",
-      "Last-Modified": "Fri, 20 Nov 2026 02:44:13 GMT",
+      "Last-Modified": "Fri, 20 Nov 2026 03:00:33 GMT",
       "X-Robots-Tag": null,
       "Strict-Transport-Security": null,
       "Content-Security-Policy": null,
@@ -27,7 +27,7 @@
       "Referrer-Policy": null,
       "Permissions-Policy": null
     },
-    "html_bytes": 60266,
+    "html_bytes": 74348,
     "structural": {
       "title": "NBA Tools — Free NBA & Fantasy Basketball Tools",
       "title_chars": 14,
@@ -49,9 +49,9 @@
       "meta_robots": "index, follow",
       "headings": {
         "h1_count": 1,
-        "h2_count": 3,
+        "h2_count": 4,
         "h3_count": 15,
-        "total": 19,
+        "total": 20,
         "sequence": [
           {
             "level": 1,
@@ -122,6 +122,10 @@
             "text": "Always free"
           },
           {
+            "level": 2,
+            "text": "Frequently asked questions"
+          },
+          {
             "level": 3,
             "text": "Site"
           },
@@ -133,18 +137,18 @@
         "level_jumps": []
       },
       "rich_counts": {
-        "table": 0,
-        "dl": 0,
-        "b": 0,
-        "ul": 0,
         "ol": 0,
-        "strong": 0
+        "ul": 1,
+        "strong": 5,
+        "dl": 1,
+        "table": 0,
+        "b": 0
       },
-      "rich_total": 0,
-      "rich_density_per_500": 0.0,
+      "rich_total": 6,
+      "rich_density_per_500": 2.49,
       "paragraphs": {
-        "count": 18,
-        "avg_chars": 34.2,
+        "count": 19,
+        "avg_chars": 36.1,
         "max_chars": 68,
         "over_300": 0,
         "over_120": 0
@@ -155,127 +159,146 @@
       },
       "links": {
         "internal": 53,
-        "external": 0
+        "external": 2
       },
-      "external_hosts": [],
-      "jsonld_types": [],
-      "jsonld_raw_count": 0,
+      "external_hosts": [
+        "www.espn.com",
+        "www.hoopshype.com"
+      ],
+      "jsonld_types": [
+        "FAQPage",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Question",
+        "Answer",
+        "Organization",
+        "WebApplication",
+        "Organization"
+      ],
+      "jsonld_raw_count": 1,
       "has_microdata": false,
       "has_rdfa": true,
       "intrusive_elements": 0,
-      "text_html_ratio": 0.0112,
+      "text_html_ratio": 0.0163,
       "main_text_chars": {
         "cjk_chars": 0,
-        "latin_words": 337,
-        "digit_chars": 13,
-        "effective_chars": 674,
-        "raw_chars": 2371
+        "latin_words": 603,
+        "digit_chars": 54,
+        "effective_chars": 1206,
+        "raw_chars": 4151
       },
       "all_text_chars": {
         "cjk_chars": 0,
-        "latin_words": 376,
-        "digit_chars": 19,
-        "effective_chars": 752,
-        "raw_chars": 2694
+        "latin_words": 642,
+        "digit_chars": 60,
+        "effective_chars": 1284,
+        "raw_chars": 4475
       },
       "dropped_code_chars": 0
     },
     "signals": {
       "entities": {
-        "numbers": 6,
+        "numbers": 21,
         "percents": 0,
-        "years": 1,
+        "years": 6,
         "currency": 0,
         "org_terms": 0,
         "places": 0,
         "person_titles": 0,
-        "brand_mentions": 51,
+        "brand_mentions": 84,
         "categories_hit": [
           "numbers",
+          "years",
           "brand_mentions"
         ],
-        "category_count": 2
+        "category_count": 3
       },
       "filler": {
         "hits": [],
         "hit_total": 0,
-        "coverage_pct": 0.0
+        "coverage_pct": 0
       },
       "top_terms": [
         {
           "term": "nba",
-          "count": 9,
-          "density_pct": 1.34
-        },
-        {
-          "term": "tools",
-          "count": 8,
-          "density_pct": 1.19
+          "count": 16,
+          "density_pct": 1.33
         },
         {
           "term": "cap",
+          "count": 12,
+          "density_pct": 1
+        },
+        {
+          "term": "tools",
+          "count": 11,
+          "density_pct": 0.91
+        },
+        {
+          "term": "honours",
+          "count": 8,
+          "density_pct": 0.66
+        },
+        {
+          "term": "player",
+          "count": 8,
+          "density_pct": 0.66
+        },
+        {
+          "term": "free",
           "count": 7,
-          "density_pct": 1.04
+          "density_pct": 0.58
         },
         {
           "term": "basketball",
-          "count": 6,
-          "density_pct": 0.89
+          "count": 7,
+          "density_pct": 0.58
+        },
+        {
+          "term": "salary",
+          "count": 7,
+          "density_pct": 0.58
+        },
+        {
+          "term": "tax",
+          "count": 7,
+          "density_pct": 0.58
         },
         {
           "term": "fantasy",
           "count": 5,
-          "density_pct": 0.74
+          "density_pct": 0.41
         },
         {
-          "term": "salary",
+          "term": "data",
           "count": 5,
-          "density_pct": 0.74
+          "density_pct": 0.41
+        },
+        {
+          "term": "team",
+          "count": 5,
+          "density_pct": 0.41
+        },
+        {
+          "term": "every",
+          "count": 5,
+          "density_pct": 0.41
         },
         {
           "term": "see",
           "count": 5,
-          "density_pct": 0.74
-        },
-        {
-          "term": "tax",
-          "count": 5,
-          "density_pct": 0.74
+          "density_pct": 0.41
         },
         {
           "term": "side",
           "count": 5,
-          "density_pct": 0.74
-        },
-        {
-          "term": "points",
-          "count": 5,
-          "density_pct": 0.74
-        },
-        {
-          "term": "trade",
-          "count": 4,
-          "density_pct": 0.59
-        },
-        {
-          "term": "every",
-          "count": 4,
-          "density_pct": 0.59
-        },
-        {
-          "term": "player",
-          "count": 4,
-          "density_pct": 0.59
-        },
-        {
-          "term": "team",
-          "count": 4,
-          "density_pct": 0.59
-        },
-        {
-          "term": "teams",
-          "count": 4,
-          "density_pct": 0.59
+          "density_pct": 0.41
         }
       ],
       "summary": {
@@ -286,10 +309,10 @@
         "meta_description": "A growing collection of free basketball tools for fans and fantasy managers: salary cap, luxury tax, trade analyzer, advanced stats, and more. No signup, runs in your browser.",
         "faq_heading_count": 0,
         "faq_headings": [],
-        "has_faqpage_schema": false
+        "has_faqpage_schema": true
       },
       "intro": {
-        "first_paragraph": "Salary cap math, fantasy trade analysis, advanced stats, playoff simulations — all in your browser. No signup, no data collected, no nonsense.",
+        "first_paragraph": "NBA Tools is a free, browser-only set of 10 basketball calculators and simulators for fans and fantasy managers. Cover salary cap, luxury tax, trade analysis, playoff brackets and honours — no signup, no data collected.",
         "signals": [],
         "signal_count": 0
       },
@@ -302,13 +325,27 @@
       "js_rendered_hint": null
     },
     "citability": {
-      "average": 25.3,
+      "average": 27.3,
       "blocks_analyzed": 7,
       "grade_distribution": {
         "F": 7
       },
       "optimal_length_count": 0,
       "top": [
+        {
+          "heading": "Free NBA tools that just work.",
+          "effective_chars": 118,
+          "score": 31,
+          "grade": "F",
+          "breakdown": {
+            "answer_block_quality": 5,
+            "self_containment": 22,
+            "structural_readability": 2,
+            "data_density": 2,
+            "uniqueness": 0
+          },
+          "preview": "NBA Tools is a free, browser-only set of 10 basketball calculators and simulators for fans and fantasy managers. Cover salary cap, luxury ta"
+        },
         {
           "heading": "NBA Salary Cap Calculator",
           "effective_chars": 40,
@@ -324,7 +361,21 @@
           "preview": "Free NBA salary cap calculator. Add player contracts and instantly see your total payroll, cap space, and luxury tax position."
         },
         {
-          "heading": "Free NBA tools that just work.",
+          "heading": "Frequently asked questions",
+          "effective_chars": 402,
+          "score": 29,
+          "grade": "F",
+          "breakdown": {
+            "answer_block_quality": 2,
+            "self_containment": 19,
+            "structural_readability": 6,
+            "data_density": 2,
+            "uniqueness": 0
+          },
+          "preview": "Yes. Every calculator and simulator on this site is free, with no paywall, trial or credit card. Everything runs in your browser, so there i"
+        },
+        {
+          "heading": "NBA Player Comparison Tool",
           "effective_chars": 42,
           "score": 27,
           "grade": "F",
@@ -335,7 +386,51 @@
             "data_density": 0,
             "uniqueness": 0
           },
-          "preview": "Salary cap math, fantasy trade analysis, advanced stats, playoff simulations — all in your browser. No signup, no data collected, no nonsens"
+          "preview": "Compare two NBA players side by side across every stat. See who has the edge in points, rebounds, assists, and more."
+        },
+        {
+          "heading": "NBA Salary & Trade Simulator",
+          "effective_chars": 44,
+          "score": 27,
+          "grade": "F",
+          "breakdown": {
+            "answer_block_quality": 8,
+            "self_containment": 14,
+            "structural_readability": 5,
+            "data_density": 0,
+            "uniqueness": 0
+          },
+          "preview": "Explore every team's payroll, cap space and tax status, then simulate trades between two teams with real-time salary-cap and CBA rule valida"
+        }
+      ],
+      "bottom": [
+        {
+          "heading": "NBA Player Honours Comparison",
+          "effective_chars": 68,
+          "score": 21,
+          "grade": "F",
+          "breakdown": {
+            "answer_block_quality": 0,
+            "self_containment": 19,
+            "structural_readability": 2,
+            "data_density": 0,
+            "uniqueness": 0
+          },
+          "preview": "Compare the trophy cases of up to four NBA players side by side — MVP awards, Finals MVPs, All-NBA and All-Defensive teams, All-Star MVPs an"
+        },
+        {
+          "heading": "Team payrolls & rosters",
+          "effective_chars": 48,
+          "score": 26,
+          "grade": "F",
+          "breakdown": {
+            "answer_block_quality": 5,
+            "self_containment": 14,
+            "structural_readability": 5,
+            "data_density": 2,
+            "uniqueness": 0
+          },
+          "preview": "All 30 teams split by conference, with real 2026-27 cap hits, cap space and apron status. Open a team for every contract, salary and remaini"
         },
         {
           "heading": "NBA Player Comparison Tool",
@@ -366,90 +461,18 @@
           "preview": "Explore every team's payroll, cap space and tax status, then simulate trades between two teams with real-time salary-cap and CBA rule valida"
         },
         {
-          "heading": "Team payrolls & rosters",
-          "effective_chars": 48,
-          "score": 26,
+          "heading": "Frequently asked questions",
+          "effective_chars": 402,
+          "score": 29,
           "grade": "F",
           "breakdown": {
-            "answer_block_quality": 5,
-            "self_containment": 14,
-            "structural_readability": 5,
-            "data_density": 2,
-            "uniqueness": 0
-          },
-          "preview": "All 30 teams split by conference, with real 2026-27 cap hits, cap space and apron status. Open a team for every contract, salary and remaini"
-        }
-      ],
-      "bottom": [
-        {
-          "heading": "Always free",
-          "effective_chars": 56,
-          "score": 19,
-          "grade": "F",
-          "breakdown": {
-            "answer_block_quality": 0,
-            "self_containment": 14,
-            "structural_readability": 5,
-            "data_density": 0,
-            "uniqueness": 0
-          },
-          "preview": "No paywalls, no trials, no credit card. Just free tools. Free basketball tools for fans and fantasy managers. No signup, no data collected —"
-        },
-        {
-          "heading": "NBA Player Honours Comparison",
-          "effective_chars": 68,
-          "score": 21,
-          "grade": "F",
-          "breakdown": {
-            "answer_block_quality": 0,
+            "answer_block_quality": 2,
             "self_containment": 19,
-            "structural_readability": 2,
-            "data_density": 0,
-            "uniqueness": 0
-          },
-          "preview": "Compare the trophy cases of up to four NBA players side by side — MVP awards, Finals MVPs, All-NBA and All-Defensive teams, All-Star MVPs an"
-        },
-        {
-          "heading": "Team payrolls & rosters",
-          "effective_chars": 48,
-          "score": 26,
-          "grade": "F",
-          "breakdown": {
-            "answer_block_quality": 5,
-            "self_containment": 14,
-            "structural_readability": 5,
+            "structural_readability": 6,
             "data_density": 2,
             "uniqueness": 0
           },
-          "preview": "All 30 teams split by conference, with real 2026-27 cap hits, cap space and apron status. Open a team for every contract, salary and remaini"
-        },
-        {
-          "heading": "Free NBA tools that just work.",
-          "effective_chars": 42,
-          "score": 27,
-          "grade": "F",
-          "breakdown": {
-            "answer_block_quality": 8,
-            "self_containment": 14,
-            "structural_readability": 5,
-            "data_density": 0,
-            "uniqueness": 0
-          },
-          "preview": "Salary cap math, fantasy trade analysis, advanced stats, playoff simulations — all in your browser. No signup, no data collected, no nonsens"
-        },
-        {
-          "heading": "NBA Player Comparison Tool",
-          "effective_chars": 42,
-          "score": 27,
-          "grade": "F",
-          "breakdown": {
-            "answer_block_quality": 8,
-            "self_containment": 14,
-            "structural_readability": 5,
-            "data_density": 0,
-            "uniqueness": 0
-          },
-          "preview": "Compare two NBA players side by side across every stat. See who has the edge in points, rebounds, assists, and more."
+          "preview": "Yes. Every calculator and simulator on this site is free, with no paywall, trial or credit card. Everything runs in your browser, so there i"
         }
       ]
     },
@@ -467,7 +490,23 @@
       },
       {
         "tag": "p",
-        "text": "Salary cap math, fantasy trade analysis, advanced stats, playoff simulations — all in your browser. No signup, no data collected, no nonsense."
+        "text": "NBA Tools is a free, browser-only set of 10 basketball calculators and simulators for fans and fantasy managers. Cover salary cap, luxury tax, trade analysis, p"
+      },
+      {
+        "tag": "li",
+        "text": "10 free toolsCalculators and simulators that run locally"
+      },
+      {
+        "tag": "li",
+        "text": "30 team pagesPayrolls, rosters and 2026-27 cap status"
+      },
+      {
+        "tag": "li",
+        "text": "355 player pagesJersey numbers, career timeline and honours"
+      },
+      {
+        "tag": "li",
+        "text": "11 award categoriesSide-by-side honours comparison, with seasons"
       },
       {
         "tag": "h2",
@@ -592,6 +631,54 @@
       {
         "tag": "p",
         "text": "No paywalls, no trials, no credit card. Just free tools."
+      },
+      {
+        "tag": "h2",
+        "text": "Frequently asked questions"
+      },
+      {
+        "tag": "dt",
+        "text": "Is NBA Tools free to use?"
+      },
+      {
+        "tag": "dd",
+        "text": "Yes. Every calculator and simulator on this site is free, with no paywall, trial or credit card. Everything runs in your browser, so there is no account to crea"
+      },
+      {
+        "tag": "dt",
+        "text": "Do I need to sign up or share any personal data?"
+      },
+      {
+        "tag": "dd",
+        "text": "No. NBA Tools does not require an account and does not collect your inputs on the server. Calculations happen locally in your browser, and only anonymous aggreg"
+      },
+      {
+        "tag": "dt",
+        "text": "Where does the salary and cap data come from?"
+      },
+      {
+        "tag": "dd",
+        "text": "Contract figures are point-in-time 2026-27 snapshots from HoopsHype, combined with the official NBA cap, tax and apron thresholds. They were retrieved in Novemb"
+      },
+      {
+        "tag": "dt",
+        "text": "Where do player profiles and award records come from?"
+      },
+      {
+        "tag": "dd",
+        "text": "Player biographies, jersey numbers, honours and season-by-season statistics come from ESPN public athlete endpoints. The honours comparison groups 31 recorded a"
+      },
+      {
+        "tag": "dt",
+        "text": "Can I use these numbers for official NBA transactions?"
+      },
+      {
+        "tag": "dd",
+        "text": "No. This is an independent, fan-run project. It is not affiliated with the NBA, its teams or ESPN, and the figures are not an official source for contracts, cap"
+      },
+      {
+        "tag": "p",
+        "text": "Data sources: player bios, honours and statistics from ESPN; salary snapshots from HoopsHype; cap thresholds from the NBA's published 2026-27 figures. Last retr"
       },
       {
         "tag": "p",

@@ -2,14 +2,14 @@
   "schema_version": "geo-29-v2.0",
   "generated_by": "generate-report.py --autofill",
   "target": {
-    "url": "http://127.0.0.1:8765/",
-    "domain": "127.0.0.1:8765",
+    "url": "https://xushoulin.github.io/nba-tools/",
+    "domain": "xushoulin.github.io/nba-tools",
     "market": "domestic",
-    "business_type": "other",
-    "business_basis": "无明确业务类型信号",
+    "business_type": "内容站/工具站",
+    "business_basis": "首页提供免费浏览器端 NBA 工具、球队与球员页面，按工具/内容站推断",
     "page_role": "homepage",
     "page_role_basis": "URL 为站点根路径",
-    "fetched_at": "2026-11-20T10:45:15+0800",
+    "fetched_at": "2026-11-20T11:00:44+0800",
     "http_status": 200,
     "notes": ""
   },
@@ -326,13 +326,27 @@
     }
   },
   "citability": {
-    "average": 25.3,
+    "average": 27.3,
     "blocks_analyzed": 7,
     "grade_distribution": {
       "F": 7
     },
     "optimal_length_count": 0,
     "top": [
+      {
+        "heading": "Free NBA tools that just work.",
+        "effective_chars": 118,
+        "score": 31,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 5,
+          "self_containment": 22,
+          "structural_readability": 2,
+          "data_density": 2,
+          "uniqueness": 0
+        },
+        "preview": "NBA Tools is a free, browser-only set of 10 basketball calculators and simulators for fans and fantasy managers. Cover salary cap, luxury ta"
+      },
       {
         "heading": "NBA Salary Cap Calculator",
         "effective_chars": 40,
@@ -348,7 +362,21 @@
         "preview": "Free NBA salary cap calculator. Add player contracts and instantly see your total payroll, cap space, and luxury tax position."
       },
       {
-        "heading": "Free NBA tools that just work.",
+        "heading": "Frequently asked questions",
+        "effective_chars": 402,
+        "score": 29,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 2,
+          "self_containment": 19,
+          "structural_readability": 6,
+          "data_density": 2,
+          "uniqueness": 0
+        },
+        "preview": "Yes. Every calculator and simulator on this site is free, with no paywall, trial or credit card. Everything runs in your browser, so there i"
+      },
+      {
+        "heading": "NBA Player Comparison Tool",
         "effective_chars": 42,
         "score": 27,
         "grade": "F",
@@ -359,7 +387,51 @@
           "data_density": 0,
           "uniqueness": 0
         },
-        "preview": "Salary cap math, fantasy trade analysis, advanced stats, playoff simulations — all in your browser. No signup, no data collected, no nonsens"
+        "preview": "Compare two NBA players side by side across every stat. See who has the edge in points, rebounds, assists, and more."
+      },
+      {
+        "heading": "NBA Salary & Trade Simulator",
+        "effective_chars": 44,
+        "score": 27,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 8,
+          "self_containment": 14,
+          "structural_readability": 5,
+          "data_density": 0,
+          "uniqueness": 0
+        },
+        "preview": "Explore every team's payroll, cap space and tax status, then simulate trades between two teams with real-time salary-cap and CBA rule valida"
+      }
+    ],
+    "bottom": [
+      {
+        "heading": "NBA Player Honours Comparison",
+        "effective_chars": 68,
+        "score": 21,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 0,
+          "self_containment": 19,
+          "structural_readability": 2,
+          "data_density": 0,
+          "uniqueness": 0
+        },
+        "preview": "Compare the trophy cases of up to four NBA players side by side — MVP awards, Finals MVPs, All-NBA and All-Defensive teams, All-Star MVPs an"
+      },
+      {
+        "heading": "Team payrolls & rosters",
+        "effective_chars": 48,
+        "score": 26,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 5,
+          "self_containment": 14,
+          "structural_readability": 5,
+          "data_density": 2,
+          "uniqueness": 0
+        },
+        "preview": "All 30 teams split by conference, with real 2026-27 cap hits, cap space and apron status. Open a team for every contract, salary and remaini"
       },
       {
         "heading": "NBA Player Comparison Tool",
@@ -390,95 +462,23 @@
         "preview": "Explore every team's payroll, cap space and tax status, then simulate trades between two teams with real-time salary-cap and CBA rule valida"
       },
       {
-        "heading": "Team payrolls & rosters",
-        "effective_chars": 48,
-        "score": 26,
+        "heading": "Frequently asked questions",
+        "effective_chars": 402,
+        "score": 29,
         "grade": "F",
         "breakdown": {
-          "answer_block_quality": 5,
-          "self_containment": 14,
-          "structural_readability": 5,
-          "data_density": 2,
-          "uniqueness": 0
-        },
-        "preview": "All 30 teams split by conference, with real 2026-27 cap hits, cap space and apron status. Open a team for every contract, salary and remaini"
-      }
-    ],
-    "bottom": [
-      {
-        "heading": "Always free",
-        "effective_chars": 56,
-        "score": 19,
-        "grade": "F",
-        "breakdown": {
-          "answer_block_quality": 0,
-          "self_containment": 14,
-          "structural_readability": 5,
-          "data_density": 0,
-          "uniqueness": 0
-        },
-        "preview": "No paywalls, no trials, no credit card. Just free tools. Free basketball tools for fans and fantasy managers. No signup, no data collected —"
-      },
-      {
-        "heading": "NBA Player Honours Comparison",
-        "effective_chars": 68,
-        "score": 21,
-        "grade": "F",
-        "breakdown": {
-          "answer_block_quality": 0,
+          "answer_block_quality": 2,
           "self_containment": 19,
-          "structural_readability": 2,
-          "data_density": 0,
-          "uniqueness": 0
-        },
-        "preview": "Compare the trophy cases of up to four NBA players side by side — MVP awards, Finals MVPs, All-NBA and All-Defensive teams, All-Star MVPs an"
-      },
-      {
-        "heading": "Team payrolls & rosters",
-        "effective_chars": 48,
-        "score": 26,
-        "grade": "F",
-        "breakdown": {
-          "answer_block_quality": 5,
-          "self_containment": 14,
-          "structural_readability": 5,
+          "structural_readability": 6,
           "data_density": 2,
           "uniqueness": 0
         },
-        "preview": "All 30 teams split by conference, with real 2026-27 cap hits, cap space and apron status. Open a team for every contract, salary and remaini"
-      },
-      {
-        "heading": "Free NBA tools that just work.",
-        "effective_chars": 42,
-        "score": 27,
-        "grade": "F",
-        "breakdown": {
-          "answer_block_quality": 8,
-          "self_containment": 14,
-          "structural_readability": 5,
-          "data_density": 0,
-          "uniqueness": 0
-        },
-        "preview": "Salary cap math, fantasy trade analysis, advanced stats, playoff simulations — all in your browser. No signup, no data collected, no nonsens"
-      },
-      {
-        "heading": "NBA Player Comparison Tool",
-        "effective_chars": 42,
-        "score": 27,
-        "grade": "F",
-        "breakdown": {
-          "answer_block_quality": 8,
-          "self_containment": 14,
-          "structural_readability": 5,
-          "data_density": 0,
-          "uniqueness": 0
-        },
-        "preview": "Compare two NBA players side by side across every stat. See who has the edge in points, rebounds, assists, and more."
+        "preview": "Yes. Every calculator and simulator on this site is free, with no paywall, trial or credit card. Everything runs in your browser, so there i"
       }
     ]
   },
   "body_audit": {
-    "chars": 674,
+    "chars": 1206,
     "min_chars": 150,
     "usable": true,
     "js_rendered_hint": null,
@@ -488,13 +488,13 @@
     "pages_requested": 5,
     "pages_ok": 5,
     "pages_failed": 0,
-    "pages_with_jsonld": 4,
-    "jsonld_coverage": 0.8,
+    "pages_with_jsonld": 5,
+    "jsonld_coverage": 1,
     "title_unique_rate": 1,
     "body_adequate_rate": 1,
-    "avg_citability": 34.9,
-    "worst_citability": 25.3,
-    "note": "抽样页平均可引用性 34.9/100，整站内容写法需要统一改"
+    "avg_citability": 35.3,
+    "worst_citability": 27.3,
+    "note": "抽样页平均可引用性 35.3/100，整站内容写法需要统一改"
   },
   "sample_pages": {
     "top": [
@@ -517,8 +517,8 @@
     "bottom": [
       {
         "url": "https://xushoulin.github.io/nba-tools",
-        "citability": 25.3,
-        "chars": 2364
+        "citability": 27.3,
+        "chars": 4144
       },
       {
         "url": "https://xushoulin.github.io/nba-tools/players/james-harden",
@@ -528,13 +528,18 @@
     ]
   },
   "schema_audit": {
-    "detected_types": [],
+    "detected_types": [
+      "Answer",
+      "FAQPage",
+      "Organization",
+      "Question",
+      "WebApplication"
+    ],
     "required_types": [
       "Organization",
       "WebSite"
     ],
     "missing_types": [
-      "Organization",
       "WebSite"
     ],
     "extracted": {
@@ -546,31 +551,89 @@
       "canonical": "https://xushoulin.github.io/nba-tools/",
       "lang": "en"
     },
-    "visibility_note": "检测到 microdata/RDFa 标记，但没有 JSON-LD。大模型对 JSON-LD 的解析成本最低，建议额外补一份 JSON-LD，而不是依赖 microdata。",
+    "visibility_note": "已有 5 种类型，但缺少 ['WebSite']。",
     "w3c_validation": {
       "specs": {
         "jsonld": "https://www.w3.org/TR/json-ld11/",
         "schema": "https://schema.org/"
       },
-      "blocks_checked": 0,
+      "blocks_checked": 1,
       "summary": {
         "errors": 0,
-        "warnings": 0,
-        "infos": 0
+        "warnings": 3,
+        "infos": 2
       },
-      "score": null,
-      "grade": null,
-      "per_block": [],
-      "note": "页面没有 JSON-LD，无从校验合规性"
+      "score": 83,
+      "grade": "B",
+      "per_block": [
+        {
+          "specs": {
+            "jsonld": "https://www.w3.org/TR/json-ld11/",
+            "schema": "https://schema.org/"
+          },
+          "findings": [
+            {
+              "severity": "warning",
+              "path": "@graph[0]",
+              "type": "UnknownType",
+              "rule": "@type",
+              "message": "类型 'WebApplication' 不在已知的 schema.org 类型表内，无法离线核验",
+              "fix": "到 https://schema.org/WebApplication 核对拼写；自定义类型不会被主流解析器认识"
+            },
+            {
+              "severity": "info",
+              "path": "@graph[0].publisher",
+              "type": "MissingRecommended",
+              "rule": "schema.org/Organization",
+              "message": "Organization 建议再补: logo、description、sameAs",
+              "fix": "这些字段不影响合法性，但直接影响富结果/摘要展示概率"
+            },
+            {
+              "severity": "warning",
+              "path": "@graph[0].sameAs",
+              "type": "SameAsNotArray",
+              "rule": "sameAs",
+              "message": "sameAs 建议写成数组（一个主体通常有多个外部身份页）",
+              "fix": "改成 [\"https://...\", \"https://...\"]"
+            },
+            {
+              "severity": "info",
+              "path": "@graph[1]",
+              "type": "MissingRecommended",
+              "rule": "schema.org/Organization",
+              "message": "Organization 建议再补: logo、description",
+              "fix": "这些字段不影响合法性，但直接影响富结果/摘要展示概率"
+            },
+            {
+              "severity": "warning",
+              "path": "@graph[1].sameAs",
+              "type": "SameAsNotArray",
+              "rule": "sameAs",
+              "message": "sameAs 建议写成数组（一个主体通常有多个外部身份页）",
+              "fix": "改成 [\"https://...\", \"https://...\"]"
+            }
+          ],
+          "summary": {
+            "errors": 0,
+            "warnings": 3,
+            "infos": 2
+          },
+          "score": 83,
+          "grade": "B",
+          "index": 0,
+          "type": null
+        }
+      ],
+      "note": "判定依据：JSON-LD 1.1 (w3.org/TR/json-ld11) + schema.org 类型定义。离线校验，不联网；类型若不在本地白名单内只提示、不判错。"
     }
   },
   "llms_audit": {
     "tool": "llms-txt.py",
     "rule_version": "geo-29-v2.0",
-    "generated_at": "2026-11-20T10:45:33+0800",
+    "generated_at": "2026-11-20T11:01:00+0800",
     "input_url": "http://127.0.0.1:8765/",
     "llms_txt": {
-      "url": "http://127.0.0.1:8765/llms.txt",
+      "url": "https://xushoulin.github.io/nba-tools/llms.txt",
       "exists": true,
       "status_code": 200,
       "bytes": 1762,
@@ -665,7 +728,7 @@
       "status": "pass",
       "source": "auto",
       "evidence": [
-        "1 个 H1、3 个 H2，层级无跳级"
+        "1 个 H1、4 个 H2，层级无跳级"
       ],
       "remediation": "—"
     },
@@ -678,7 +741,7 @@
       "status": "pass",
       "source": "auto",
       "evidence": [
-        "18 段，平均 34.2 字，最长 68 字，无超长段"
+        "19 段，平均 36.1 字，最长 68 字，无超长段"
       ],
       "remediation": "—"
     },
@@ -692,7 +755,7 @@
       "source": "hybrid",
       "evidence": [
         "首段无结论信号",
-        "首段：Salary cap math, fantasy trade analysis, advanced stats, playoff simulations — all in your browser. No signup, no data c"
+        "首段：NBA Tools is a free, browser-only set of 10 basketball calculators and simulators for fans and fantasy managers. Cover s"
       ],
       "remediation": "把结论提到前 150 字内：X 是…，适用于…，核心参数…"
     },
@@ -701,13 +764,13 @@
       "dimension": "C1",
       "name": "使用列表、表格、加粗强调",
       "max": 4,
-      "score": 0,
-      "status": "fail",
+      "score": 3.2,
+      "status": "partial",
       "source": "auto",
       "evidence": [
-        "无 ul/ol/table/strong/b 元素，全是大段纯文字"
+        "每 500 字 2.49 个；table 0 个"
       ],
-      "remediation": "把长文改写成「小标题 + 列表 + 表格」结构"
+      "remediation": "补一张参数对比表，把并列信息从段落改成表格"
     },
     {
       "id": "C2.1",
@@ -718,7 +781,7 @@
       "status": "pass",
       "source": "auto",
       "evidence": [
-        "词频最高的是「nba」，出现 9 次、密度 1.34%（作为主关键词密度的代理指标）"
+        "词频最高的是「nba」，出现 16 次、密度 1.33%（作为主关键词密度的代理指标）"
       ],
       "remediation": "—"
     },
@@ -727,28 +790,28 @@
       "dimension": "C2",
       "name": "语义多样性",
       "max": 4,
-      "score": 3.5,
+      "score": 4,
       "status": "pass",
       "source": "hybrid",
       "evidence": [
-        "覆盖「是什么」：All tools 区块逐个说明 10 个工具（如 \"Calculate your NBA luxury tax bill with the league's progressive tax brackets\"）",
-        "覆盖「为什么」：Why use NBA Tools? 小节给出 Instant / Private / Always free 三条理由",
-        "覆盖「场景/人群」：首段与页脚都点明 fans and fantasy managers",
-        "未覆盖「怎么做」和「有什么坑」：首页没有步骤说明，也没有数据时效或误差提示"
+        "是什么：All tools 区块逐个说明工具用途，如 Calculate your NBA luxury tax bill with the league progressive tax brackets",
+        "为什么：Why use NBA Tools 给出 Instant / Private / Always free 三条理由",
+        "场景/人群：首段点明 fans and fantasy managers",
+        "限制/风险：FAQ 第 5 问明确说明数据不是官方交易依据"
       ],
-      "remediation": "在首页补一段「How to start」三步说明，并在数据区加一句「2026-27 快照会随交易变化，仅供估算」。"
+      "remediation": "保持现有四类语义角色；补一段三步上手说明以覆盖「怎么做」。"
     },
     {
       "id": "C2.3",
       "dimension": "C2",
       "name": "实体明确（人名、地名、数字、品牌）",
       "max": 4,
-      "score": 1.6,
+      "score": 2.8,
       "status": "partial",
       "source": "auto",
       "evidence": [
-        "实体类别命中 2 类：numbers、brand_mentions",
-        "数字 6、百分比 0、年份 1、机构名 0、地名 0"
+        "实体类别命中 3 类：numbers、years、brand_mentions",
+        "数字 21、百分比 0、年份 6、机构名 0、地名 0"
       ],
       "remediation": "把「效果好」改写成具体数字；补品牌全称、服务地区、适用行业、负责人署名"
     },
@@ -761,7 +824,7 @@
       "status": "pass",
       "source": "auto",
       "evidence": [
-        "营销套话占比 0.0%"
+        "营销套话占比 0%"
       ],
       "remediation": "—"
     },
@@ -770,13 +833,13 @@
       "dimension": "C3",
       "name": "内容中有权威来源/研究/报告引用",
       "max": 4,
-      "score": 0,
-      "status": "fail",
+      "score": 1.6,
+      "status": "partial",
       "source": "auto",
       "evidence": [
-        "全文 0 个外部链接，没有任何引用来源"
+        "共 2 个外链，但域名均不属于权威来源（如 www.espn.com, www.hoopshype.com）"
       ],
-      "remediation": "至少补 2 条可核实的权威来源；没有就说明哪些数字来自自家实测"
+      "remediation": "关键论断后补权威来源链接，标注「（来源：xx，年份）」。禁止编造"
     },
     {
       "id": "C3.2",
@@ -787,7 +850,7 @@
       "status": "partial",
       "source": "auto",
       "evidence": [
-        "带语境数据点 1 处（百分比 0、金额 0、年份 1）"
+        "带语境数据点 1 处（百分比 0、金额 0、年份 6）"
       ],
       "remediation": "把「提升明显」改成「响应耗时从 820ms 降到 210ms」这类可核对表述"
     },
@@ -796,11 +859,11 @@
       "dimension": "C3",
       "name": "作者/品牌/机构信息透明",
       "max": 4,
-      "score": 0,
+      "score": 0.8,
       "status": "fail",
       "source": "auto",
       "evidence": [
-        "主体透明命中 0 项：无"
+        "主体透明命中 1 项：Schema 含主体信息"
       ],
       "remediation": "页脚补：企业工商全称 + 详细地址 + ICP 备案号 + 更新时间；文章加作者署名"
     },
@@ -813,25 +876,26 @@
       "status": "pass",
       "source": "manual",
       "evidence": [
-        "有一手数据：页面写明 \"real 2026-27 cap hits\"、30 teams、355 player career pages，这些数字来自项目自有数据集而非通用描述",
-        "有独有产品组合：salary-cap + trade simulator + honours comparison 的组合不是常见模板站内容",
-        "与站内其他页面不重复：首页是索引页，正文为各工具的一句话定位，未见整段复制模板痕迹",
-        "缺少作者/维护者署名与独立观点，因此未给满分"
+        "有一手数据：页面写明 real 2026-27 cap hits、30 个球队、355 个球员页面、31 种奖项归并为 11 类，均来自项目自有数据集",
+        "有独有产品组合：salary-cap、trade simulator 与 honours comparison 的组合不是通用模板内容",
+        "与站内其他页面不重复：首页为索引页，FAQ 与数据来源说明为本站特有",
+        "缺少维护者署名与独立行业观点，未给满分"
       ],
-      "remediation": "在 About 页补维护者身份与数据来源说明，并在首页加一句本站独有的数据口径（如官方 cap 与仅列前 12 份合同的差别）。"
+      "remediation": "在 About 页补维护者身份与数据口径说明（如官方 cap hit 与仅列前 12 份合同的差别）。"
     },
     {
       "id": "C4.1",
       "dimension": "C4",
       "name": "结构化数据合规且覆盖到位",
       "max": 5,
-      "score": 1,
-      "status": "fail",
+      "score": 2.5,
+      "status": "partial",
       "source": "auto",
       "evidence": [
-        "只有 microdata/RDFa，没有 JSON-LD"
+        "已有类型：Answer、FAQPage、Organization、Question、WebApplication；缺少：WebSite",
+        "W3C JSON-LD 1.1 / schema.org 合规校验：83 分（B），错误 0、警告 3、建议 2（校验 1 个 JSON-LD 块）"
       ],
-      "remediation": "额外补一份 JSON-LD；大模型解析 JSON-LD 的成本最低"
+      "remediation": "补 WebSite 的 JSON-LD，模板见 templates/schema-jsonld.json"
     },
     {
       "id": "C4.2",
@@ -856,7 +920,7 @@
       "status": "fail",
       "source": "auto",
       "evidence": [
-        "正文/HTML 字符比仅 0.0112，静态 HTML 里几乎抓不到正文"
+        "正文/HTML 字符比仅 0.0163，静态 HTML 里几乎抓不到正文"
       ],
       "remediation": "改成服务端渲染或预渲染，否则 AI 爬虫读不到内容"
     },
@@ -871,11 +935,11 @@
       "evidence": [
         "是什么：10 个工具逐项列出用途",
         "适合谁：fans and fantasy managers",
-        "为什么：Instant / Private / Always free 三条理由",
-        "多少钱：明确写 \"No paywalls, no trials, no credit card\"",
-        "未覆盖「怎么做」与「有什么坑」两个角度"
+        "为什么：Instant / Private / Always free",
+        "多少钱：明确写 No paywalls, no trials, no credit card",
+        "有什么坑：FAQ 回答数据时效性与非官方用途"
       ],
-      "remediation": "按疑问链补两个 H2：「How to get started」与「Things to know」，分别写三步用法和数据时效/非官方声明。"
+      "remediation": "补「How to get started」三步说明，把疑问链补成六角。"
     },
     {
       "id": "C5.2",
@@ -895,13 +959,13 @@
       "dimension": "C5",
       "name": "明确满足用户意图（FAQ）",
       "max": 4,
-      "score": 1.5,
-      "status": "partial",
+      "score": 4,
+      "status": "pass",
       "source": "auto",
       "evidence": [
-        "无 FAQ 模块"
+        "FAQ 标题 0 个，FAQPage Schema：有"
       ],
-      "remediation": "整理 6–10 条高频问题，用客户原话提问，配 FAQPage Schema"
+      "remediation": "—"
     },
     {
       "id": "C6.1",
@@ -912,7 +976,7 @@
       "status": "pass",
       "source": "auto",
       "evidence": [
-        "TTFB 475.8ms，HTML 60266 字节"
+        "TTFB 484.3ms，HTML 74348 字节"
       ],
       "remediation": "—"
     },
@@ -965,7 +1029,7 @@
       "source": "auto",
       "evidence": [
         "无 noindex；canonical https://xushoulin.github.io/nba-tools/；robots.txt 声明 sitemap 1 条",
-        "sitemap.xml 声明了 50 条 URL，但全部指向其他域名（xushoulin.github.io 等），跨域声明无效，本页等于没提交"
+        "本页已在 sitemap.xml 中声明（共 50 条）"
       ],
       "remediation": "—"
     },
@@ -978,7 +1042,7 @@
       "status": "fail",
       "source": "auto",
       "evidence": [
-        "7 个段落块平均可引用性 25.3/100，等级分布 F级 7块",
+        "7 个段落块平均可引用性 27.3/100，等级分布 F级 7块",
         "落在 150–300 字理想区间的段落 0 个"
       ],
       "remediation": "按 45/30/12 的顺序改：先把每个二级标题下的第一段写成「定义 + 数字 + 适用边界」，再砍掉依赖上文的代词，最后补数据来源"
@@ -992,7 +1056,7 @@
       "status": "fail",
       "source": "auto",
       "evidence": [
-        "抽样段落的「答案块质量」均值 5.8/30（定义句、首句带数字、问句式标题、来源声明合计）"
+        "抽样段落的「答案块质量」均值 5.4/30（定义句、首句带数字、问句式标题、来源声明合计）"
       ],
       "remediation": "每个二级标题下的首段直接给结论：用「X 是指…」「实测 …ms」开头，把标题改成客户会问的原话（带问号）"
     },
@@ -1001,29 +1065,29 @@
       "dimension": "C7",
       "name": "段落自包含性（脱离上下文也读得懂）",
       "max": 3,
-      "score": 1.8,
-      "status": "partial",
+      "score": 2.4,
+      "status": "pass",
       "source": "auto",
       "evidence": [
-        "抽样段落的「自包含性」均值 14.5/25（理想长度 150–300 字、代词密度、专有名词数合计）",
+        "抽样段落的「自包含性」均值 16.3/25（理想长度 150–300 字、代词密度、专有名词数合计）",
         "0 个段落落在 150–300 字区间"
       ],
-      "remediation": "把「它/这个/该」换成主语名词；单段控制在 150–300 字；每段至少出现 3 个专有名词（品牌全称、地名、机构名）"
+      "remediation": "—"
     },
     {
       "id": "C7.4",
       "dimension": "C7",
       "name": "多页一致性（抽样页结构/schema 不打架）",
       "max": 3,
-      "score": 2.76,
+      "score": 3,
       "status": "pass",
       "source": "auto",
       "evidence": [
         "抽样 5 页（请求 5，失败 0）",
-        "JSON-LD 覆盖率 80%（4 页有）",
+        "JSON-LD 覆盖率 100%（5 页有）",
         "标题去重后唯一率 100%",
         "正文 ≥300 字占比 100%",
-        "抽样页平均可引用性 34.9/100，整站内容写法需要统一改"
+        "抽样页平均可引用性 35.3/100，整站内容写法需要统一改"
       ],
       "remediation": "—"
     },
@@ -1043,50 +1107,50 @@
     }
   ],
   "summary": {
-    "total": 57.41,
+    "total": 69.55,
     "assessed_max": 100,
     "grade": "C",
-    "rate": 0.5741,
+    "rate": 0.6955,
     "dimensions": [
       {
         "key": "C1",
         "name": "一、网页内容结构",
-        "score": 13.6,
+        "score": 16.8,
         "max": 20,
         "assessed_max": 20,
-        "rate": 0.68
+        "rate": 0.84
       },
       {
         "key": "C2",
         "name": "二、语义可理解性",
-        "score": 13.1,
+        "score": 14.8,
         "max": 16,
         "assessed_max": 16,
-        "rate": 0.8187
+        "rate": 0.925
       },
       {
         "key": "C3",
         "name": "三、权威性与可信度",
-        "score": 5.1,
+        "score": 7.5,
         "max": 16,
         "assessed_max": 16,
-        "rate": 0.3187
+        "rate": 0.4688
       },
       {
         "key": "C4",
         "name": "四、结构化与机器可读性",
-        "score": 3.35,
+        "score": 4.85,
         "max": 12,
         "assessed_max": 12,
-        "rate": 0.2792
+        "rate": 0.4042
       },
       {
         "key": "C5",
         "name": "五、覆盖度与用户价值",
-        "score": 7.1,
+        "score": 9.6,
         "max": 12,
         "assessed_max": 12,
-        "rate": 0.5917
+        "rate": 0.8
       },
       {
         "key": "C6",
@@ -1099,10 +1163,10 @@
       {
         "key": "C7",
         "name": "七、AI 平台适配与可引用性",
-        "score": 10.16,
+        "score": 11.0,
         "max": 18,
         "assessed_max": 18,
-        "rate": 0.5644
+        "rate": 0.6111
       }
     ],
     "assessed_items": 29,
@@ -1112,28 +1176,12 @@
   "unassessed": [],
   "priority_actions": [
     {
-      "id": "C3.1",
-      "level": "高危",
-      "title": "内容中有权威来源/研究/报告引用",
-      "gap": 4.0,
-      "action": "至少补 2 条可核实的权威来源；没有就说明哪些数字来自自家实测",
-      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
-    },
-    {
       "id": "C3.3",
       "level": "高危",
       "title": "作者/品牌/机构信息透明",
-      "gap": 4.0,
+      "gap": 3.2,
       "action": "页脚补：企业工商全称 + 详细地址 + ICP 备案号 + 更新时间；文章加作者署名",
       "verify": "页脚可见企业全称、地址、ICP 备案号、更新时间四项"
-    },
-    {
-      "id": "C4.1",
-      "level": "高危",
-      "title": "结构化数据合规且覆盖到位",
-      "gap": 4.0,
-      "action": "额外补一份 JSON-LD；大模型解析 JSON-LD 的成本最低",
-      "verify": "跑 inspect-schema.py，看 w3c_validation.findings 里 error 级是否清零"
     },
     {
       "id": "C7.1",
@@ -1144,12 +1192,20 @@
       "verify": "重跑 fetch-page.py 后看 citability.average，目标 ≥65"
     },
     {
-      "id": "C5.3",
+      "id": "C4.1",
       "level": "高危",
-      "title": "明确满足用户意图（FAQ）",
+      "title": "结构化数据合规且覆盖到位",
       "gap": 2.5,
-      "action": "整理 6–10 条高频问题，用客户原话提问，配 FAQPage Schema",
-      "verify": "页面出现 FAQ 区块，且与 FAQPage Schema 内容一致"
+      "action": "补 WebSite 的 JSON-LD，模板见 templates/schema-jsonld.json",
+      "verify": "跑 inspect-schema.py，看 w3c_validation.findings 里 error 级是否清零"
+    },
+    {
+      "id": "C3.1",
+      "level": "高危",
+      "title": "内容中有权威来源/研究/报告引用",
+      "gap": 2.4,
+      "action": "关键论断后补权威来源链接，标注「（来源：xx，年份）」。禁止编造",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
     },
     {
       "id": "C3.2",
@@ -1172,23 +1228,7 @@
       "level": "高危",
       "title": "专业性 & 原创性明显",
       "gap": 0.5,
-      "action": "在 About 页补维护者身份与数据来源说明，并在首页加一句本站独有的数据口径（如官方 cap 与仅列前 12 份合同的差别）。",
-      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
-    },
-    {
-      "id": "C7.4",
-      "level": "高危",
-      "title": "多页一致性（抽样页结构/schema 不打架）",
-      "gap": 0.2,
-      "action": "—",
-      "verify": "跑 fetch-page.py sample --pages 5，看 jsonld_coverage 是否为 100%"
-    },
-    {
-      "id": "C1.5",
-      "level": "中",
-      "title": "使用列表、表格、加粗强调",
-      "gap": 4.0,
-      "action": "把长文改写成「小标题 + 列表 + 表格」结构",
+      "action": "在 About 页补维护者身份与数据口径说明（如官方 cap hit 与仅列前 12 份合同的差别）。",
       "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
     },
     {
@@ -1208,14 +1248,6 @@
       "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
     },
     {
-      "id": "C2.3",
-      "level": "中",
-      "title": "实体明确（人名、地名、数字、品牌）",
-      "gap": 2.4,
-      "action": "把「效果好」改写成具体数字；补品牌全称、服务地区、适用行业、负责人署名",
-      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
-    },
-    {
       "id": "C5.2",
       "level": "中",
       "title": "提供案例、图表、对比",
@@ -1232,20 +1264,28 @@
       "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
     },
     {
+      "id": "C2.3",
+      "level": "中",
+      "title": "实体明确（人名、地名、数字、品牌）",
+      "gap": 1.2,
+      "action": "把「效果好」改写成具体数字；补品牌全称、服务地区、适用行业、负责人署名",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
+      "id": "C1.5",
+      "level": "中",
+      "title": "使用列表、表格、加粗强调",
+      "gap": 0.8,
+      "action": "补一张参数对比表，把并列信息从段落改成表格",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
       "id": "C7.3",
       "level": "中",
       "title": "段落自包含性（脱离上下文也读得懂）",
-      "gap": 1.2,
-      "action": "把「它/这个/该」换成主语名词；单段控制在 150–300 字；每段至少出现 3 个专有名词（品牌全称、地名、机构名）",
+      "gap": 0.6,
+      "action": "—",
       "verify": "数一遍每个段落里的「它/这个/该」，单段不超过 2 个"
-    },
-    {
-      "id": "C2.2",
-      "level": "中",
-      "title": "语义多样性",
-      "gap": 0.5,
-      "action": "在首页补一段「How to start」三步说明，并在数据区加一句「2026-27 快照会随交易变化，仅供估算」。",
-      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
     },
     {
       "id": "C6.3",
@@ -1257,8 +1297,7 @@
     }
   ],
   "open_questions": [
-    "结构化数据缺失项较多时，需确认站点是否为纯前端渲染，静态注入 JSON-LD 是否可行。",
-    "sitemap.xml 里声明的全部是其他域名的 URL，跨域声明无效。需要确认是部署时拷错了文件，还是有意把两个子域当成同一站点管理。"
+    "结构化数据缺失项较多时，需确认站点是否为纯前端渲染，静态注入 JSON-LD 是否可行。"
   ],
   "errors": []
 }
