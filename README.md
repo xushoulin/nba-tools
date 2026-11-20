@@ -50,6 +50,28 @@ npm run build    # production build
 npm run start    # serve production build
 ```
 
+## Deployment
+
+The site is a full static export served from the `gh-pages` branch:
+
+- Live URL: https://xushoulin.github.io/nba-tools/
+- `NEXT_PUBLIC_SITE_URL` controls canonical URLs, Open Graph tags, `robots.txt` and `sitemap.xml`.
+  It defaults to the live URL above; override it with an env var if you move to a custom domain.
+
+To publish an update:
+
+```bash
+npm run build                       # emits the static site into .next-export/
+cp -r .next-export/. /tmp/nba-pages/
+touch /tmp/nba-pages/.nojekyll
+cd /tmp/nba-pages && git init -b gh-pages && git add -A
+git commit -m "Deploy static export" && git push -f origin gh-pages
+```
+
+GitHub Pages is configured to serve the root of `gh-pages`. Adding a CNAME file there and
+pointing a DNS CNAME record at `xushoulin.github.io` will move the same build to a custom domain;
+remember to set `NEXT_PUBLIC_SITE_URL` to that domain before rebuilding.
+
 ## Disclaimer
 
 NBA Tools is independently operated and not affiliated with the NBA, its teams or ESPN. Salary

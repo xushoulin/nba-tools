@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { TOOLS, SITE_URL } from "@/lib/tools";
+
+export const dynamic = "force-static";
 import { INITIAL_TEAMS } from "@/lib/salary-data";
 import { allPlayerSlugs } from "@/lib/player-profiles";
 
