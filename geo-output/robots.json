@@ -1,0 +1,1193 @@
+{
+  "tool": "inspect-robots.py",
+  "rule_version": "geo-29-v2.0",
+  "generated_at": "2026-11-20T10:45:25+0800",
+  "input_url": "http://127.0.0.1:8765/",
+  "market": "domestic",
+  "robots": {
+    "url": "http://127.0.0.1:8765/robots.txt",
+    "status_code": 200,
+    "exists": true,
+    "error": null,
+    "sitemaps": [
+      "https://xushoulin.github.io/nba-tools/sitemap.xml"
+    ],
+    "content_signals_raw": [],
+    "content_signals": {},
+    "content_signal_warnings": [],
+    "groups": {
+      "*": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Disallow",
+          "path": "/api/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "Bytespider": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "Baiduspider": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "Sogou web spider": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "YisouSpider": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "360Spider": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "ToutiaoSpider": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "Bingbot": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "Googlebot": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "GPTBot": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "OAI-SearchBot": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "ChatGPT-User": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "ClaudeBot": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "PerplexityBot": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "Google-Extended": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "GoogleOther": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "Applebot-Extended": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "Amazonbot": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        },
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ],
+      "FacebookBot": [
+        {
+          "directive": "Allow",
+          "path": "/"
+        }
+      ]
+    },
+    "raw_excerpt": "User-Agent: *\nAllow: /\nDisallow: /api/\n\nUser-Agent: Bytespider\nAllow: /\n\nUser-Agent: Baiduspider\nAllow: /\n\nUser-Agent: Sogou web spider\nAllow: /\n\nUser-Agent: YisouSpider\nAllow: /\n\nUser-Agent: 360Spider\nAllow: /\n\nUser-Agent: ToutiaoSpider\nAllow: /\n\nUser-Agent: Bingbot\nAllow: /\n\nUser-Agent: Googlebot\nAllow: /\n\nUser-Agent: GPTBot\nAllow: /\n\nUser-Agent: OAI-SearchBot\nAllow: /\n\nUser-Agent: ChatGPT-User\nAllow: /\n\nUser-Agent: ClaudeBot\nAllow: /\n\nUser-Agent: PerplexityBot\nAllow: /\n\nUser-Agent: Google-Extended\nAllow: /\n\nUser-Agent: GoogleOther\nAllow: /\n\nUser-Agent: Applebot-Extended\nAllow: /\n\nUser-Agent: Amazonbot\nAllow: /\n\nUser-Agent: FacebookBot\nAllow: /\n\nSitemap: https://xushoulin.github.io/nba-tools/sitemap.xml\n",
+    "ai_files_excerpt": "# NBA Tools\n\n> Free, browser-based NBA calculators and basketball tools. No signup, no data\n> collected, no runtime API calls. All calculations run in the visitor's browser.\n\nThis site publishes 17 tool pages, 30 team pages and 355 player career pages.\nIt is an independent project and is not affiliated with the NBA, its teams or ESPN.\n\n## What you can do here\n\n- Calculate NBA salary cap space, luxury tax and apron positions for the 2026-27 season.\n- Simulate trades with 30 real team payrolls and"
+  },
+  "ai_files": {
+    "llms_txt": {
+      "url": "http://127.0.0.1:8765/llms.txt",
+      "exists": true,
+      "status_code": 200
+    },
+    "llms_full_txt": {
+      "url": "http://127.0.0.1:8765/llms-full.txt",
+      "exists": false,
+      "status_code": 404
+    },
+    "ai_txt": {
+      "url": "http://127.0.0.1:8765/ai.txt",
+      "exists": false,
+      "status_code": 404,
+      "spa_fallback": false
+    }
+  },
+  "crawler_status": {
+    "Bytespider": "ALLOWED",
+    "Baiduspider": "ALLOWED",
+    "Sogou web spider": "ALLOWED",
+    "YisouSpider": "ALLOWED",
+    "360Spider": "ALLOWED",
+    "ToutiaoSpider": "ALLOWED",
+    "Baiduspider-image": "ALLOWED_BY_DEFAULT",
+    "Baiduspider-news": "ALLOWED_BY_DEFAULT",
+    "Baiduspider-video": "ALLOWED_BY_DEFAULT",
+    "Sogou inst spider": "ALLOWED_BY_DEFAULT",
+    "Sogou Pic Spider": "ALLOWED_BY_DEFAULT",
+    "EasouSpider": "ALLOWED_BY_DEFAULT",
+    "GPTBot": "ALLOWED",
+    "OAI-SearchBot": "ALLOWED",
+    "ChatGPT-User": "ALLOWED",
+    "ClaudeBot": "ALLOWED",
+    "Claude-Web": "ALLOWED_BY_DEFAULT",
+    "PerplexityBot": "ALLOWED",
+    "Bingbot": "ALLOWED",
+    "Googlebot": "ALLOWED",
+    "Google-Extended": "ALLOWED",
+    "GoogleOther": "ALLOWED",
+    "Applebot": "ALLOWED_BY_DEFAULT",
+    "Applebot-Extended": "ALLOWED",
+    "Amazonbot": "ALLOWED",
+    "meta-externalagent": "ALLOWED_BY_DEFAULT",
+    "FacebookBot": "ALLOWED",
+    "DuckAssistBot": "ALLOWED_BY_DEFAULT",
+    "YouBot": "ALLOWED_BY_DEFAULT",
+    "CCBot": "ALLOWED_BY_DEFAULT",
+    "anthropic-ai": "ALLOWED_BY_DEFAULT",
+    "cohere-ai": "ALLOWED_BY_DEFAULT",
+    "Timpibot": "ALLOWED_BY_DEFAULT",
+    "ImagesiftBot": "ALLOWED_BY_DEFAULT",
+    "Diffbot": "ALLOWED_BY_DEFAULT"
+  },
+  "crawler_table": [
+    {
+      "ua": "Bytespider",
+      "operator": "字节跳动",
+      "tier": 1,
+      "market": "both",
+      "note": "豆包 / 即梦 的自建索引爬虫",
+      "status": "ALLOWED",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Baiduspider",
+      "operator": "百度",
+      "tier": 1,
+      "market": "both",
+      "note": "文心一言、百度 AI 搜索的主索引来源",
+      "status": "ALLOWED",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Sogou web spider",
+      "operator": "搜狗",
+      "tier": 1,
+      "market": "cn",
+      "note": "腾讯元宝、微信搜索的主索引来源",
+      "status": "ALLOWED",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "YisouSpider",
+      "operator": "神马搜索（阿里）",
+      "tier": 1,
+      "market": "cn",
+      "note": "夸克 / UC 搜索，通义千问的主要检索来源",
+      "status": "ALLOWED",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "360Spider",
+      "operator": "360",
+      "tier": 2,
+      "market": "cn",
+      "note": "360 智脑、纳米 AI 的索引来源",
+      "status": "ALLOWED",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "ToutiaoSpider",
+      "operator": "今日头条",
+      "tier": 2,
+      "market": "cn",
+      "note": "头条内容池，间接影响豆包召回",
+      "status": "ALLOWED",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Baiduspider-image",
+      "operator": "百度",
+      "tier": 2,
+      "market": "cn",
+      "note": "百度图片索引",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Baiduspider-news",
+      "operator": "百度",
+      "tier": 2,
+      "market": "cn",
+      "note": "百度新闻/资讯源",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Baiduspider-video",
+      "operator": "百度",
+      "tier": 2,
+      "market": "cn",
+      "note": "百度视频索引",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Sogou inst spider",
+      "operator": "搜狗",
+      "tier": 2,
+      "market": "cn",
+      "note": "搜狗即时收录",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Sogou Pic Spider",
+      "operator": "搜狗",
+      "tier": 2,
+      "market": "cn",
+      "note": "搜狗图片索引",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "EasouSpider",
+      "operator": "宜搜",
+      "tier": 3,
+      "market": "cn",
+      "note": "长尾移动搜索",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Bingbot",
+      "operator": "微软",
+      "tier": 1,
+      "market": "both",
+      "note": "必应索引；Kimi/DeepSeek 等多款国产 AI 走 Bing 索引",
+      "status": "ALLOWED",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Googlebot",
+      "operator": "Google",
+      "tier": 2,
+      "market": "both",
+      "note": "Google AI Overviews / AI Mode 的检索来源",
+      "status": "ALLOWED",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "CCBot",
+      "operator": "Common Crawl",
+      "tier": 3,
+      "market": "both",
+      "note": "公共语料库，为训练提供数据",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "anthropic-ai",
+      "operator": "Anthropic",
+      "tier": 3,
+      "market": "both",
+      "note": "Anthropic 训练采集",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "cohere-ai",
+      "operator": "Cohere",
+      "tier": 3,
+      "market": "both",
+      "note": "Cohere 训练采集",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Timpibot",
+      "operator": "Timpi",
+      "tier": 3,
+      "market": "both",
+      "note": "第三方索引",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "ImagesiftBot",
+      "operator": "Imagesift",
+      "tier": 3,
+      "market": "both",
+      "note": "图像数据集",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    },
+    {
+      "ua": "Diffbot",
+      "operator": "Diffbot",
+      "tier": 3,
+      "market": "both",
+      "note": "知识图谱抽取",
+      "status": "ALLOWED_BY_DEFAULT",
+      "blocked": false,
+      "matched_rule": null
+    }
+  ],
+  "tier1_blocked": [],
+  "tier2_blocked": [],
+  "platforms": [
+    {
+      "platform": "豆包 Doubao",
+      "market": "cn",
+      "depends_on": [
+        "Bytespider",
+        "ToutiaoSpider"
+      ],
+      "primary_crawler": "Bytespider",
+      "states": {
+        "Bytespider": "ALLOWED",
+        "ToutiaoSpider": "ALLOWED"
+      },
+      "blocked_crawlers": [],
+      "verdict": "ok",
+      "advice": "字节自建索引 + 头条/抖音内容池；除放行外，建议同步做抖音/头条号内容覆盖"
+    },
+    {
+      "platform": "文心一言 Ernie",
+      "market": "cn",
+      "depends_on": [
+        "Baiduspider",
+        "Baiduspider-news"
+      ],
+      "primary_crawler": "Baiduspider",
+      "states": {
+        "Baiduspider": "ALLOWED",
+        "Baiduspider-news": "ALLOWED_BY_DEFAULT"
+      },
+      "blocked_crawlers": [],
+      "verdict": "ok",
+      "advice": "百度搜索索引；建议接入百度搜索资源平台的普通收录/API 主动推送"
+    },
+    {
+      "platform": "腾讯元宝 Yuanbao",
+      "market": "cn",
+      "depends_on": [
+        "Sogou web spider",
+        "Sogou inst spider"
+      ],
+      "primary_crawler": "Sogou web spider",
+      "states": {
+        "Sogou web spider": "ALLOWED",
+        "Sogou inst spider": "ALLOWED_BY_DEFAULT"
+      },
+      "blocked_crawlers": [],
+      "verdict": "ok",
+      "advice": "腾讯搜索（搜狗）索引；建议接入搜狗站长主动提交"
+    },
+    {
+      "platform": "通义千问 Qwen",
+      "market": "cn",
+      "depends_on": [
+        "YisouSpider",
+        "360Spider"
+      ],
+      "primary_crawler": "YisouSpider",
+      "states": {
+        "YisouSpider": "ALLOWED",
+        "360Spider": "ALLOWED"
+      },
+      "blocked_crawlers": [],
+      "verdict": "ok",
+      "advice": "夸克/神马 + 360 索引；建议在夸克站点与 360 站长平台提交"
+    },
+    {
+      "platform": "Kimi / DeepSeek",
+      "market": "cn",
+      "depends_on": [
+        "Bingbot",
+        "Googlebot"
+      ],
+      "primary_crawler": "Bingbot",
+      "states": {
+        "Bingbot": "ALLOWED",
+        "Googlebot": "ALLOWED"
+      },
+      "blocked_crawlers": [],
+      "verdict": "ok",
+      "advice": "无自建公开爬虫，主要依赖第三方搜索 API（Bing 索引 + 博查等聚合层）；必须放行 Bingbot 并接入 IndexNow 主动推送"
+    }
+  ],
+  "noindex_signals": {
+    "meta_robots": "index, follow",
+    "x_robots_tag": null,
+    "has_noindex": false,
+    "has_noai": false,
+    "has_noimageai": false,
+    "page_status": 200,
+    "js_rendered_hint": null,
+    "bot_ua_probe": null
+  },
+  "errors": [],
+  "platform_summary": {
+    "total": 5,
+    "blocked": [],
+    "partial": [],
+    "ok": [
+      "豆包 Doubao",
+      "文心一言 Ernie",
+      "腾讯元宝 Yuanbao",
+      "通义千问 Qwen",
+      "Kimi / DeepSeek"
+    ]
+  },
+  "verdict": "ok",
+  "score_hint": 2.0,
+  "verdict_reason": "未发现 AI 爬虫阻断，抓取层无阻塞",
+  "recommended_robots": "# ===== 第一段：决定 AI 能否读到你的内容（必须放行）=====\n# 生成参数: --market domestic\n# --- 国内：国产大模型的检索来源 ---\nUser-agent: Bytespider\nAllow: /\n\nUser-agent: Baiduspider\nAllow: /\n\nUser-agent: Sogou web spider\nAllow: /\n\nUser-agent: YisouSpider\nAllow: /\n\nUser-agent: 360Spider\nAllow: /\n\nUser-agent: ToutiaoSpider\nAllow: /\n\n# --- Bingbot：国内外都要放行（多款国产 AI 依赖 Bing 索引）---\nUser-agent: Bingbot\nAllow: /\n\nUser-agent: Googlebot\nAllow: /\n\n# ===== 第二段：训练类爬虫：按你的内容策略自行决定 =====\n# 拦掉它们不影响 AI 搜索可见性，只影响是否被用作训练语料\nUser-agent: CCBot\nDisallow: /\n\nUser-agent: anthropic-ai\nDisallow: /\n\nUser-agent: cohere-ai\nDisallow: /\n\n\n# ===== AI 使用偏好声明（IETF 草案，选填）=====\nContent-Signal: ai-train=no, search=yes, ai-retrieval=yes\n\nSitemap: http://127.0.0.1:8765/sitemap.xml\n"
+}

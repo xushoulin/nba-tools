@@ -1,0 +1,1264 @@
+{
+  "schema_version": "geo-29-v2.0",
+  "generated_by": "generate-report.py --autofill",
+  "target": {
+    "url": "http://127.0.0.1:8765/",
+    "domain": "127.0.0.1:8765",
+    "market": "domestic",
+    "business_type": "other",
+    "business_basis": "无明确业务类型信号",
+    "page_role": "homepage",
+    "page_role_basis": "URL 为站点根路径",
+    "fetched_at": "2026-11-20T10:45:15+0800",
+    "http_status": 200,
+    "notes": ""
+  },
+  "crawler_access": {
+    "verdict": "ok",
+    "verdict_reason": "未发现 AI 爬虫阻断，抓取层无阻塞",
+    "robots_exists": true,
+    "llms_txt": true,
+    "llms_full_txt": false,
+    "ai_txt": false,
+    "sitemaps": [
+      "https://xushoulin.github.io/nba-tools/sitemap.xml"
+    ],
+    "noindex": false,
+    "noai": false,
+    "tier1_blocked": [],
+    "tier2_blocked": [],
+    "crawler_table": [
+      {
+        "ua": "Bytespider",
+        "operator": "字节跳动",
+        "tier": 1,
+        "market": "both",
+        "note": "豆包 / 即梦 的自建索引爬虫",
+        "status": "ALLOWED",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Baiduspider",
+        "operator": "百度",
+        "tier": 1,
+        "market": "both",
+        "note": "文心一言、百度 AI 搜索的主索引来源",
+        "status": "ALLOWED",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Sogou web spider",
+        "operator": "搜狗",
+        "tier": 1,
+        "market": "cn",
+        "note": "腾讯元宝、微信搜索的主索引来源",
+        "status": "ALLOWED",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "YisouSpider",
+        "operator": "神马搜索（阿里）",
+        "tier": 1,
+        "market": "cn",
+        "note": "夸克 / UC 搜索，通义千问的主要检索来源",
+        "status": "ALLOWED",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "360Spider",
+        "operator": "360",
+        "tier": 2,
+        "market": "cn",
+        "note": "360 智脑、纳米 AI 的索引来源",
+        "status": "ALLOWED",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "ToutiaoSpider",
+        "operator": "今日头条",
+        "tier": 2,
+        "market": "cn",
+        "note": "头条内容池，间接影响豆包召回",
+        "status": "ALLOWED",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Baiduspider-image",
+        "operator": "百度",
+        "tier": 2,
+        "market": "cn",
+        "note": "百度图片索引",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Baiduspider-news",
+        "operator": "百度",
+        "tier": 2,
+        "market": "cn",
+        "note": "百度新闻/资讯源",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Baiduspider-video",
+        "operator": "百度",
+        "tier": 2,
+        "market": "cn",
+        "note": "百度视频索引",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Sogou inst spider",
+        "operator": "搜狗",
+        "tier": 2,
+        "market": "cn",
+        "note": "搜狗即时收录",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Sogou Pic Spider",
+        "operator": "搜狗",
+        "tier": 2,
+        "market": "cn",
+        "note": "搜狗图片索引",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "EasouSpider",
+        "operator": "宜搜",
+        "tier": 3,
+        "market": "cn",
+        "note": "长尾移动搜索",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Bingbot",
+        "operator": "微软",
+        "tier": 1,
+        "market": "both",
+        "note": "必应索引；Kimi/DeepSeek 等多款国产 AI 走 Bing 索引",
+        "status": "ALLOWED",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Googlebot",
+        "operator": "Google",
+        "tier": 2,
+        "market": "both",
+        "note": "Google AI Overviews / AI Mode 的检索来源",
+        "status": "ALLOWED",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "CCBot",
+        "operator": "Common Crawl",
+        "tier": 3,
+        "market": "both",
+        "note": "公共语料库，为训练提供数据",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "anthropic-ai",
+        "operator": "Anthropic",
+        "tier": 3,
+        "market": "both",
+        "note": "Anthropic 训练采集",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "cohere-ai",
+        "operator": "Cohere",
+        "tier": 3,
+        "market": "both",
+        "note": "Cohere 训练采集",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Timpibot",
+        "operator": "Timpi",
+        "tier": 3,
+        "market": "both",
+        "note": "第三方索引",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "ImagesiftBot",
+        "operator": "Imagesift",
+        "tier": 3,
+        "market": "both",
+        "note": "图像数据集",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      },
+      {
+        "ua": "Diffbot",
+        "operator": "Diffbot",
+        "tier": 3,
+        "market": "both",
+        "note": "知识图谱抽取",
+        "status": "ALLOWED_BY_DEFAULT",
+        "blocked": false,
+        "matched_rule": null
+      }
+    ],
+    "content_signals": {},
+    "platforms": [
+      {
+        "platform": "豆包 Doubao",
+        "market": "cn",
+        "depends_on": [
+          "Bytespider",
+          "ToutiaoSpider"
+        ],
+        "primary_crawler": "Bytespider",
+        "states": {
+          "Bytespider": "ALLOWED",
+          "ToutiaoSpider": "ALLOWED"
+        },
+        "blocked_crawlers": [],
+        "verdict": "ok",
+        "advice": "字节自建索引 + 头条/抖音内容池；除放行外，建议同步做抖音/头条号内容覆盖"
+      },
+      {
+        "platform": "文心一言 Ernie",
+        "market": "cn",
+        "depends_on": [
+          "Baiduspider",
+          "Baiduspider-news"
+        ],
+        "primary_crawler": "Baiduspider",
+        "states": {
+          "Baiduspider": "ALLOWED",
+          "Baiduspider-news": "ALLOWED_BY_DEFAULT"
+        },
+        "blocked_crawlers": [],
+        "verdict": "ok",
+        "advice": "百度搜索索引；建议接入百度搜索资源平台的普通收录/API 主动推送"
+      },
+      {
+        "platform": "腾讯元宝 Yuanbao",
+        "market": "cn",
+        "depends_on": [
+          "Sogou web spider",
+          "Sogou inst spider"
+        ],
+        "primary_crawler": "Sogou web spider",
+        "states": {
+          "Sogou web spider": "ALLOWED",
+          "Sogou inst spider": "ALLOWED_BY_DEFAULT"
+        },
+        "blocked_crawlers": [],
+        "verdict": "ok",
+        "advice": "腾讯搜索（搜狗）索引；建议接入搜狗站长主动提交"
+      },
+      {
+        "platform": "通义千问 Qwen",
+        "market": "cn",
+        "depends_on": [
+          "YisouSpider",
+          "360Spider"
+        ],
+        "primary_crawler": "YisouSpider",
+        "states": {
+          "YisouSpider": "ALLOWED",
+          "360Spider": "ALLOWED"
+        },
+        "blocked_crawlers": [],
+        "verdict": "ok",
+        "advice": "夸克/神马 + 360 索引；建议在夸克站点与 360 站长平台提交"
+      },
+      {
+        "platform": "Kimi / DeepSeek",
+        "market": "cn",
+        "depends_on": [
+          "Bingbot",
+          "Googlebot"
+        ],
+        "primary_crawler": "Bingbot",
+        "states": {
+          "Bingbot": "ALLOWED",
+          "Googlebot": "ALLOWED"
+        },
+        "blocked_crawlers": [],
+        "verdict": "ok",
+        "advice": "无自建公开爬虫，主要依赖第三方搜索 API（Bing 索引 + 博查等聚合层）；必须放行 Bingbot 并接入 IndexNow 主动推送"
+      }
+    ],
+    "platform_summary": {
+      "total": 5,
+      "blocked": [],
+      "partial": [],
+      "ok": [
+        "豆包 Doubao",
+        "文心一言 Ernie",
+        "腾讯元宝 Yuanbao",
+        "通义千问 Qwen",
+        "Kimi / DeepSeek"
+      ]
+    }
+  },
+  "citability": {
+    "average": 25.3,
+    "blocks_analyzed": 7,
+    "grade_distribution": {
+      "F": 7
+    },
+    "optimal_length_count": 0,
+    "top": [
+      {
+        "heading": "NBA Salary Cap Calculator",
+        "effective_chars": 40,
+        "score": 30,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 8,
+          "self_containment": 14,
+          "structural_readability": 8,
+          "data_density": 0,
+          "uniqueness": 0
+        },
+        "preview": "Free NBA salary cap calculator. Add player contracts and instantly see your total payroll, cap space, and luxury tax position."
+      },
+      {
+        "heading": "Free NBA tools that just work.",
+        "effective_chars": 42,
+        "score": 27,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 8,
+          "self_containment": 14,
+          "structural_readability": 5,
+          "data_density": 0,
+          "uniqueness": 0
+        },
+        "preview": "Salary cap math, fantasy trade analysis, advanced stats, playoff simulations — all in your browser. No signup, no data collected, no nonsens"
+      },
+      {
+        "heading": "NBA Player Comparison Tool",
+        "effective_chars": 42,
+        "score": 27,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 8,
+          "self_containment": 14,
+          "structural_readability": 5,
+          "data_density": 0,
+          "uniqueness": 0
+        },
+        "preview": "Compare two NBA players side by side across every stat. See who has the edge in points, rebounds, assists, and more."
+      },
+      {
+        "heading": "NBA Salary & Trade Simulator",
+        "effective_chars": 44,
+        "score": 27,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 8,
+          "self_containment": 14,
+          "structural_readability": 5,
+          "data_density": 0,
+          "uniqueness": 0
+        },
+        "preview": "Explore every team's payroll, cap space and tax status, then simulate trades between two teams with real-time salary-cap and CBA rule valida"
+      },
+      {
+        "heading": "Team payrolls & rosters",
+        "effective_chars": 48,
+        "score": 26,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 5,
+          "self_containment": 14,
+          "structural_readability": 5,
+          "data_density": 2,
+          "uniqueness": 0
+        },
+        "preview": "All 30 teams split by conference, with real 2026-27 cap hits, cap space and apron status. Open a team for every contract, salary and remaini"
+      }
+    ],
+    "bottom": [
+      {
+        "heading": "Always free",
+        "effective_chars": 56,
+        "score": 19,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 0,
+          "self_containment": 14,
+          "structural_readability": 5,
+          "data_density": 0,
+          "uniqueness": 0
+        },
+        "preview": "No paywalls, no trials, no credit card. Just free tools. Free basketball tools for fans and fantasy managers. No signup, no data collected —"
+      },
+      {
+        "heading": "NBA Player Honours Comparison",
+        "effective_chars": 68,
+        "score": 21,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 0,
+          "self_containment": 19,
+          "structural_readability": 2,
+          "data_density": 0,
+          "uniqueness": 0
+        },
+        "preview": "Compare the trophy cases of up to four NBA players side by side — MVP awards, Finals MVPs, All-NBA and All-Defensive teams, All-Star MVPs an"
+      },
+      {
+        "heading": "Team payrolls & rosters",
+        "effective_chars": 48,
+        "score": 26,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 5,
+          "self_containment": 14,
+          "structural_readability": 5,
+          "data_density": 2,
+          "uniqueness": 0
+        },
+        "preview": "All 30 teams split by conference, with real 2026-27 cap hits, cap space and apron status. Open a team for every contract, salary and remaini"
+      },
+      {
+        "heading": "Free NBA tools that just work.",
+        "effective_chars": 42,
+        "score": 27,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 8,
+          "self_containment": 14,
+          "structural_readability": 5,
+          "data_density": 0,
+          "uniqueness": 0
+        },
+        "preview": "Salary cap math, fantasy trade analysis, advanced stats, playoff simulations — all in your browser. No signup, no data collected, no nonsens"
+      },
+      {
+        "heading": "NBA Player Comparison Tool",
+        "effective_chars": 42,
+        "score": 27,
+        "grade": "F",
+        "breakdown": {
+          "answer_block_quality": 8,
+          "self_containment": 14,
+          "structural_readability": 5,
+          "data_density": 0,
+          "uniqueness": 0
+        },
+        "preview": "Compare two NBA players side by side across every stat. See who has the edge in points, rebounds, assists, and more."
+      }
+    ]
+  },
+  "body_audit": {
+    "chars": 674,
+    "min_chars": 150,
+    "usable": true,
+    "js_rendered_hint": null,
+    "guarded_items": 0
+  },
+  "multi_page": {
+    "pages_requested": 5,
+    "pages_ok": 5,
+    "pages_failed": 0,
+    "pages_with_jsonld": 4,
+    "jsonld_coverage": 0.8,
+    "title_unique_rate": 1,
+    "body_adequate_rate": 1,
+    "avg_citability": 34.9,
+    "worst_citability": 25.3,
+    "note": "抽样页平均可引用性 34.9/100，整站内容写法需要统一改"
+  },
+  "sample_pages": {
+    "top": [
+      {
+        "url": "https://xushoulin.github.io/nba-tools/teams/sac",
+        "citability": 43,
+        "chars": 2107
+      },
+      {
+        "url": "https://xushoulin.github.io/nba-tools/players/brayden-burries",
+        "citability": 36,
+        "chars": 1581
+      },
+      {
+        "url": "https://xushoulin.github.io/nba-tools/players/james-wiseman",
+        "citability": 35,
+        "chars": 1866
+      }
+    ],
+    "bottom": [
+      {
+        "url": "https://xushoulin.github.io/nba-tools",
+        "citability": 25.3,
+        "chars": 2364
+      },
+      {
+        "url": "https://xushoulin.github.io/nba-tools/players/james-harden",
+        "citability": 35,
+        "chars": 2566
+      }
+    ]
+  },
+  "schema_audit": {
+    "detected_types": [],
+    "required_types": [
+      "Organization",
+      "WebSite"
+    ],
+    "missing_types": [
+      "Organization",
+      "WebSite"
+    ],
+    "extracted": {
+      "organization_name": "NBA Tools — Free NBA & Fantasy Basketball Tools",
+      "phone": null,
+      "address": null,
+      "icp": null,
+      "last_updated": null,
+      "canonical": "https://xushoulin.github.io/nba-tools/",
+      "lang": "en"
+    },
+    "visibility_note": "检测到 microdata/RDFa 标记，但没有 JSON-LD。大模型对 JSON-LD 的解析成本最低，建议额外补一份 JSON-LD，而不是依赖 microdata。",
+    "w3c_validation": {
+      "specs": {
+        "jsonld": "https://www.w3.org/TR/json-ld11/",
+        "schema": "https://schema.org/"
+      },
+      "blocks_checked": 0,
+      "summary": {
+        "errors": 0,
+        "warnings": 0,
+        "infos": 0
+      },
+      "score": null,
+      "grade": null,
+      "per_block": [],
+      "note": "页面没有 JSON-LD，无从校验合规性"
+    }
+  },
+  "llms_audit": {
+    "tool": "llms-txt.py",
+    "rule_version": "geo-29-v2.0",
+    "generated_at": "2026-11-20T10:45:33+0800",
+    "input_url": "http://127.0.0.1:8765/",
+    "llms_txt": {
+      "url": "http://127.0.0.1:8765/llms.txt",
+      "exists": true,
+      "status_code": 200,
+      "bytes": 1762,
+      "error": null,
+      "analysis": {
+        "exists_content": true,
+        "title": "NBA Tools",
+        "description": "Free, browser-based NBA calculators and basketball tools. No signup, no data",
+        "description_kind": "blockquote",
+        "sections": [
+          "What you can do here",
+          "Key pages",
+          "Data sources",
+          "Contact"
+        ],
+        "entry_count": 0,
+        "entries_with_desc": 0,
+        "has_optional": false,
+        "external_hosts": [],
+        "chars": 1762,
+        "score": 50,
+        "grade": "C",
+        "findings": [
+          "没有任何 `- [标题](url)` 条目，等于空壳",
+          "没有 `## Optional` 段（次要上下文单独一组，便于模型按需加载）"
+        ],
+        "entries_preview": []
+      }
+    },
+    "llms_full_txt": {
+      "url": "http://127.0.0.1:8765/llms-full.txt",
+      "exists": false,
+      "status_code": 404,
+      "bytes": 0
+    },
+    "link_headers": {
+      "all": [],
+      "rels": [],
+      "has_llms_txt_rel": false,
+      "has_sitemap_rel": false,
+      "has_canonical_rel": false,
+      "rfc": "RFC 8288 Web Linking",
+      "note": "用 Link 头声明 llms.txt 位置（<https://域名/llms.txt>; rel=\"alternate\"; type=\"text/plain\"）比只放根目录更易被发现，且不需要等爬虫来根目录试"
+    },
+    "push_channels": {
+      "indexnow": {
+        "declared": false,
+        "declarations": [],
+        "key_hint": null,
+        "key_file_probe": [],
+        "endpoint": "https://api.indexnow.org/indexnow",
+        "why": "Kimi / DeepSeek 等无自建爬虫的模型主要调第三方搜索 API（Bing 索引），接入 IndexNow 能在发布后分钟级被索引刷新，是这几条链路里唯一能主动干预的手段",
+        "how": "curl -X POST https://api.indexnow.org/indexnow -H 'Content-Type: application/json; charset=utf-8' -d '{\"host\":\"<你的域名>\",\"key\":\"<你的key>\",\"keyLocation\":\"https://<你的域名>/<key>.txt\",\"urlList\":[\"https://<你的域名>/新页面\"]}'",
+        "not_verified": "本脚本只检查「有没有声明」，不发起真实推送，也不验证 key 是否真的生效"
+      },
+      "baidu": {
+        "sitemaps_declared": [
+          "https://xushoulin.github.io/nba-tools/sitemap.xml"
+        ],
+        "sitemap_count": 1,
+        "verification_meta": null,
+        "api_endpoint": "http://data.zz.baidu.com/urls?site=<域名>&token=<token>",
+        "note": "百度「普通收录/API 主动推送」的配额与门槛以百度搜索资源平台后台为准，本脚本读不到你的配额数据，也不会伪造任何收录数字",
+        "uncertain": false
+      }
+    },
+    "limitations": [
+      "llms.txt 是海外 AI 厂商的事实约定：国内主流大模型目前没有公开证据表明会主动抓取该文件，本脚本不为它虚增分数。",
+      "IndexNow 与百度主动推送：本脚本只检查「有无声明」，不发起真实推送请求，因此不会也不可能给出任何收录量、索引速度类的性能数字。"
+    ]
+  },
+  "checks": [
+    {
+      "id": "C1.1",
+      "dimension": "C1",
+      "name": "标题清晰且包含核心关键词",
+      "max": 4,
+      "score": 4,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "<title>「NBA Tools — Free NBA & Fantasy Basketball Tools」，14 字，长度合适"
+      ],
+      "remediation": "—"
+    },
+    {
+      "id": "C1.2",
+      "dimension": "C1",
+      "name": "H1/H2/H3 层次分明",
+      "max": 4,
+      "score": 4,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "1 个 H1、3 个 H2，层级无跳级"
+      ],
+      "remediation": "—"
+    },
+    {
+      "id": "C1.3",
+      "dimension": "C1",
+      "name": "段落简洁、避免过长",
+      "max": 4,
+      "score": 4,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "18 段，平均 34.2 字，最长 68 字，无超长段"
+      ],
+      "remediation": "—"
+    },
+    {
+      "id": "C1.4",
+      "dimension": "C1",
+      "name": "首段有结论/答案",
+      "max": 4,
+      "score": 1.6,
+      "status": "partial",
+      "source": "hybrid",
+      "evidence": [
+        "首段无结论信号",
+        "首段：Salary cap math, fantasy trade analysis, advanced stats, playoff simulations — all in your browser. No signup, no data c"
+      ],
+      "remediation": "把结论提到前 150 字内：X 是…，适用于…，核心参数…"
+    },
+    {
+      "id": "C1.5",
+      "dimension": "C1",
+      "name": "使用列表、表格、加粗强调",
+      "max": 4,
+      "score": 0,
+      "status": "fail",
+      "source": "auto",
+      "evidence": [
+        "无 ul/ol/table/strong/b 元素，全是大段纯文字"
+      ],
+      "remediation": "把长文改写成「小标题 + 列表 + 表格」结构"
+    },
+    {
+      "id": "C2.1",
+      "dimension": "C2",
+      "name": "语言自然流畅，无明显关键词堆砌",
+      "max": 4,
+      "score": 4,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "词频最高的是「nba」，出现 9 次、密度 1.34%（作为主关键词密度的代理指标）"
+      ],
+      "remediation": "—"
+    },
+    {
+      "id": "C2.2",
+      "dimension": "C2",
+      "name": "语义多样性",
+      "max": 4,
+      "score": 3.5,
+      "status": "pass",
+      "source": "hybrid",
+      "evidence": [
+        "覆盖「是什么」：All tools 区块逐个说明 10 个工具（如 \"Calculate your NBA luxury tax bill with the league's progressive tax brackets\"）",
+        "覆盖「为什么」：Why use NBA Tools? 小节给出 Instant / Private / Always free 三条理由",
+        "覆盖「场景/人群」：首段与页脚都点明 fans and fantasy managers",
+        "未覆盖「怎么做」和「有什么坑」：首页没有步骤说明，也没有数据时效或误差提示"
+      ],
+      "remediation": "在首页补一段「How to start」三步说明，并在数据区加一句「2026-27 快照会随交易变化，仅供估算」。"
+    },
+    {
+      "id": "C2.3",
+      "dimension": "C2",
+      "name": "实体明确（人名、地名、数字、品牌）",
+      "max": 4,
+      "score": 1.6,
+      "status": "partial",
+      "source": "auto",
+      "evidence": [
+        "实体类别命中 2 类：numbers、brand_mentions",
+        "数字 6、百分比 0、年份 1、机构名 0、地名 0"
+      ],
+      "remediation": "把「效果好」改写成具体数字；补品牌全称、服务地区、适用行业、负责人署名"
+    },
+    {
+      "id": "C2.4",
+      "dimension": "C2",
+      "name": "减少冗余废话，信息密度高",
+      "max": 4,
+      "score": 4,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "营销套话占比 0.0%"
+      ],
+      "remediation": "—"
+    },
+    {
+      "id": "C3.1",
+      "dimension": "C3",
+      "name": "内容中有权威来源/研究/报告引用",
+      "max": 4,
+      "score": 0,
+      "status": "fail",
+      "source": "auto",
+      "evidence": [
+        "全文 0 个外部链接，没有任何引用来源"
+      ],
+      "remediation": "至少补 2 条可核实的权威来源；没有就说明哪些数字来自自家实测"
+    },
+    {
+      "id": "C3.2",
+      "dimension": "C3",
+      "name": "提供数据或事实支撑观点",
+      "max": 4,
+      "score": 1.6,
+      "status": "partial",
+      "source": "auto",
+      "evidence": [
+        "带语境数据点 1 处（百分比 0、金额 0、年份 1）"
+      ],
+      "remediation": "把「提升明显」改成「响应耗时从 820ms 降到 210ms」这类可核对表述"
+    },
+    {
+      "id": "C3.3",
+      "dimension": "C3",
+      "name": "作者/品牌/机构信息透明",
+      "max": 4,
+      "score": 0,
+      "status": "fail",
+      "source": "auto",
+      "evidence": [
+        "主体透明命中 0 项：无"
+      ],
+      "remediation": "页脚补：企业工商全称 + 详细地址 + ICP 备案号 + 更新时间；文章加作者署名"
+    },
+    {
+      "id": "C3.4",
+      "dimension": "C3",
+      "name": "专业性 & 原创性明显",
+      "max": 4,
+      "score": 3.5,
+      "status": "pass",
+      "source": "manual",
+      "evidence": [
+        "有一手数据：页面写明 \"real 2026-27 cap hits\"、30 teams、355 player career pages，这些数字来自项目自有数据集而非通用描述",
+        "有独有产品组合：salary-cap + trade simulator + honours comparison 的组合不是常见模板站内容",
+        "与站内其他页面不重复：首页是索引页，正文为各工具的一句话定位，未见整段复制模板痕迹",
+        "缺少作者/维护者署名与独立观点，因此未给满分"
+      ],
+      "remediation": "在 About 页补维护者身份与数据来源说明，并在首页加一句本站独有的数据口径（如官方 cap 与仅列前 12 份合同的差别）。"
+    },
+    {
+      "id": "C4.1",
+      "dimension": "C4",
+      "name": "结构化数据合规且覆盖到位",
+      "max": 5,
+      "score": 1,
+      "status": "fail",
+      "source": "auto",
+      "evidence": [
+        "只有 microdata/RDFa，没有 JSON-LD"
+      ],
+      "remediation": "额外补一份 JSON-LD；大模型解析 JSON-LD 的成本最低"
+    },
+    {
+      "id": "C4.2",
+      "dimension": "C4",
+      "name": "提供摘要/总结",
+      "max": 4,
+      "score": 1.6,
+      "status": "partial",
+      "source": "hybrid",
+      "evidence": [
+        "摘要信号命中 1 项：meta_description",
+        "meta description：A growing collection of free basketball tools for fans and fantasy managers: salary cap, luxury tax, trade analyzer, adv"
+      ],
+      "remediation": "正文开头加 3–5 条要点摘要，结尾加一段结论"
+    },
+    {
+      "id": "C4.3",
+      "dimension": "C4",
+      "name": "页面 HTML 结构简洁，少广告干扰",
+      "max": 3,
+      "score": 0.75,
+      "status": "fail",
+      "source": "auto",
+      "evidence": [
+        "正文/HTML 字符比仅 0.0112，静态 HTML 里几乎抓不到正文"
+      ],
+      "remediation": "改成服务端渲染或预渲染，否则 AI 爬虫读不到内容"
+    },
+    {
+      "id": "C5.1",
+      "dimension": "C5",
+      "name": "回答覆盖多个角度",
+      "max": 4,
+      "score": 4,
+      "status": "pass",
+      "source": "hybrid",
+      "evidence": [
+        "是什么：10 个工具逐项列出用途",
+        "适合谁：fans and fantasy managers",
+        "为什么：Instant / Private / Always free 三条理由",
+        "多少钱：明确写 \"No paywalls, no trials, no credit card\"",
+        "未覆盖「怎么做」与「有什么坑」两个角度"
+      ],
+      "remediation": "按疑问链补两个 H2：「How to get started」与「Things to know」，分别写三步用法和数据时效/非官方声明。"
+    },
+    {
+      "id": "C5.2",
+      "dimension": "C5",
+      "name": "提供案例、图表、对比",
+      "max": 4,
+      "score": 1.6,
+      "status": "partial",
+      "source": "auto",
+      "evidence": [
+        "深度素材命中 1 类（表格 0 个、模块 []、图片 30 张）"
+      ],
+      "remediation": "加一张参数对比表 + 一个真实案例（背景/做法/结果）"
+    },
+    {
+      "id": "C5.3",
+      "dimension": "C5",
+      "name": "明确满足用户意图（FAQ）",
+      "max": 4,
+      "score": 1.5,
+      "status": "partial",
+      "source": "auto",
+      "evidence": [
+        "无 FAQ 模块"
+      ],
+      "remediation": "整理 6–10 条高频问题，用客户原话提问，配 FAQPage Schema"
+    },
+    {
+      "id": "C6.1",
+      "dimension": "C6",
+      "name": "页面加载速度快",
+      "max": 1,
+      "score": 1,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "TTFB 475.8ms，HTML 60266 字节"
+      ],
+      "remediation": "—"
+    },
+    {
+      "id": "C6.2",
+      "dimension": "C6",
+      "name": "移动端体验良好",
+      "max": 1,
+      "score": 1,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "viewport：width=device-width, initial-scale=1"
+      ],
+      "remediation": "—"
+    },
+    {
+      "id": "C6.3",
+      "dimension": "C6",
+      "name": "多模块内容",
+      "max": 1,
+      "score": 0,
+      "status": "fail",
+      "source": "hybrid",
+      "evidence": [
+        "识别到 0 个内容模块：无"
+      ],
+      "remediation": "按「是什么—怎么做—案例—FAQ—联系」重排页面骨架"
+    },
+    {
+      "id": "C6.4",
+      "dimension": "C6",
+      "name": "爬虫可抓取性",
+      "max": 2,
+      "score": 2,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "未发现 AI 爬虫阻断，抓取层无阻塞"
+      ],
+      "remediation": "—"
+    },
+    {
+      "id": "C6.5",
+      "dimension": "C6",
+      "name": "网页可索引性",
+      "max": 1,
+      "score": 1,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "无 noindex；canonical https://xushoulin.github.io/nba-tools/；robots.txt 声明 sitemap 1 条",
+        "sitemap.xml 声明了 50 条 URL，但全部指向其他域名（xushoulin.github.io 等），跨域声明无效，本页等于没提交"
+      ],
+      "remediation": "—"
+    },
+    {
+      "id": "C7.1",
+      "dimension": "C7",
+      "name": "段落可引用性均值",
+      "max": 4,
+      "score": 0.8,
+      "status": "fail",
+      "source": "auto",
+      "evidence": [
+        "7 个段落块平均可引用性 25.3/100，等级分布 F级 7块",
+        "落在 150–300 字理想区间的段落 0 个"
+      ],
+      "remediation": "按 45/30/12 的顺序改：先把每个二级标题下的第一段写成「定义 + 数字 + 适用边界」，再砍掉依赖上文的代词，最后补数据来源"
+    },
+    {
+      "id": "C7.2",
+      "dimension": "C7",
+      "name": "答案块质量（给可直接摘走的结论）",
+      "max": 4,
+      "score": 0.8,
+      "status": "fail",
+      "source": "auto",
+      "evidence": [
+        "抽样段落的「答案块质量」均值 5.8/30（定义句、首句带数字、问句式标题、来源声明合计）"
+      ],
+      "remediation": "每个二级标题下的首段直接给结论：用「X 是指…」「实测 …ms」开头，把标题改成客户会问的原话（带问号）"
+    },
+    {
+      "id": "C7.3",
+      "dimension": "C7",
+      "name": "段落自包含性（脱离上下文也读得懂）",
+      "max": 3,
+      "score": 1.8,
+      "status": "partial",
+      "source": "auto",
+      "evidence": [
+        "抽样段落的「自包含性」均值 14.5/25（理想长度 150–300 字、代词密度、专有名词数合计）",
+        "0 个段落落在 150–300 字区间"
+      ],
+      "remediation": "把「它/这个/该」换成主语名词；单段控制在 150–300 字；每段至少出现 3 个专有名词（品牌全称、地名、机构名）"
+    },
+    {
+      "id": "C7.4",
+      "dimension": "C7",
+      "name": "多页一致性（抽样页结构/schema 不打架）",
+      "max": 3,
+      "score": 2.76,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "抽样 5 页（请求 5，失败 0）",
+        "JSON-LD 覆盖率 80%（4 页有）",
+        "标题去重后唯一率 100%",
+        "正文 ≥300 字占比 100%",
+        "抽样页平均可引用性 34.9/100，整站内容写法需要统一改"
+      ],
+      "remediation": "—"
+    },
+    {
+      "id": "C7.5",
+      "dimension": "C7",
+      "name": "国内 AI 平台链路可达性",
+      "max": 4,
+      "score": 4,
+      "status": "pass",
+      "source": "auto",
+      "evidence": [
+        "已映射 5 条 AI 链路：ok 5、部分可达 0、阻断 0",
+        "可达：豆包 Doubao、文心一言 Ernie、腾讯元宝 Yuanbao、通义千问 Qwen、Kimi / DeepSeek"
+      ],
+      "remediation": "—"
+    }
+  ],
+  "summary": {
+    "total": 57.41,
+    "assessed_max": 100,
+    "grade": "C",
+    "rate": 0.5741,
+    "dimensions": [
+      {
+        "key": "C1",
+        "name": "一、网页内容结构",
+        "score": 13.6,
+        "max": 20,
+        "assessed_max": 20,
+        "rate": 0.68
+      },
+      {
+        "key": "C2",
+        "name": "二、语义可理解性",
+        "score": 13.1,
+        "max": 16,
+        "assessed_max": 16,
+        "rate": 0.8187
+      },
+      {
+        "key": "C3",
+        "name": "三、权威性与可信度",
+        "score": 5.1,
+        "max": 16,
+        "assessed_max": 16,
+        "rate": 0.3187
+      },
+      {
+        "key": "C4",
+        "name": "四、结构化与机器可读性",
+        "score": 3.35,
+        "max": 12,
+        "assessed_max": 12,
+        "rate": 0.2792
+      },
+      {
+        "key": "C5",
+        "name": "五、覆盖度与用户价值",
+        "score": 7.1,
+        "max": 12,
+        "assessed_max": 12,
+        "rate": 0.5917
+      },
+      {
+        "key": "C6",
+        "name": "六、技术体验",
+        "score": 5.0,
+        "max": 6,
+        "assessed_max": 6,
+        "rate": 0.8333
+      },
+      {
+        "key": "C7",
+        "name": "七、AI 平台适配与可引用性",
+        "score": 10.16,
+        "max": 18,
+        "assessed_max": 18,
+        "rate": 0.5644
+      }
+    ],
+    "assessed_items": 29,
+    "coverage": 1.0,
+    "low_coverage": false
+  },
+  "unassessed": [],
+  "priority_actions": [
+    {
+      "id": "C3.1",
+      "level": "高危",
+      "title": "内容中有权威来源/研究/报告引用",
+      "gap": 4.0,
+      "action": "至少补 2 条可核实的权威来源；没有就说明哪些数字来自自家实测",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
+      "id": "C3.3",
+      "level": "高危",
+      "title": "作者/品牌/机构信息透明",
+      "gap": 4.0,
+      "action": "页脚补：企业工商全称 + 详细地址 + ICP 备案号 + 更新时间；文章加作者署名",
+      "verify": "页脚可见企业全称、地址、ICP 备案号、更新时间四项"
+    },
+    {
+      "id": "C4.1",
+      "level": "高危",
+      "title": "结构化数据合规且覆盖到位",
+      "gap": 4.0,
+      "action": "额外补一份 JSON-LD；大模型解析 JSON-LD 的成本最低",
+      "verify": "跑 inspect-schema.py，看 w3c_validation.findings 里 error 级是否清零"
+    },
+    {
+      "id": "C7.1",
+      "level": "高危",
+      "title": "段落可引用性均值",
+      "gap": 3.2,
+      "action": "按 45/30/12 的顺序改：先把每个二级标题下的第一段写成「定义 + 数字 + 适用边界」，再砍掉依赖上文的代词，最后补数据来源",
+      "verify": "重跑 fetch-page.py 后看 citability.average，目标 ≥65"
+    },
+    {
+      "id": "C5.3",
+      "level": "高危",
+      "title": "明确满足用户意图（FAQ）",
+      "gap": 2.5,
+      "action": "整理 6–10 条高频问题，用客户原话提问，配 FAQPage Schema",
+      "verify": "页面出现 FAQ 区块，且与 FAQPage Schema 内容一致"
+    },
+    {
+      "id": "C3.2",
+      "level": "高危",
+      "title": "提供数据或事实支撑观点",
+      "gap": 2.4,
+      "action": "把「提升明显」改成「响应耗时从 820ms 降到 210ms」这类可核对表述",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
+      "id": "C4.2",
+      "level": "高危",
+      "title": "提供摘要/总结",
+      "gap": 2.4,
+      "action": "正文开头加 3–5 条要点摘要，结尾加一段结论",
+      "verify": "页首出现要点摘要，页尾出现结论段"
+    },
+    {
+      "id": "C3.4",
+      "level": "高危",
+      "title": "专业性 & 原创性明显",
+      "gap": 0.5,
+      "action": "在 About 页补维护者身份与数据来源说明，并在首页加一句本站独有的数据口径（如官方 cap 与仅列前 12 份合同的差别）。",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
+      "id": "C7.4",
+      "level": "高危",
+      "title": "多页一致性（抽样页结构/schema 不打架）",
+      "gap": 0.2,
+      "action": "—",
+      "verify": "跑 fetch-page.py sample --pages 5，看 jsonld_coverage 是否为 100%"
+    },
+    {
+      "id": "C1.5",
+      "level": "中",
+      "title": "使用列表、表格、加粗强调",
+      "gap": 4.0,
+      "action": "把长文改写成「小标题 + 列表 + 表格」结构",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
+      "id": "C7.2",
+      "level": "中",
+      "title": "答案块质量（给可直接摘走的结论）",
+      "gap": 3.2,
+      "action": "每个二级标题下的首段直接给结论：用「X 是指…」「实测 …ms」开头，把标题改成客户会问的原话（带问号）",
+      "verify": "随机抽 3 个二级标题的首段，遮住上下文能独立读懂即为达标"
+    },
+    {
+      "id": "C1.4",
+      "level": "中",
+      "title": "首段有结论/答案",
+      "gap": 2.4,
+      "action": "把结论提到前 150 字内：X 是…，适用于…，核心参数…",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
+      "id": "C2.3",
+      "level": "中",
+      "title": "实体明确（人名、地名、数字、品牌）",
+      "gap": 2.4,
+      "action": "把「效果好」改写成具体数字；补品牌全称、服务地区、适用行业、负责人署名",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
+      "id": "C5.2",
+      "level": "中",
+      "title": "提供案例、图表、对比",
+      "gap": 2.4,
+      "action": "加一张参数对比表 + 一个真实案例（背景/做法/结果）",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
+      "id": "C4.3",
+      "level": "中",
+      "title": "页面 HTML 结构简洁，少广告干扰",
+      "gap": 2.2,
+      "action": "改成服务端渲染或预渲染，否则 AI 爬虫读不到内容",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
+      "id": "C7.3",
+      "level": "中",
+      "title": "段落自包含性（脱离上下文也读得懂）",
+      "gap": 1.2,
+      "action": "把「它/这个/该」换成主语名词；单段控制在 150–300 字；每段至少出现 3 个专有名词（品牌全称、地名、机构名）",
+      "verify": "数一遍每个段落里的「它/这个/该」，单段不超过 2 个"
+    },
+    {
+      "id": "C2.2",
+      "level": "中",
+      "title": "语义多样性",
+      "gap": 0.5,
+      "action": "在首页补一段「How to start」三步说明，并在数据区加一句「2026-27 快照会随交易变化，仅供估算」。",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    },
+    {
+      "id": "C6.3",
+      "level": "低",
+      "title": "多模块内容",
+      "gap": 1.0,
+      "action": "按「是什么—怎么做—案例—FAQ—联系」重排页面骨架",
+      "verify": "改动后重跑本脚本，该项状态应从 fail/partial 变 pass"
+    }
+  ],
+  "open_questions": [
+    "结构化数据缺失项较多时，需确认站点是否为纯前端渲染，静态注入 JSON-LD 是否可行。",
+    "sitemap.xml 里声明的全部是其他域名的 URL，跨域声明无效。需要确认是部署时拷错了文件，还是有意把两个子域当成同一站点管理。"
+  ],
+  "errors": []
+}
