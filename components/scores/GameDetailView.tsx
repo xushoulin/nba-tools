@@ -216,7 +216,7 @@ function PlayerTable({ game, team }: { game: GameBox; team: BoxTeam }) {
                 <th
                   key={column.key}
                   scope="col"
-                  className={`w-12 px-1.5 py-2.5 text-right font-semibold tabular-nums ${column.visibility ?? ""}`}
+                  className={`w-12 whitespace-nowrap px-1.5 py-2.5 text-right font-semibold tabular-nums ${column.visibility ?? ""}`}
                 >
                   {column.label}
                 </th>
@@ -248,7 +248,7 @@ function PlayerTable({ game, team }: { game: GameBox; team: BoxTeam }) {
                 {COLUMNS.map((column) => (
                   <td
                     key={column.key}
-                    className={`px-1.5 py-2 text-right tabular-nums ${column.visibility ?? ""} ${
+                    className={`whitespace-nowrap px-1.5 py-2 text-right tabular-nums ${column.visibility ?? ""} ${
                       column.highlight ? "font-bold text-ink" : "text-gray-600"
                     } ${player.didNotPlay ? "text-gray-300" : ""}`}
                   >
