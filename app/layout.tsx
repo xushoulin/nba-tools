@@ -20,8 +20,14 @@ export const metadata: Metadata = {
   robots: { index: true, follow: true },
   // Search-engine ownership proofs. Emitted as <meta name="...-site-verification">
   // in the head of every page, which is what the consoles check.
+  // Google issues one token per account+property, so keep every token that is
+  // still in use. Old tokens are left in place: removing them can silently
+  // un-verify a property that was proven with them.
   verification: {
-    google: "H3OtcTypZvJU3mKaMhIGoh0tQb9tTtjt8rZGDOTo0LA",
+    google: [
+      "H3OtcTypZvJU3mKaMhIGoh0tQb9tTtjt8rZGDOTo0LA",
+      "NJdBBhKDI2T5qlaOpVOV3muaDTAuMsLbPUaELl8wRvo",
+    ],
   },
 };
 
