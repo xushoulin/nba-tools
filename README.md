@@ -45,16 +45,16 @@ node scripts/players/build.mjs     # compresses everything into lib/data/players
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000/nba-tools  (dev writes to .next-dev)
+npm run dev      # http://localhost:3000  (dev writes to .next-dev)
 npm run build    # static export into .next-export
-npm run preview  # serves the export at http://localhost:3000/nba-tools
+npm run preview  # serves the export at http://localhost:3000
 ```
 
-The site is built with `output: "export"`, so it is served under the `/nba-tools`
-basePath locally too. `next start` cannot serve an export build, which is why
-`npm run preview` (a dependency-free static server in `scripts/preview.mjs`) exists.
-`npm run dev` and `npm run build` use separate output directories, so running the
-dev server never overwrites a build you are previewing.
+The site is built with `output: "export"`. `next start` cannot serve an export build, which is why
+`npm run preview` (a dependency-free static server in `scripts/preview.mjs`) exists. It mounts the
+export at `/`, or at `NEXT_PUBLIC_BASE_PATH` when that is set. `npm run dev` and `npm run build`
+use separate output directories, so running the dev server never overwrites a build you are
+previewing.
 
 ## Google AdSense
 
@@ -82,25 +82,34 @@ Two things to know:
 
 ## Deployment
 
-The site is a full static export served from the `gh-pages` branch:
+The site is a full static export, served from the domain root.
 
-- Live URL: https://xushoulin.github.io/nba-tools/
-- `NEXT_PUBLIC_SITE_URL` controls canonical URLs, Open Graph tags, `robots.txt` and `sitemap.xml`.
-  It defaults to the live URL above; override it with an env var if you move to a custom domain.
+- **Primary URL: https://nba.shoulin.shop/** (Vercel, builds from `main` on every push)
+- Legacy mirror: https://xushoulin.github.io/nba-tools/ (GitHub Pages project site, `gh-pages` branch)
+
+`basePath` is not hard-coded. It comes from `NEXT_PUBLIC_BASE_PATH` and defaults to empty, so the
+export works at a domain root. A GitHub Pages *project* site lives under `/<repo>/`, so that build
+needs `NEXT_PUBLIC_BASE_PATH=/nba-tools` — otherwise every `_next/static` request 404s and the page
+renders unstyled.
+
+`NEXT_PUBLIC_SITE_URL` controls canonical URLs, Open Graph tags, `robots.txt` and `sitemap.xml`.
+It defaults to `https://nba.shoulin.shop`.
 
 To publish an update:
 
 ```bash
-npm run build                       # emits the static site into .next-export/
-cp -r .next-export/. /tmp/nba-pages/
-touch /tmp/nba-pages/.nojekyll
+npm run build                       # static export into .next-export/
+npm run preview                     # check it at http://localhost:3000
+```
+
+Then push to `main` — Vercel rebuilds automatically. To refresh the GitHub Pages mirror as well:
+
+```bash
+NEXT_PUBLIC_BASE_PATH=/nba-tools NEXT_PUBLIC_SITE_URL=https://xushoulin.github.io/nba-tools npm run build
+cp -r .next-export/. /tmp/nba-pages/ && touch /tmp/nba-pages/.nojekyll
 cd /tmp/nba-pages && git init -b gh-pages && git add -A
 git commit -m "Deploy static export" && git push -f origin gh-pages
 ```
-
-GitHub Pages is configured to serve the root of `gh-pages`. Adding a CNAME file there and
-pointing a DNS CNAME record at `xushoulin.github.io` will move the same build to a custom domain;
-remember to set `NEXT_PUBLIC_SITE_URL` to that domain before rebuilding.
 
 ## Disclaimer
 
