@@ -24,6 +24,7 @@ import {
   profileFor,
 } from "@/lib/player-profiles";
 import { SITE_URL } from "@/lib/tools";
+import { playerNarrative } from "@/lib/player-narrative";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -89,6 +90,9 @@ export default async function PlayerPage({ params }: Params) {
     .sort((a, b) => b.salary - a.salary)
     .slice(0, 6);
 
+  const narrative = playerNarrative(p, team, full);
+  const proseSections = narrative.sections.filter((s) => s.id !== "comparable-contracts");
+
   const faces = [
     ["Height", p.height ?? "—"],
     ["Weight", p.weight ?? "—"],
@@ -131,6 +135,14 @@ export default async function PlayerPage({ params }: Params) {
           { "@type": "ListItem", position: 3, name: full, item: `${SITE_URL}/teams/${team.id}` },
           { "@type": "ListItem", position: 4, name: p.name, item: `${SITE_URL}/players/${p.slug}` },
         ],
+      },
+      {
+        "@type": "FAQPage",
+        mainEntity: narrative.faqs.map((f) => ({
+          "@type": "Question",
+          name: f.q,
+          acceptedAnswer: { "@type": "Answer", text: f.a },
+        })),
       },
     ],
   };
@@ -437,6 +449,120 @@ export default async function PlayerPage({ params }: Params) {
           Averages per game. Rows follow the franchises ESPN credits the player with, so
           mid-season trades appear as two rows in the same season.
         </p>
+      </section>
+
+      {/* ---------- derived analysis ---------- */}
+      <section className="mx-auto max-w-6xl px-4 pb-10">
+        <div className="mb-4">
+          <h2 className="text-2xl font-bold text-ink">What the numbers say</h2>
+          <p className="mt-1 text-sm text-gray-500">
+            Written from the career log, honours and {LEAGUE.season} contract on this page, and
+            compared against every other player in the dataset at the same position.
+          </p>
+        </div>
+
+        <div className="space-y-4">
+          {proseSections.map((section) => (
+            <div key={section.id} id={section.id} className="card p-6">
+              <h3 className="text-lg font-bold text-ink">{section.heading}</h3>
+              <div className="mt-3 space-y-3 text-sm leading-7 text-gray-700">
+                {section.paragraphs.map((text, i) => (
+                  <p key={i}>{text}</p>
+                ))}
+              </div>
+              {section.bullets && section.bullets.length > 0 && (
+                <ul className="mt-4 space-y-1.5 rounded-lg bg-gray-50 px-4 py-3 text-sm text-gray-600">
+                  {section.bullets.map((item) => (
+                    <li key={item} className="flex gap-2">
+                      <span aria-hidden className="text-orange-500">
+                        ·
+                      </span>
+                      <span>{item}</span>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              {section.table && (
+                <div className="mt-5 overflow-x-auto">
+                  <table className="w-full text-sm">
+                    <thead>
+                      <tr className="border-b border-gray-200 text-left text-xs uppercase tracking-wide text-gray-500">
+                        {section.table.head.map((h) => (
+                          <th key={h} className="px-3 py-2 font-semibold">
+                            {h}
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-gray-100">
+                      {section.table.rows.map((row) => (
+                        <tr key={row[0]}>
+                          {row.map((cell, j) => (
+                            <td
+                              key={j}
+                              className={
+                                j === 0
+                                  ? "px-3 py-2 text-gray-600"
+                                  : "px-3 py-2 font-semibold tabular-nums text-ink"
+                              }
+                            >
+                              {cell}
+                            </td>
+                          ))}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              )}
+            </div>
+          ))}
+
+          {narrative.comparables.length > 0 && (
+            <div className="card p-6">
+              <h3 className="text-lg font-bold text-ink">Comparable contracts</h3>
+              <p className="mt-2 text-sm leading-7 text-gray-700">
+                The players at the same position whose {LEAGUE.season} salary is closest to his.
+                Salary proximity is not the same as similarity as a player, but it is the quickest
+                read on what the market pays for this kind of role.
+              </p>
+              <ul className="mt-4 divide-y divide-gray-100">
+                {narrative.comparables.map((c) => (
+                  <li key={c.slug}>
+                    <Link
+                      href={`/players/${c.slug}`}
+                      className="flex items-center justify-between gap-3 rounded-lg px-2 py-2.5 transition hover:bg-gray-50"
+                    >
+                      <span className="flex min-w-0 items-center gap-2">
+                        <PlayerAvatar name={c.name} teamAbbr={team.abbr} size={24} />
+                        <span className="truncate text-sm font-semibold text-ink">{c.name}</span>
+                        <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] font-bold text-gray-500">
+                          {c.pos}
+                        </span>
+                      </span>
+                      <span className="shrink-0 text-xs tabular-nums text-gray-500">
+                        ${c.salary.toFixed(2)}M · {c.years} yr
+                        {c.ppg !== null ? ` · ${c.ppg.toFixed(1)} ppg` : ""}
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          <div className="card p-6">
+            <h3 className="text-lg font-bold text-ink">Quick answers</h3>
+            <dl className="mt-4 space-y-4">
+              {narrative.faqs.map((f) => (
+                <div key={f.q}>
+                  <dt className="text-sm font-bold text-ink">{f.q}</dt>
+                  <dd className="mt-1 text-sm leading-7 text-gray-600">{f.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </div>
       </section>
 
       {/* ---------- contract context ---------- */}
