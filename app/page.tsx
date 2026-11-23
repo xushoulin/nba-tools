@@ -172,11 +172,11 @@ export default function Home() {
       <section id="guides" className="mx-auto max-w-6xl px-4 py-14">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
-            <h2 className="text-2xl font-bold text-ink">Cap &amp; contract guides</h2>
+            <h2 className="text-2xl font-bold text-ink">Salary cap, trade and stats guides</h2>
             <p className="mt-2 max-w-2xl text-gray-600">
-              Plain-English explainers on the rules behind every number on this site — the soft cap,
-              the luxury tax brackets, the five checks a trade must pass, and the contract types that
-              decide who a team can sign.
+              Nine plain-English explainers on the rules behind every number on this site — the soft cap,
+              luxury tax brackets, the first and second aprons, Bird rights, pick trades, contract types,
+              advanced stats and fantasy scoring.
             </p>
           </div>
           <Link
@@ -187,7 +187,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {GUIDES.map((guide) => (
+          {GUIDES.slice(0, 4).map((guide) => (
             <Link
               key={guide.slug}
               href={`/guides/${guide.slug}`}

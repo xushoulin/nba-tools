@@ -36,7 +36,14 @@ function resolveFile(urlPath) {
   const rel = decodeURIComponent(urlPath);
   const full = path.join(ROOT, rel);
   if (!full.startsWith(ROOT)) return null; // path traversal guard
-  const candidates = [full, `${full}.html`, path.join(full, "index.html")];
+  // The export is flat ("guides.html"), so a trailing slash must not become a directory lookup.
+  const trimmed = full.replace(/[\\/]+$/, "") || full;
+  const candidates = [
+    full,
+    trimmed,
+    `${trimmed}.html`,
+    path.join(trimmed, "index.html"),
+  ];
   for (const candidate of candidates) {
     if (fs.existsSync(candidate) && fs.statSync(candidate).isFile()) return candidate;
   }

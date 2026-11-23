@@ -46,7 +46,9 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
   const url = `${SITE_URL}/guides/${guide.slug}`;
   const relatedTools = guide.tools.map(getTool).filter((t): t is NonNullable<typeof t> => Boolean(t));
-  const otherGuides = GUIDES.filter((g) => g.slug !== guide.slug);
+  // The four guides that follow this one in reading order, wrapping at the end.
+  const guideIndex = GUIDES.findIndex((g) => g.slug === guide.slug);
+  const otherGuides = [1, 2, 3, 4].map((step) => GUIDES[(guideIndex + step) % GUIDES.length]);
 
   const jsonLd = {
     "@context": "https://schema.org",

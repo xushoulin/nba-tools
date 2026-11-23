@@ -4,9 +4,9 @@ import { GUIDES } from "@/lib/guides";
 import { SITE_URL } from "@/lib/tools";
 
 export const metadata: Metadata = {
-  title: "NBA Salary Cap & Contract Guides",
+  title: "NBA Salary Cap, Trade & Stats Guides",
   description:
-    "Plain-English explainers on NBA salary cap rules, luxury tax brackets, trade matching and contract types — written around the 2026-27 league figures.",
+    "Plain-English explainers on NBA salary cap rules, luxury tax brackets, the aprons, Bird rights, pick trades, advanced stats and fantasy scoring — written around the 2026-27 league figures.",
   alternates: { canonical: "/guides" },
   openGraph: { url: "/guides" },
 };
@@ -16,10 +16,10 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "CollectionPage",
-      name: "NBA Salary Cap & Contract Guides",
+      name: "NBA Salary Cap, Trade & Stats Guides",
       url: `${SITE_URL}/guides`,
       description:
-        "Plain-English explainers on NBA salary cap rules, luxury tax brackets, trade matching and contract types.",
+        "Plain-English explainers on NBA salary cap rules, luxury tax brackets, the aprons, Bird rights, pick trades, advanced stats and fantasy scoring.",
       isPartOf: { "@type": "WebSite", name: "NBA Tools", url: `${SITE_URL}/` },
     },
     {
@@ -34,7 +34,32 @@ const jsonLd = {
   ],
 };
 
+const GROUPS: { heading: string; note: string; slugs: string[] }[] = [
+  {
+    heading: "Money: the cap, the tax and the aprons",
+    note: "Start here. These four explain what teams can spend and what they lose when they spend it.",
+    slugs: [
+      "how-nba-salary-cap-works",
+      "nba-luxury-tax-explained",
+      "nba-apron-rules-explained",
+      "nba-free-agency-bird-rights",
+    ],
+  },
+  {
+    heading: "Building a roster: trades, picks and contracts",
+    note: "The mechanisms that turn payroll into a team, and the rules that block the obvious move.",
+    slugs: ["nba-trade-rules-explained", "nba-draft-pick-trade-rules", "nba-contract-types-explained"],
+  },
+  {
+    heading: "Reading the numbers: stats and fantasy",
+    note: "How to measure what happened, and how the same player is worth different amounts in different formats.",
+    slugs: ["nba-advanced-stats-explained", "fantasy-basketball-scoring-systems"],
+  },
+];
+
 export default function GuidesIndex() {
+  const bySlug = new Map(GUIDES.map((g) => [g.slug, g]));
+
   return (
     <main className="mx-auto max-w-6xl px-4 py-12">
       <script
@@ -53,9 +78,10 @@ export default function GuidesIndex() {
           NBA salary cap and contract guides
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-gray-700">
-          Four plain-English explainers on how NBA money actually works: the soft cap and its exceptions, the
-          luxury tax bracket maths, the five checks every trade must pass, and the contract types that decide
-          who a team can sign. All figures are the official 2026-27 thresholds.
+          Nine plain-English explainers on how NBA money actually works: the soft cap and its exceptions, the
+          luxury tax bracket maths, the first and second aprons, Bird rights and cap holds, the five checks every
+          trade must pass, draft-pick rules, contract types, advanced stats and fantasy scoring. All figures are
+          the official 2026-27 thresholds.
         </p>
         <ul className="mt-6 flex flex-wrap gap-2 text-xs font-semibold text-gray-600">
           {["$164.961M cap", "$200.428M tax line", "$209.015M first apron", "$221.686M second apron"].map((chip) => (
@@ -66,33 +92,45 @@ export default function GuidesIndex() {
         </ul>
       </header>
 
-      <div className="mt-10 grid gap-4 sm:grid-cols-2">
-        {GUIDES.map((guide) => (
-          <Link
-            key={guide.slug}
-            href={`/guides/${guide.slug}`}
-            className="card group flex flex-col p-6 transition hover:-translate-y-0.5 hover:border-court hover:shadow-lg"
-          >
-            <div className="mb-3 flex items-center justify-between">
-              <span className="text-3xl">{guide.icon}</span>
-              <span className="text-xs font-medium text-gray-400">{guide.readingMinutes} min read</span>
-            </div>
-            <h2 className="text-lg font-bold leading-snug text-ink group-hover:text-court">{guide.title}</h2>
-            <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">{guide.description}</p>
-            <span className="mt-4 text-xs font-semibold uppercase tracking-wide text-orange-600">
-              Read the guide →
-            </span>
-          </Link>
-        ))}
-      </div>
+      {GROUPS.map((group) => (
+        <section key={group.heading} className="mt-10">
+          <h2 className="text-xl font-bold text-ink">{group.heading}</h2>
+          <p className="mt-1.5 text-sm text-gray-600">{group.note}</p>
+          <div className="mt-4 grid gap-4 sm:grid-cols-2">
+            {group.slugs.map((slug) => {
+              const guide = bySlug.get(slug);
+              if (!guide) return null;
+              return (
+                <Link
+                  key={guide.slug}
+                  href={`/guides/${guide.slug}`}
+                  className="card group flex flex-col p-6 transition hover:-translate-y-0.5 hover:border-court hover:shadow-lg"
+                >
+                  <div className="mb-3 flex items-center justify-between">
+                    <span className="text-3xl">{guide.icon}</span>
+                    <span className="text-xs font-medium text-gray-400">{guide.readingMinutes} min read</span>
+                  </div>
+                  <h3 className="text-lg font-bold leading-snug text-ink group-hover:text-court">{guide.title}</h3>
+                  <p className="mt-2 flex-1 text-sm leading-relaxed text-gray-600">{guide.description}</p>
+                  <span className="mt-4 text-xs font-semibold uppercase tracking-wide text-orange-600">
+                    Read the guide →
+                  </span>
+                </Link>
+              );
+            })}
+          </div>
+        </section>
+      ))}
 
       <section className="mt-14 rounded-2xl border border-gray-200 bg-white p-6">
         <h2 className="text-xl font-bold text-ink">How to use these guides</h2>
         <p className="mt-3 text-sm leading-7 text-gray-700">
-          Each guide is written to be read once and then used as a reference. Start with the cap explainer if you
-          want the vocabulary, then read the tax and trade pieces together — most arguments about roster building
-          come down to confusing the tax line (money) with the aprons (rules). Every guide links to the
-          calculator that applies the same numbers, so you can test a claim instead of trusting it.
+          Each guide is written to be read once and then used as a reference. The three groups above are in
+          reading order: start with the cap explainer for the vocabulary, then read the tax and apron pieces
+          together — most arguments about roster building come down to confusing the tax line (money) with the
+          aprons (rules). The trade, pick and contract guides are the mechanics; the stats and fantasy guides are
+          how to measure the result. Every guide links to the calculator that applies the same numbers, so you
+          can test a claim instead of trusting it.
         </p>
         <p className="mt-3 text-sm leading-7 text-gray-700">
           Figures come from the NBA&rsquo;s published 2026-27 thresholds and payroll snapshots retrieved from
