@@ -23,9 +23,9 @@ export default function Privacy() {
       <p>
         Google&rsquo;s use of data is governed by its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">Privacy Policy</a>. We do not sell your personal information.
       </p>
-      <h2 className="pt-2 text-xl font-bold text-ink">Live scores</h2>
+      <h2 className="pt-2 text-xl font-bold text-ink">Live scores and game logs</h2>
       <p>
-        The &ldquo;Today&rsquo;s NBA games&rdquo; section on our homepage reads scores from ESPN&rsquo;s public scoreboard feed. That request is made directly by your browser, so ESPN receives your IP address and basic request details in the same way as visiting espn.com directly. We do not proxy, store or log that data. If you block the request, the rest of the site continues to work normally.
+        Three parts of this site read live data from ESPN&rsquo;s public feeds, and every request is made directly by your browser rather than through a server of ours: the &ldquo;Today&rsquo;s NBA games&rdquo; board on the homepage, the box score behind each game, and the &ldquo;Recent form&rdquo; game log on player pages. ESPN therefore receives your IP address and basic request details in the same way as visiting espn.com directly. We do not proxy, store or log that data. If you block the requests, the rest of the site continues to work normally &mdash; those sections simply stay empty.
       </p>
       <h2 className="pt-2 text-xl font-bold text-ink">Analytics</h2>
       <p>

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import PlayerAvatar from "@/components/teams/PlayerAvatar";
 import TeamLogo from "@/components/teams/TeamLogo";
+import PlayerFormSection from "@/components/players/PlayerFormSection";
 import {
   INITIAL_TEAMS,
   LEAGUE,
@@ -450,6 +451,9 @@ export default async function PlayerPage({ params }: Params) {
           mid-season trades appear as two rows in the same season.
         </p>
       </section>
+
+      {/* ---------- recent form (live) ---------- */}
+      <PlayerFormSection playerId={String(p.id)} playerName={p.name} seasonLabel={LEAGUE.season} />
 
       {/* ---------- derived analysis ---------- */}
       <section className="mx-auto max-w-6xl px-4 pb-10">
