@@ -329,7 +329,7 @@ export default function HonoursComparison() {
                   type="checkbox"
                   checked={onlyDiff}
                   onChange={(e) => setOnlyDiff(e.target.checked)}
-                  className="h-4 w-4 rounded border-gray-300 text-court focus:ring-court"
+                  className="h-4 w-4 cursor-pointer accent-court"
                 />
                 Only differences
               </label>

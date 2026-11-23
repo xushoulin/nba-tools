@@ -6,7 +6,8 @@
     "dev": "next dev -p 3000",
     "prebuild": "node scripts/gen-ads.mjs",
     "build": "next build",
-    "start": "next start -p 3000",
+    "preview": "node scripts/preview.mjs",
+    "start": "node scripts/preview.mjs",
     "lint": "next lint"
   },
   "dependencies": {

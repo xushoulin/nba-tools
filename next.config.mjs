@@ -6,8 +6,9 @@ const nextConfig = {
   // GitHub Pages project sites are served under /<repo-name>/.
   basePath: "/nba-tools",
   images: { unoptimized: true },
-  // Separate cache directory for the static-export build.
-  distDir: ".next-export",
+  // Separate cache directory for the static-export build. Dev gets its own
+  // directory so `next dev` never wipes the export that `npm run preview` serves.
+  distDir: process.env.NODE_ENV === "development" ? ".next-dev" : ".next-export",
 };
 
 export default nextConfig;
