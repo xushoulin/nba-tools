@@ -43,15 +43,7 @@ function TeamRow({ team, state }: { team: GameTeam; state: Game["state"] }) {
     <div className="flex items-center gap-3 py-1">
       <TeamLogo abbr={team.key} size={26} eager />
       <span className="text-[11px] font-bold uppercase tracking-wide text-gray-400">{team.espnAbbr}</span>
-      <div className="min-w-0 flex-1">
-        {team.slug ? (
-          <Link href={`/teams/${team.slug}`} className="block hover:text-court">
-            {name}
-          </Link>
-        ) : (
-          name
-        )}
-      </div>
+      <div className="min-w-0 flex-1">{name}</div>
       <span
         className={`w-9 text-right text-base font-bold tabular-nums ${
           state === "post" && !team.winner ? "text-gray-500" : "text-ink"
@@ -81,7 +73,13 @@ function GameCard({ game }: { game: Game }) {
         : `${game.away.name} at ${game.home.name}, tips off ${formatTipoff(game.tipoff)}`;
 
   return (
-    <article className={`card p-4 ${live ? "ring-1 ring-orange-200" : ""}`} aria-label={label}>
+    <Link
+      href={`/game/?id=${game.id}`}
+      aria-label={label}
+      className={`card group block p-4 transition hover:-translate-y-0.5 hover:border-court hover:shadow-md ${
+        live ? "ring-1 ring-orange-200" : ""
+      }`}
+    >
       <div className="flex items-center justify-between gap-2">
         <span
           className={`inline-flex items-center gap-1.5 rounded-full px-2 py-0.5 text-[11px] font-bold uppercase tracking-wide ${statusStyles(
@@ -99,13 +97,18 @@ function GameCard({ game }: { game: Game }) {
         <TeamRow team={game.home} state={game.state} />
       </div>
 
-      <p className="mt-3 truncate text-[11px] text-gray-400">
-        {game.state === "pre" ? "Tip-off " : ""}
-        {formatTipoff(game.tipoff)}
-        {game.venue ? ` · ${game.venue}` : ""}
-        {game.broadcast ? ` · ${game.broadcast}` : ""}
+      <p className="mt-3 flex items-center justify-between gap-2 text-[11px] text-gray-400">
+        <span className="truncate">
+          {game.state === "pre" ? "Tip-off " : ""}
+          {formatTipoff(game.tipoff)}
+          {game.venue ? ` · ${game.venue}` : ""}
+          {game.broadcast ? ` · ${game.broadcast}` : ""}
+        </span>
+        <span className="shrink-0 font-semibold text-orange-600 opacity-0 transition group-hover:opacity-100">
+          Box score →
+        </span>
       </p>
-    </article>
+    </Link>
   );
 }
 
@@ -283,7 +286,7 @@ export default function TodaysGames() {
             <button type="button" onClick={onRefresh} className="btn-primary mt-5" disabled={refreshing}>
               {refreshing ? "Retrying…" : "Try again"}
             </button>
-            {errorMessage && (
+            {errorMessage && !/reach ESPN/i.test(errorMessage) && (
               <p className="mt-4 text-[11px] text-gray-400" title={errorMessage}>
                 {errorMessage}
               </p>

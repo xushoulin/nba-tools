@@ -257,6 +257,11 @@ async function fetchDay(dateParam: string): Promise<RawEvent[]> {
     if (error instanceof Error && error.name === "AbortError") {
       throw new Error("The scoreboard request timed out");
     }
+    // A blocked connection surfaces as a bare TypeError ("Failed to fetch"),
+    // which means nothing to a visitor.
+    if (error instanceof TypeError) {
+      throw new Error("Could not reach ESPN — check your connection and try again");
+    }
     throw error;
   } finally {
     clearTimeout(timer);
