@@ -1,0 +1,4 @@
+# ads.txt is not active yet.
+# Set NEXT_PUBLIC_ADSENSE_CLIENT=ca-pub-XXXXXXXXXXXXXXXX in .env.local,
+# then rebuild. Note: ads.txt must be served from the domain root,
+# so a custom domain (not the /nba-tools/ project path) is required.
