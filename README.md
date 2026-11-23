@@ -45,10 +45,16 @@ node scripts/players/build.mjs     # compresses everything into lib/data/players
 
 ```bash
 npm install
-npm run dev      # http://localhost:3000
-npm run build    # production build
-npm run start    # serve production build
+npm run dev      # http://localhost:3000/nba-tools  (dev writes to .next-dev)
+npm run build    # static export into .next-export
+npm run preview  # serves the export at http://localhost:3000/nba-tools
 ```
+
+The site is built with `output: "export"`, so it is served under the `/nba-tools`
+basePath locally too. `next start` cannot serve an export build, which is why
+`npm run preview` (a dependency-free static server in `scripts/preview.mjs`) exists.
+`npm run dev` and `npm run build` use separate output directories, so running the
+dev server never overwrites a build you are previewing.
 
 ## Google AdSense
 
