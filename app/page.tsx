@@ -4,6 +4,7 @@ import TeamLogo from "@/components/teams/TeamLogo";
 import { SITE_URL, TOOLS } from "@/lib/tools";
 import { INITIAL_TEAMS, LEAGUE } from "@/lib/salary-data";
 import { allPlayerSlugs } from "@/lib/player-profiles";
+import { GUIDES } from "@/lib/guides";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
@@ -165,6 +166,43 @@ export default function Home() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="guides" className="mx-auto max-w-6xl px-4 py-14">
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <h2 className="text-2xl font-bold text-ink">Cap &amp; contract guides</h2>
+            <p className="mt-2 max-w-2xl text-gray-600">
+              Plain-English explainers on the rules behind every number on this site — the soft cap,
+              the luxury tax brackets, the five checks a trade must pass, and the contract types that
+              decide who a team can sign.
+            </p>
+          </div>
+          <Link
+            href="/guides"
+            className="rounded-xl bg-ink px-5 py-2.5 font-semibold text-white transition hover:bg-gray-800"
+          >
+            Read all guides →
+          </Link>
+        </div>
+        <div className="mt-8 grid gap-4 sm:grid-cols-2">
+          {GUIDES.map((guide) => (
+            <Link
+              key={guide.slug}
+              href={`/guides/${guide.slug}`}
+              className="card group flex items-start gap-4 p-5 transition hover:-translate-y-0.5 hover:border-court hover:shadow-lg"
+            >
+              <span className="text-3xl">{guide.icon}</span>
+              <div>
+                <h3 className="font-bold leading-snug text-ink group-hover:text-court">{guide.shortTitle}</h3>
+                <p className="mt-1 text-sm leading-relaxed text-gray-600">{guide.description}</p>
+                <span className="mt-2 inline-block text-xs font-medium text-gray-400">
+                  {guide.readingMinutes} min read
+                </span>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 

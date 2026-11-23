@@ -1,12 +1,19 @@
-const SITE = "https://xushoulin.github.io/nba-tools";
+import { GUIDES } from "@/lib/guides";
+import { SITE_NAME, SITE_URL, TOOLS } from "@/lib/tools";
+import { INITIAL_TEAMS } from "@/lib/salary-data";
+import { allPlayerSlugs } from "@/lib/player-profiles";
 
-const body = `# NBA Tools
+export const dynamic = "force-static";
+
+const body = `# ${SITE_NAME}
 
 > Free, browser-based NBA calculators and basketball tools. No signup, no data
 > collected, no runtime API calls. All calculations run in the visitor's browser.
 
-This site publishes 17 tool pages, 30 team pages and 355 player career pages.
-It is an independent project and is not affiliated with the NBA, its teams or ESPN.
+This site publishes ${TOOLS.length} tool pages, ${GUIDES.length} long-form explainer
+guides, ${INITIAL_TEAMS.length} team pages and ${allPlayerSlugs().length} player career
+pages. It is an independent project and is not affiliated with the NBA, its teams
+or ESPN.
 
 ## What you can do here
 
@@ -14,18 +21,34 @@ It is an independent project and is not affiliated with the NBA, its teams or ES
 - Simulate trades with 30 real team payrolls and CBA salary-matching checks.
 - Compare players head to head, including a 2-4 player honours comparison with awards, counts and seasons.
 - Look up a player's jersey number, bio, career timeline, honours and season-by-season statistics.
+- Read plain-English explainers on the cap, the luxury tax, trade matching and contract types.
+
+## 2026-27 league figures used across the site
+
+- Salary cap: $164.961M
+- Luxury tax line: $200.428M
+- First apron: $209.015M
+- Second apron: $221.686M
+- Minimum payroll: $148.465M
+
+## Guides
+
+${GUIDES.map((g) => `- ${g.title}: ${SITE_URL}/guides/${g.slug}`).join("\n")}
 
 ## Key pages
 
-- Home: ${SITE}/
-- All tools: ${SITE}/salary-cap-calculator
-- Player honours comparison: ${SITE}/honours-comparison
-- Team index: ${SITE}/teams
-- Player index example: ${SITE}/players/lebron-james
-- About: ${SITE}/about
-- Privacy: ${SITE}/privacy
-- Contact: ${SITE}/contact
-- Sitemap: ${SITE}/sitemap.xml
+- Home: ${SITE_URL}/
+- All guides: ${SITE_URL}/guides
+- Salary cap calculator: ${SITE_URL}/salary-cap-calculator
+- Luxury tax calculator: ${SITE_URL}/luxury-tax-calculator
+- Salary & trade simulator: ${SITE_URL}/team-salary-trade-simulator
+- Player honours comparison: ${SITE_URL}/honours-comparison
+- Team index: ${SITE_URL}/teams
+- Player index example: ${SITE_URL}/players/lebron-james
+- About: ${SITE_URL}/about
+- Privacy: ${SITE_URL}/privacy
+- Contact: ${SITE_URL}/contact
+- Sitemap: ${SITE_URL}/sitemap.xml
 
 ## Data sources
 
@@ -39,8 +62,6 @@ can change; figures are estimates, not official transactions.
 Bug reports, data corrections and feature requests:
 https://github.com/xushoulin/nba-tools/issues
 `;
-
-export const dynamic = "force-static";
 
 export function GET() {
   return new Response(body, {

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { relatedTools, SITE_URL } from "@/lib/tools";
+import { guidesForTool } from "@/lib/guides";
 
 type Faq = { q: string; a: string };
 type Step = { title: string; body: string };
@@ -17,6 +18,7 @@ type Props = {
 
 export default function ToolShell({ title, description, icon, slug, children, steps, faqs }: Props) {
   const related = relatedTools(slug);
+  const guides = guidesForTool(slug);
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -90,6 +92,28 @@ export default function ToolShell({ title, description, icon, slug, children, st
           ))}
         </div>
       </section>
+
+      {/* Related guides */}
+      {guides.length > 0 && (
+        <section className="mt-12">
+          <h2 className="text-2xl font-bold text-ink">The rules behind this tool</h2>
+          <div className="mt-5 grid gap-3 sm:grid-cols-2">
+            {guides.map((guide) => (
+              <Link
+                key={guide.slug}
+                href={`/guides/${guide.slug}`}
+                className="card flex items-start gap-3 border-orange-100 bg-orange-50/40 p-4 transition hover:border-court hover:shadow-md"
+              >
+                <span className="text-2xl">{guide.icon}</span>
+                <div>
+                  <div className="font-bold text-ink">{guide.title}</div>
+                  <div className="mt-1 text-xs text-gray-500">{guide.readingMinutes} min read · updated 2026</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
 
       {/* Related tools */}
       <section className="mt-12">

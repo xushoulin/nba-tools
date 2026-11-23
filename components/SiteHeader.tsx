@@ -12,6 +12,7 @@ export default function SiteHeader() {
         <nav className="hidden gap-6 text-sm font-medium text-gray-600 sm:flex">
           <Link href="/teams" className="hover:text-court">Teams</Link>
           <Link href="/#tools" className="hover:text-court">Tools</Link>
+          <Link href="/guides" className="hover:text-court">Guides</Link>
           <Link href="/#faq" className="hover:text-court">FAQ</Link>
           <Link href="/about" className="hover:text-court">About</Link>
         </nav>

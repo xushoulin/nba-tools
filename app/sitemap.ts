@@ -4,6 +4,7 @@ import { TOOLS, SITE_URL } from "@/lib/tools";
 export const dynamic = "force-static";
 import { INITIAL_TEAMS } from "@/lib/salary-data";
 import { allPlayerSlugs } from "@/lib/player-profiles";
+import { GUIDES, GUIDES_UPDATED } from "@/lib/guides";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
@@ -37,5 +38,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "monthly" as const,
     priority: 0.6,
   }));
-  return [...pages, teamsIndex, ...tools, ...teamPages, ...playerPages];
+  const guidesUpdated = new Date(`${GUIDES_UPDATED}T00:00:00Z`);
+  const guidesIndex = {
+    url: `${SITE_URL}/guides`,
+    lastModified: guidesUpdated,
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  };
+  const guidePages = GUIDES.map((g) => ({
+    url: `${SITE_URL}/guides/${g.slug}`,
+    lastModified: new Date(`${g.updated}T00:00:00Z`),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+  return [...pages, teamsIndex, guidesIndex, ...tools, ...guidePages, ...teamPages, ...playerPages];
 }
