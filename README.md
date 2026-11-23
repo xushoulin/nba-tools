@@ -50,6 +50,30 @@ npm run build    # production build
 npm run start    # serve production build
 ```
 
+## Google AdSense
+
+Ads are fully optional and off until you add a client id. Everything else (privacy policy,
+cookie notice, `robots.txt` allowing AdSense crawlers, ads.txt generation) is already in place.
+
+To turn ads on:
+
+1. Apply at https://www.google.com/adsense/ and add `https://xushoulin.github.io/nba-tools/`
+   (or your custom domain) as a site. Site ownership is verified through the URL / Search Console,
+   so no verification tag needs to be edited into the code.
+2. Copy your client id (`ca-pub-XXXXXXXXXXXXXXXX`) into a new `.env.local` line:
+   `NEXT_PUBLIC_ADSENSE_CLIENT=ca-pub-...`
+3. Rebuild and republish. `prebuild` regenerates `public/ads.txt` from that id, and the loader
+   in `app/layout.tsx` starts the Auto ads script. With the variable empty, no ad script loads.
+
+Two things to know:
+
+- **ads.txt must be at the domain root.** The default `xushoulin.github.io/nba-tools/` path puts
+  it under a subfolder, where Google will report it as missing. Binding a custom domain (see
+  Deployment) fixes this — the file is then served from `https://your-domain.com/ads.txt`.
+- Ads are enabled account-wide via **Auto ads** in the AdSense dashboard; no manual ad slots
+  are required. `AdSenseAd` in `components/ads/AdSense.tsx` exists only if you later want a
+  fixed-position unit.
+
 ## Deployment
 
 The site is a full static export served from the `gh-pages` branch:

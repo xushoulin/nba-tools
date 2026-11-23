@@ -7,7 +7,7 @@ import { allPlayerSlugs } from "@/lib/player-profiles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const pages = ["", "/about", "/privacy", "/terms", "/contact"].map((path) => ({
+  const pages = ["", "/about", "/privacy", "/terms", "/contact", "/disclaimer"].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
     changeFrequency: "monthly" as const,

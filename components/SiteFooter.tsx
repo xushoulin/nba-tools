@@ -30,6 +30,8 @@ export default function SiteFooter() {
               <h3 className="mb-3 font-semibold text-gray-900">Legal</h3>
               <div className="flex flex-col gap-2 text-gray-500">
                 <Link href="/terms" className="hover:text-court">Terms</Link>
+                <Link href="/disclaimer" className="hover:text-court">Disclaimer</Link>
+                <Link href="/about" className="hover:text-court">About</Link>
                 <Link href="/contact" className="hover:text-court">Contact</Link>
               </div>
             </div>

@@ -13,9 +13,15 @@ export default function Privacy() {
       <p>
         The numbers and text you enter into our calculators are processed locally in your browser and are not transmitted to our servers. We do not store your inputs.
       </p>
-      <h2 className="pt-2 text-xl font-bold text-ink">Advertising</h2>
+      <h2 className="pt-2 text-xl font-bold text-ink">Cookies and advertising</h2>
       <p>
-        We may display third-party advertisements (including Google AdSense). These providers may use cookies or similar technologies to serve ads based on your interests. You can opt out of personalized advertising through your browser or the provider&rsquo;s settings.
+        When ads are enabled, Google AdSense may set cookies on your device to serve ads and to measure their performance. Google uses these cookies to show ads that may be more relevant to you, based on your browsing history and the content of this site. These are third-party cookies controlled by Google, not by us.
+      </p>
+      <p>
+        You can opt out of personalized advertising at any time via <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">Google Ads Settings</a>, or through the <a href="https://www.aboutads.info/choices/" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">Digital Advertising Alliance</a>. You can also block or delete cookies in your browser settings; the tools on this site will still work.
+      </p>
+      <p>
+        Google&rsquo;s use of data is governed by its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">Privacy Policy</a>. We do not sell your personal information.
       </p>
       <h2 className="pt-2 text-xl font-bold text-ink">Analytics</h2>
       <p>
