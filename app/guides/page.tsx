@@ -75,7 +75,7 @@ export default function GuidesIndex() {
 
       <header className="max-w-3xl">
         <h1 className="text-3xl font-extrabold tracking-tight text-ink sm:text-4xl">
-          NBA salary cap and contract guides
+          NBA salary cap, trade and stats guides
         </h1>
         <p className="mt-4 text-lg leading-relaxed text-gray-700">
           Nine plain-English explainers on how NBA money actually works: the soft cap and its exceptions, the
