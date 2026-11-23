@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import TeamLogo from "@/components/teams/TeamLogo";
+import TodaysGames from "@/components/home/TodaysGames";
 import { SITE_URL, TOOLS } from "@/lib/tools";
 import { INITIAL_TEAMS, LEAGUE } from "@/lib/salary-data";
 import { allPlayerSlugs } from "@/lib/player-profiles";
@@ -27,6 +28,10 @@ const FAQS = [
   {
     q: "Where do player profiles and award records come from?",
     a: "Player biographies, jersey numbers, honours and season-by-season statistics come from ESPN public athlete endpoints. The honours comparison groups 31 recorded award names into 11 categories and shows counts plus seasons.",
+  },
+  {
+    q: "Where do the live scores on the homepage come from?",
+    a: "They are read from ESPN's public scoreboard feed directly by your browser and refreshed every 20 seconds while a game is in progress, or every minute otherwise. Because the request is made from your device, the games you see are grouped by your own local date and tip-off times are shown in your own timezone. If the feed cannot be reached, the widget says so and the rest of the page keeps working.",
   },
   {
     q: "Can I use these numbers for official NBA transactions?",
@@ -111,6 +116,8 @@ export default function Home() {
           </ul>
         </div>
       </section>
+
+      <TodaysGames />
 
       <section id="tools" className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-2xl font-bold text-ink">All tools</h2>
@@ -235,7 +242,7 @@ export default function Home() {
             ))}
           </dl>
           <p className="mt-8 text-sm leading-relaxed text-gray-600">
-            Data sources: player bios, honours and statistics from{" "}
+            Data sources: player bios, honours, statistics and live scores from{" "}
             <a href="https://www.espn.com/nba/" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
               ESPN
             </a>

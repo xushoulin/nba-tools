@@ -7,13 +7,15 @@ type Props = {
   abbr: string;
   size?: number;
   className?: string;
+  /** Load immediately instead of waiting for the viewport. Use above the fold. */
+  eager?: boolean;
 };
 
 /**
  * Team crest from a public logo CDN. If the image fails to load, falls back to a
  * brand-coloured tile with the team abbreviation so the layout never collapses.
  */
-export default function TeamLogo({ abbr, size = 48, className = "" }: Props) {
+export default function TeamLogo({ abbr, size = 48, className = "", eager = false }: Props) {
   const [failed, setFailed] = useState(false);
   const asset = TEAM_ASSETS[abbr.toLowerCase()];
 
@@ -41,7 +43,7 @@ export default function TeamLogo({ abbr, size = 48, className = "" }: Props) {
       alt={`${abbr} logo`}
       width={size}
       height={size}
-      loading="lazy"
+      loading={eager ? "eager" : "lazy"}
       decoding="async"
       onError={() => setFailed(true)}
       className={`shrink-0 object-contain ${className}`}

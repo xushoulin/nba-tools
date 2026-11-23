@@ -23,6 +23,10 @@ export default function Privacy() {
       <p>
         Google&rsquo;s use of data is governed by its <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">Privacy Policy</a>. We do not sell your personal information.
       </p>
+      <h2 className="pt-2 text-xl font-bold text-ink">Live scores</h2>
+      <p>
+        The &ldquo;Today&rsquo;s NBA games&rdquo; section on our homepage reads scores from ESPN&rsquo;s public scoreboard feed. That request is made directly by your browser, so ESPN receives your IP address and basic request details in the same way as visiting espn.com directly. We do not proxy, store or log that data. If you block the request, the rest of the site continues to work normally.
+      </p>
       <h2 className="pt-2 text-xl font-bold text-ink">Analytics</h2>
       <p>
         We may use privacy-friendly analytics to understand aggregate traffic, such as which pages are visited most. This data is not used to identify individuals.
