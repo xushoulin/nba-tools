@@ -18,6 +18,11 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
   },
   robots: { index: true, follow: true },
+  // Search-engine ownership proofs. Emitted as <meta name="...-site-verification">
+  // in the head of every page, which is what the consoles check.
+  verification: {
+    google: "H3OtcTypZvJU3mKaMhIGoh0tQb9tTtjt8rZGDOTo0LA",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
