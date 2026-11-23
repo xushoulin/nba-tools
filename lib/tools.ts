@@ -108,6 +108,6 @@ export function relatedTools(slug: string, count = 4): Tool[] {
   return TOOLS.filter((t) => t.slug !== slug).slice(0, count);
 }
 
-const DEFAULT_SITE_URL = "https://xushoulin.github.io/nba-tools";
+const DEFAULT_SITE_URL = "https://nba.shoulin.shop";
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || DEFAULT_SITE_URL).replace(/\/$/, "");
 export const SITE_NAME = "NBA Tools";

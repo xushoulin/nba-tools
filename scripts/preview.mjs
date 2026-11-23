@@ -1,12 +1,13 @@
 // Minimal static server for the exported site (.next-export).
 // `next start` cannot serve a project built with `output: "export"`, so this
-// mirrors how GitHub Pages serves the site: the export is mounted at /nba-tools.
+// mirrors how the site is actually hosted: at the domain root on Vercel, or
+// under /nba-tools when NEXT_PUBLIC_BASE_PATH is set for GitHub Pages.
 import http from "node:http";
 import fs from "node:fs";
 import path from "node:path";
 
 const ROOT = path.resolve(".next-export");
-const BASE = "/nba-tools";
+const BASE = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(/\/$/, "");
 const PORT = Number(process.env.PORT || 3000);
 
 const MIME = {
@@ -46,17 +47,18 @@ const server = http.createServer((req, res) => {
   const url = new URL(req.url, `http://${req.headers.host}`);
   let pathname = url.pathname;
 
-  if (pathname === BASE) {
-    res.writeHead(301, { Location: `${BASE}/${url.search}` });
-    return res.end();
+  if (BASE) {
+    if (pathname === BASE) {
+      res.writeHead(301, { Location: `${BASE}/${url.search}` });
+      return res.end();
+    }
+    if (!pathname.startsWith(`${BASE}/`)) {
+      res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
+      return res.end(`Not found. The site is served under ${BASE}/`);
+    }
+    pathname = pathname.slice(BASE.length);
   }
 
-  if (!pathname.startsWith(`${BASE}/`)) {
-    res.writeHead(404, { "Content-Type": "text/plain; charset=utf-8" });
-    return res.end(`Not found. The site is served under ${BASE}/`);
-  }
-
-  pathname = pathname.slice(BASE.length);
   const file = resolveFile(pathname);
 
   if (!file) {
@@ -68,7 +70,7 @@ const server = http.createServer((req, res) => {
 
   res.writeHead(200, {
     "Content-Type": MIME[path.extname(file)] || "application/octet-stream",
-    // Mirror GitHub Pages' caching behaviour closely enough for local checks.
+    // Mirror the production cache behaviour closely enough for local checks.
     "Cache-Control": file.includes(`${path.sep}_next${path.sep}`) ? "public, max-age=31536000, immutable" : "no-cache",
   });
   fs.createReadStream(file).pipe(res);
