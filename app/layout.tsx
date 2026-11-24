@@ -18,6 +18,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
   },
   robots: { index: true, follow: true },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/logo-512.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: { url: "/apple-touch-icon.png", type: "image/png", sizes: "180x180" },
+  },
   // Search-engine ownership proofs. Emitted as <meta name="...-site-verification">
   // in the head of every page, which is what the consoles check.
   // Google issues one token per account+property, so keep every token that is

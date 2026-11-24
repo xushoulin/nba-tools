@@ -140,6 +140,14 @@ const jsonLd = {
       "@id": `${SITE_URL}/#organization`,
       name: SITE_NAME,
       url: `${SITE_URL}/`,
+      logo: {
+        "@type": "ImageObject",
+        "@id": `${SITE_URL}/#logo`,
+        url: `${SITE_URL}/logo-512.png`,
+        width: 512,
+        height: 512,
+      },
+      image: `${SITE_URL}/logo-512.png`,
       description:
         "An independent, fan-run set of free NBA salary cap, trade and fantasy tools. Not affiliated with the NBA or ESPN.",
       sameAs: ["https://github.com/xushoulin/nba-tools"],
