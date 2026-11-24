@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import TeamLogo from "@/components/teams/TeamLogo";
 import TodaysGames from "@/components/home/TodaysGames";
+import LatestNews from "@/components/home/LatestNews";
 import { SITE_URL, TOOLS } from "@/lib/tools";
 import { INITIAL_TEAMS, LEAGUE } from "@/lib/salary-data";
 import { allPlayerSlugs } from "@/lib/player-profiles";
@@ -118,6 +119,8 @@ export default function Home() {
       </section>
 
       <TodaysGames />
+
+      <LatestNews />
 
       <section id="tools" className="mx-auto max-w-6xl px-4 py-16">
         <h2 className="text-2xl font-bold text-ink">All tools</h2>

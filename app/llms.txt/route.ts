@@ -22,6 +22,7 @@ or ESPN.
 - Compare players head to head, including a 2-4 player honours comparison with awards, counts and seasons.
 - Look up a player's jersey number, bio, career timeline, honours and season-by-season statistics.
 - Read plain-English explainers on the cap, the luxury tax, trade matching and contract types.
+- Follow daily NBA headlines, reports and game recaps, grouped by publication date.
 
 ## 2026-27 league figures used across the site
 
@@ -39,6 +40,8 @@ ${GUIDES.map((g) => `- ${g.title}: ${SITE_URL}/guides/${g.slug}`).join("\n")}
 
 - Home: ${SITE_URL}/
 - All guides: ${SITE_URL}/guides
+- NBA news (by date, each story credited to ESPN): ${SITE_URL}/news
+- NBA news archive: ${SITE_URL}/news/archive
 - Salary cap calculator: ${SITE_URL}/salary-cap-calculator
 - Luxury tax calculator: ${SITE_URL}/luxury-tax-calculator
 - Salary & trade simulator: ${SITE_URL}/team-salary-trade-simulator

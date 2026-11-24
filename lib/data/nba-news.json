@@ -1,0 +1,588 @@
+{
+  "source": {
+    "name": "ESPN",
+    "url": "https://www.espn.com/nba/",
+    "feed": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=50"
+  },
+  "generatedAt": "2026-11-23T10:08:29.616Z",
+  "count": 30,
+  "items": [
+    {
+      "id": "50570668",
+      "slug": "draymond-green-swats-back-at-online-critics-fuels-warriors-win-over-celt-50570668",
+      "title": "Draymond Green swats back at online critics, fuels Warriors' win over Celtics",
+      "summary": "After reinforcing his career​ accolades earlier in the day on social media, Golden State Warriors forward Draymond Green closed out an 88-87 win over the Boston Celtics on Sunday with a last-second defensive stop and rousing celebration from the veteran.",
+      "published": "2026-11-23T07:58:53.000Z",
+      "updated": "2026-11-23T07:58:53.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50570668/vocal-green-defensive-stop-buzzer-fuels-warriors-win",
+      "author": "Anthony Slater",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1123/r1750046_600x400_3-2.jpg",
+        "alt": "261122 Draymond Green [600x400]",
+        "credit": "Noah Graham/NBAE via Getty Images"
+      },
+      "teams": [
+        "Golden State Warriors"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "47987750",
+      "slug": "which-nba-players-have-the-most-triple-doubles-of-all-time-47987750",
+      "title": "Which NBA players have the most triple-doubles of all time?",
+      "summary": "Russell Westbrook holds the NBA record for most triple-doubles in a career. See who else joins him on the list.",
+      "published": "2026-11-23T04:20:20.000Z",
+      "updated": "2026-11-23T04:20:20.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/47987750/which-nba-players-most-triple-doubles-all",
+      "author": "Keith Jenkins",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/0220/r1617781_608x342_16-9.jpg",
+        "alt": "Russell Westbrook",
+        "credit": "Scott Audette/NBAE via Getty Images"
+      },
+      "teams": [],
+      "matchup": null
+    },
+    {
+      "id": "50569618",
+      "slug": "karl-anthony-towns-has-30-points-and-13-rebounds-as-knicks-beat-pacers-1-50569618",
+      "title": "Karl-Anthony Towns has 30 points and 13 rebounds as Knicks beat Pacers 113-106",
+      "summary": "Karl-Anthony Towns had 30 points and 13 rebounds, Jalen Brunson added 22 points, and the New York Knicks beat the Indiana Pacers 113-106 on Sunday night to extend their winning streak to five games.",
+      "published": "2026-11-23T04:03:33.000Z",
+      "updated": "2026-11-23T04:03:33.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910034",
+      "author": null,
+      "image": null,
+      "teams": [
+        "New York Knicks",
+        "Indiana Pacers"
+      ],
+      "matchup": "Indiana Pacers @ New York Knicks"
+    },
+    {
+      "id": "50569206",
+      "slug": "jokics-triple-double-murrays-45-points-lead-nuggets-to-151-145-overtime-50569206",
+      "title": "Jokic's triple-double, Murray's 45 points lead Nuggets to 151-145 overtime win over Bulls",
+      "summary": "Nikola Jokic had 37 points, 18 rebounds and 11 assists for the 202nd triple double of his career, Jamal Murray scored eight of his season-high 45 points in overtime, and the Denver Nuggets held off the Chicago Bulls 151-145 on Sunday night.",
+      "published": "2026-11-23T03:15:33.000Z",
+      "updated": "2026-11-23T03:15:33.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910032",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Chicago Bulls",
+        "Denver Nuggets"
+      ],
+      "matchup": "Denver Nuggets @ Chicago Bulls"
+    },
+    {
+      "id": "50569015",
+      "slug": "cooper-flagg-saves-mavericks-with-late-free-throws-to-hold-off-jazz-come-50569015",
+      "title": "Cooper Flagg saves Mavericks with late free throws to hold off Jazz comeback in 116-114 win",
+      "summary": "Cooper Flagg scored 28 points and made the game-winning free throws with 3.7 seconds left to lift the Dallas Mavericks over the Utah Jazz 116-114 after they squandered an 18-point lead in the fourth quarter on Sunday night.",
+      "published": "2026-11-23T02:57:32.000Z",
+      "updated": "2026-11-23T02:57:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910033",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Utah Jazz",
+        "Dallas Mavericks"
+      ],
+      "matchup": "Dallas Mavericks @ Utah Jazz"
+    },
+    {
+      "id": "50567550",
+      "slug": "klay-thompson-blows-out-shoe-in-heats-win-over-thunder-50567550",
+      "title": "Klay Thompson blows out shoe in Heat's win over Thunder",
+      "summary": "Klay Thompson blew out part of a shoe while defending a fast break in the Heat's game against the Thunder on Sunday night.",
+      "published": "2026-11-23T02:57:25.000Z",
+      "updated": "2026-11-23T02:57:25.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50567550/klay-thompson-blows-shoe-heat-thunder",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1123/r1749941_2_600x400_3-2.jpg",
+        "alt": "261122 Klay Thompson [600x400]",
+        "credit": "Eric Espada/NBAE via Getty Images"
+      },
+      "teams": [
+        "Miami Heat"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50568682",
+      "slug": "bam-adebayos-triple-double-ignites-heats-123-113-victory-over-thunder-50568682",
+      "title": "Bam Adebayo's triple-double ignites Heat's 123-113 victory over Thunder",
+      "summary": "In a game that did not feature Oklahoma City's Shai Gilgeous-Alexander or Miami's Giannis Antetokounmpo, Bam Adebayo swiped the spotlight, scoring 24 points en route to a triple-double, as the surging Heat defeated the Thunder 123-113 on Sunday night.",
+      "published": "2026-11-23T02:47:08.000Z",
+      "updated": "2026-11-23T02:47:08.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50568682/adebayo-triple-double-sparks-shorthanded-heat-victory",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1123/r1749970_600x600_1-1.jpg",
+        "alt": "Bam Adebayo [600x600]",
+        "credit": "Getty Images"
+      },
+      "teams": [
+        "Miami Heat",
+        "Oklahoma City Thunder"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50568810",
+      "slug": "wizards-rout-the-magic-116-96-to-win-their-3rd-straight-following-an-8-g-50568810",
+      "title": "Wizards rout the Magic 116-96 to win their 3rd straight following an 8-game skid",
+      "summary": "Kyshawn George scored 24 points and Anthony Davis added 22 to lead the Washington Wizards to their third straight victory, 116-96 over the Orlando Magic on Sunday night.",
+      "published": "2026-11-23T02:33:32.000Z",
+      "updated": "2026-11-23T02:33:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910031",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Washington Wizards",
+        "Orlando Magic"
+      ],
+      "matchup": "Orlando Magic @ Washington Wizards"
+    },
+    {
+      "id": "50568357",
+      "slug": "adebayo-gets-triple-double-heat-without-giannis-top-thunder-without-sga-50568357",
+      "title": "Adebayo gets triple-double, Heat (without Giannis) top Thunder (without SGA) for 7th straight win",
+      "summary": "Bam Adebayo scored 24 points and had a triple-double, Pelle Larsson scored 21 and the shorthanded Miami Heat beat the very shorthanded Oklahoma City Thunder 123-113 on Sunday night to push their winning streak to seven games.",
+      "published": "2026-11-23T01:42:41.000Z",
+      "updated": "2026-11-23T01:42:41.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910030",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Miami Heat",
+        "Oklahoma City Thunder"
+      ],
+      "matchup": "Oklahoma City Thunder @ Miami Heat"
+    },
+    {
+      "id": "50564049",
+      "slug": "bulls-g-norman-powell-sidelined-by-mild-hamstring-injury-50564049",
+      "title": "Bulls G Norman Powell sidelined by mild hamstring injury",
+      "summary": "Bulls guard Norman Powell was ruled out against the Nuggets and will be reevaluated later in the week because of a mild right hamstring strain.",
+      "published": "2026-11-22T23:43:58.000Z",
+      "updated": "2026-11-22T23:43:58.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50564049/bulls-g-norman-powell-sidelined-mild-hamstring-injury",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1122/r1749738_1296x729_16-9.jpg",
+        "alt": "261009 Norman Powell photo [1296x729]",
+        "credit": "Jeff Haynes/NBAE via Getty Images"
+      },
+      "teams": [
+        "Chicago Bulls"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50566635",
+      "slug": "alexander-walker-has-27-points-as-hawks-roll-to-107-97-win-over-pistons-50566635",
+      "title": "Alexander-Walker has 27 points as Hawks roll to 107-97 win over Pistons in off game for Cunningham",
+      "summary": "Nickeil Alexander-Walker scored 27 points, Atlanta opened the fourth quarter with an 18-0 run, and the Hawks beat the Detroit Pistons 107-97 on Sunday as Cade Cunningham was held to a season-low five points.",
+      "published": "2026-11-22T23:12:32.000Z",
+      "updated": "2026-11-22T23:12:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910029",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Atlanta Hawks",
+        "Detroit Pistons"
+      ],
+      "matchup": "Detroit Pistons @ Atlanta Hawks"
+    },
+    {
+      "id": "50564924",
+      "slug": "sources-free-agent-gabe-vincent-kings-finalizing-deal-50564924",
+      "title": "Sources: Free agent Gabe Vincent, Kings finalizing deal",
+      "summary": "Gabe Vincent is finalizing a deal with the Kings to fill their 15th roster spot, league sources told ESPN's Shams Charania.",
+      "published": "2026-11-22T21:12:48.000Z",
+      "updated": "2026-11-22T21:12:48.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50564924/sources-free-agent-gabe-vincent-kings-finalizing-deal",
+      "author": "Anthony Slater",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2024/0401/r1312689_600x600_1-1.jpg",
+        "alt": "Gabe Vincent [600x600]",
+        "credit": "David L. Nemec/NBAE via Getty Images"
+      },
+      "teams": [
+        "Sacramento Kings"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50559927",
+      "slug": "mikal-bridges-shakes-off-slump-hits-buzzer-beater-to-save-knicks-vs-blaz-50559927",
+      "title": "Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers",
+      "summary": "Mired in a shooting slump, Mikal Bridges delivered a buzzer-beating 3-pointer to lift the Knicks past the Trail Blazers after they squandered a 26-point lead.",
+      "published": "2026-11-22T17:52:36.000Z",
+      "updated": "2026-11-22T17:52:36.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50559927/knicks-mikal-bridges-shakes-slump-3-buzzer-tops-blazers",
+      "author": "Vincent Goodwill",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1122/r1749469_600x400_3-2.jpg",
+        "alt": "Mikal Bridges [600x400]",
+        "credit": "AP Photo/Yuki Iwamura"
+      },
+      "teams": [
+        "New York Knicks"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50559763",
+      "slug": "wembanyama-makes-history-in-18-minutes-finishes-game-with-50-points-50559763",
+      "title": "Wembanyama makes history in 18 minutes, finishes game with 50 points",
+      "summary": "Victor Wembanyama had his third career 50-point outing during a win over the Pelicans to go along with 19 rebounds, five blocks and four steals.",
+      "published": "2026-11-22T14:30:05.000Z",
+      "updated": "2026-11-22T14:30:05.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50559763/victor-wembanyama-shows-50-point-5-block-performance",
+      "author": "Michael C. Wright",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1122/r1749474_600x400_3-2.jpg",
+        "alt": "Victor Wembanyama [600x400]",
+        "credit": "Daniel Dunn-Imagn Images"
+      },
+      "teams": [
+        "San Antonio Spurs"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50559812",
+      "slug": "murrays-putback-with-5-seconds-left-lifts-kings-to-97-96-win-over-celtic-50559812",
+      "title": "Murray's putback with 5 seconds left lifts Kings to 97-96 win over Celtics, ending 8-game skid",
+      "summary": "Keegan Murray's putback over three defenders with 5 seconds left lifted the Sacramento Kings to a 97-96 victory over the Boston Celtics on Saturday night.",
+      "published": "2026-11-22T07:01:33.000Z",
+      "updated": "2026-11-22T07:01:33.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910028",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Sacramento Kings",
+        "Boston Celtics"
+      ],
+      "matchup": "Boston Celtics @ Sacramento Kings"
+    },
+    {
+      "id": "50558602",
+      "slug": "kyrie-irving-scores-25-cooper-flagg-22-as-the-mavericks-top-the-clippers-50558602",
+      "title": "Kyrie Irving scores 25, Cooper Flagg 22 as the Mavericks top the Clippers 110-100",
+      "summary": "Kyrie Irving scored 25 points and Cooper Flagg had 22 points, eight rebounds and six assists as the Dallas Mavericks used a late 11-0 run to beat the Los Angeles Clippers 110-100 on Saturday night.",
+      "published": "2026-11-22T03:59:45.000Z",
+      "updated": "2026-11-22T03:59:45.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910025",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Dallas Mavericks",
+        "LA Clippers"
+      ],
+      "matchup": "LA Clippers @ Dallas Mavericks"
+    },
+    {
+      "id": "50558376",
+      "slug": "victor-wembanyama-has-50-points-19-rebounds-on-dominant-night-as-spurs-r-50558376",
+      "title": "Victor Wembanyama has 50 points, 19 rebounds on dominant night as Spurs roll past Pelicans, 114-91",
+      "summary": "Victor Wembanyama had 50 points, with 32 coming in the first half, along with 19 rebounds, five blocks and four steals and the San Antonio Spurs rolled to a 114-91 victory over the New Orleans Pelicans on Saturday.",
+      "published": "2026-11-22T03:38:32.000Z",
+      "updated": "2026-11-22T03:38:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910027",
+      "author": null,
+      "image": null,
+      "teams": [
+        "San Antonio Spurs",
+        "New Orleans Pelicans"
+      ],
+      "matchup": "New Orleans Pelicans @ San Antonio Spurs"
+    },
+    {
+      "id": "50558222",
+      "slug": "brunson-scores-30-bridges-hits-3-at-buzzer-lifting-knicks-to-97-96-win-o-50558222",
+      "title": "Brunson scores 30, Bridges hits 3 at buzzer, lifting Knicks to 97-96 win over Trail Blazers",
+      "summary": "Jalen Brunson scored 30 points, Mikel Bridges hit the winning 3-pointer at the buzzer, and the New York Knicks edged the Portland Trail Blazers 97-96 on Saturday night.",
+      "published": "2026-11-22T03:27:34.000Z",
+      "updated": "2026-11-22T03:27:34.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910024",
+      "author": null,
+      "image": null,
+      "teams": [
+        "New York Knicks",
+        "Portland Trail Blazers"
+      ],
+      "matchup": "Portland Trail Blazers @ New York Knicks"
+    },
+    {
+      "id": "50558217",
+      "slug": "jaden-mcdaniels-scores-25-and-timberwolves-top-short-handed-grizzlies-10-50558217",
+      "title": "Jaden McDaniels scores 25 and Timberwolves top short-handed Grizzlies 104-95",
+      "summary": "Jaden McDaniels scored 25 points, Ayo Dosunmu added 19 and the Minnesota Timberwolves beat the short-handed Memphis Grizzlies 104-95 on Saturday night.",
+      "published": "2026-11-22T03:26:34.000Z",
+      "updated": "2026-11-22T03:26:34.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910026",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Minnesota Timberwolves",
+        "Memphis Grizzlies"
+      ],
+      "matchup": "Memphis Grizzlies @ Minnesota Timberwolves"
+    },
+    {
+      "id": "50555316",
+      "slug": "76ers-survive-in-clutch-again-despite-herros-50-got-to-finish-better-50555316",
+      "title": "76ers survive in clutch again despite Herro's 50: 'Got to finish better'",
+      "summary": "The 76ers survived 50 points from Tyler Herro, nearly blowing a 10-point lead late, before once again coming out on top in the clutch.",
+      "published": "2026-11-22T00:54:12.000Z",
+      "updated": "2026-11-22T00:54:12.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50555316/76ers-survive-clutch-again-tyler-herro-50",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1121/r1749277_600x400_3-2.jpg",
+        "alt": "Tyler Herro [600x400]",
+        "credit": "Bill Streicher-Imagn Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50553702",
+      "slug": "joel-embiid-lebron-james-lead-eastern-conference-leading-76ers-past-the-50553702",
+      "title": "Joel Embiid, LeBron James lead Eastern Conference-leading 76ers past the Bucks 132-129",
+      "summary": "Joel Embiid had 26 points and 17 rebounds, LeBron James scored 13 of his 21 points in the fourth quarter and the Eastern Conference-leading Philadelphia 76ers held on for a 132-129 victory over Tyler Herro and the last-place Milwaukee Bucks on...",
+      "published": "2026-11-21T22:41:32.000Z",
+      "updated": "2026-11-21T22:41:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910023",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Philadelphia 76ers",
+        "Milwaukee Bucks"
+      ],
+      "matchup": "Milwaukee Bucks @ Philadelphia 76ers"
+    },
+    {
+      "id": "50550017",
+      "slug": "76ers-jaylen-brown-dean-wade-out-tyrese-maxey-starting-vs-bucks-50550017",
+      "title": "76ers' Jaylen Brown, Dean Wade out, Tyrese Maxey starting vs. Bucks",
+      "summary": "76ers forwards Jaylen Brown and Dean Wade will miss Saturday's game against the Bucks with left hamstring injuries, their second straight game out.",
+      "published": "2026-11-21T18:02:43.000Z",
+      "updated": "2026-11-21T18:02:43.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50550017/76ers-rule-jaylen-brown-dean-wade-vs-bucks",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1102/r1740127_600x400_3-2.jpg",
+        "alt": "Jaylen Brown [600x400]",
+        "credit": "Luther Schlaifer/NBAE via Getty Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50547994",
+      "slug": "lakers-rally-after-jj-redick-rips-teams-lack-of-fight-vs-last-place-king-50547994",
+      "title": "Lakers rally after JJ Redick rips team's lack of fight vs. last-place Kings",
+      "summary": "Lakers coach JJ Redick ripped into the team's lack of fight after trailing the last-place Kings at halftime, and Los Angeles went on to eke out a 106-104 win.",
+      "published": "2026-11-21T17:32:41.000Z",
+      "updated": "2026-11-21T17:32:41.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50547994/jj-redick-half-rant-fuels-lakers-last-place-kings",
+      "author": "Dave McMenamin",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1121/r1748866_600x400_3-2.jpg",
+        "alt": "JJ Redick [600x400]",
+        "credit": "AP Photo/Caroline Brehman"
+      },
+      "teams": [
+        "Los Angeles Lakers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50549254",
+      "slug": "ime-udoka-frustrated-by-rockets-defense-no-effort-or-any-attention-to-de-50549254",
+      "title": "Ime Udoka frustrated by Rockets' defense: 'No effort or any attention to detail'",
+      "summary": "Coach Ime Udoka was upset by the Rockets' lack of physicality and effort as they gave up a season high in points during a loss to the Nuggets, calling the defense \"as bad as I've seen it.\"",
+      "published": "2026-11-21T13:12:17.000Z",
+      "updated": "2026-11-21T13:12:17.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50549254/ime-udoka-frustrated-rockets-defense-loss-nuggets",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2025/0430/r1486037_1296x729_16-9.jpg",
+        "alt": "043025  Ime Udoka [1296x729]",
+        "credit": "Ezra Shaw/Getty Images"
+      },
+      "teams": [
+        "Houston Rockets"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50549184",
+      "slug": "scottie-barnes-scores-29-including-key-layup-as-raptors-end-skid-with-10-50549184",
+      "title": "Scottie Barnes scores 29, including key layup, as Raptors end skid with 105-102 win over Pistons",
+      "summary": "Scottie Barnes scored 29 points, including a layup with 14 seconds left, and the Toronto Raptors ended their six-game losing streak with a 105-102 win over the Detroit Pistons in an NBA Cup game on Friday night.",
+      "published": "2026-11-21T12:40:52.000Z",
+      "updated": "2026-11-21T12:40:52.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909308",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Detroit Pistons",
+        "Toronto Raptors"
+      ],
+      "matchup": "Toronto Raptors @ Detroit Pistons"
+    },
+    {
+      "id": "49577473",
+      "slug": "2026-nba-cup-schedule-format-groups-updates-and-more-49577473",
+      "title": "2026 NBA Cup: Schedule, format, groups, updates and more",
+      "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent win by the Nuggets.",
+      "published": "2026-11-21T06:34:12.000Z",
+      "updated": "2026-11-21T06:34:12.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1121/r1748853_608x342_16-9.jpg",
+        "alt": "murray [608x342]",
+        "credit": "Ron Chenoy-Imagn Images"
+      },
+      "teams": [
+        "Atlanta Hawks",
+        "Boston Celtics",
+        "Brooklyn Nets",
+        "Charlotte Hornets",
+        "Chicago Bulls",
+        "Cleveland Cavaliers",
+        "Dallas Mavericks",
+        "Denver Nuggets",
+        "Detroit Pistons",
+        "Golden State Warriors",
+        "Houston Rockets",
+        "Indiana Pacers",
+        "LA Clippers",
+        "Los Angeles Lakers",
+        "Memphis Grizzlies",
+        "Miami Heat",
+        "Milwaukee Bucks",
+        "Minnesota Timberwolves",
+        "New Orleans Pelicans",
+        "New York Knicks",
+        "Oklahoma City Thunder",
+        "Orlando Magic",
+        "Philadelphia 76ers",
+        "Phoenix Suns",
+        "Portland Trail Blazers",
+        "Sacramento Kings",
+        "San Antonio Spurs",
+        "Toronto Raptors",
+        "Utah Jazz",
+        "Washington Wizards"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50547643",
+      "slug": "nikola-jokics-big-2nd-half-sends-the-nuggets-to-a-133-124-win-over-the-r-50547643",
+      "title": "Nikola Jokic's big 2nd half sends the Nuggets to a 133-124 win over the Rockets",
+      "summary": "Nikola Jokic had 26 points, 11 assists and seven rebounds as the Denver Nuggets defeated the Houston Rockets 133-124 in a back-and-forth NBA Cup game Friday night.",
+      "published": "2026-11-21T06:15:33.000Z",
+      "updated": "2026-11-21T06:15:33.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909312",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Denver Nuggets",
+        "Houston Rockets"
+      ],
+      "matchup": "Houston Rockets @ Denver Nuggets"
+    },
+    {
+      "id": "50547439",
+      "slug": "luka-doncic-scores-25-lakers-barely-hold-off-kings-106-104-on-lavines-mi-50547439",
+      "title": "Luka Doncic scores 25, Lakers barely hold off Kings 106-104 on LaVine's miss at the buzzer",
+      "summary": "Luka Doncic had 25 points and eight assists, Quentin Grimes hit a tiebreaking 3-pointer with 57 seconds to play, and the Los Angeles Lakers rallied in the fourth quarter for their 10th win in 11 games, 106-104 over the Sacramento Kings on Friday night.",
+      "published": "2026-11-21T05:37:34.000Z",
+      "updated": "2026-11-21T05:37:34.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909313",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Los Angeles Lakers",
+        "Sacramento Kings"
+      ],
+      "matchup": "Sacramento Kings @ Los Angeles Lakers"
+    },
+    {
+      "id": "50547437",
+      "slug": "devin-booker-scores-23-points-and-suns-pull-away-in-final-minute-for-111-50547437",
+      "title": "Devin Booker scores 23 points and Suns pull away in final minute for 111-101 win over Jazz",
+      "summary": "Devin Booker had 23 points and the Phoenix Suns scored the final six of the game to pull away late and beat the Utah Jazz 111-101 in an NBA Cup matchup Friday night.",
+      "published": "2026-11-21T05:37:33.000Z",
+      "updated": "2026-11-21T05:37:33.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909311",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Utah Jazz",
+        "Phoenix Suns"
+      ],
+      "matchup": "Phoenix Suns @ Utah Jazz"
+    },
+    {
+      "id": "50546486",
+      "slug": "shai-gilgeous-alexander-scores-40-as-thunder-beat-pelicans-126-120-in-nb-50546486",
+      "title": "Shai Gilgeous-Alexander scores 40 as Thunder beat Pelicans 126-120 in NBA Cup",
+      "summary": "Shai Gilgeous-Alexander scored 40 points and the Oklahoma City Thunder rallied in the fourth quarter for a 126-120 win over the New Orleans Pelicans on Friday night to improve to 2-1 in NBA Cup play.",
+      "published": "2026-11-21T03:49:32.000Z",
+      "updated": "2026-11-21T03:49:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909310",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Oklahoma City Thunder",
+        "New Orleans Pelicans"
+      ],
+      "matchup": "New Orleans Pelicans @ Oklahoma City Thunder"
+    }
+  ]
+}

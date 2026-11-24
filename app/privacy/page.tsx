@@ -27,6 +27,10 @@ export default function Privacy() {
       <p>
         Three parts of this site read live data from ESPN&rsquo;s public feeds, and every request is made directly by your browser rather than through a server of ours: the &ldquo;Today&rsquo;s NBA games&rdquo; board on the homepage, the box score behind each game, and the &ldquo;Recent form&rdquo; game log on player pages. ESPN therefore receives your IP address and basic request details in the same way as visiting espn.com directly. We do not proxy, store or log that data. If you block the requests, the rest of the site continues to work normally &mdash; those sections simply stay empty.
       </p>
+      <h2 className="pt-2 text-xl font-bold text-ink">NBA news</h2>
+      <p>
+        The news section republishes headlines, short summaries and publish times from ESPN&rsquo;s public NBA news feed, always with the source named and a link to the original article. That feed is read when the site is built, not by your browser, so visiting a news page sends no request of yours to ESPN. The only exception is the story images, which are loaded from ESPN&rsquo;s image CDN and therefore expose your IP address to that CDN in the normal way; if you block them, the text of every story still renders. We keep no reading history and no per-visitor news data.
+      </p>
       <h2 className="pt-2 text-xl font-bold text-ink">Analytics</h2>
       <p>
         We may use privacy-friendly analytics to understand aggregate traffic, such as which pages are visited most. This data is not used to identify individuals.

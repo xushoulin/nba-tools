@@ -4,11 +4,12 @@
   "private": true,
   "scripts": {
     "dev": "next dev -p 3000",
-    "prebuild": "node scripts/gen-ads.mjs",
+    "prebuild": "node scripts/gen-ads.mjs && node scripts/news/build-news.mjs",
     "build": "next build",
     "preview": "node scripts/preview.mjs",
     "start": "node scripts/preview.mjs",
-    "lint": "next lint"
+    "lint": "next lint",
+    "news": "node scripts/news/build-news.mjs"
   },
   "dependencies": {
     "next": "^15.1.0",
