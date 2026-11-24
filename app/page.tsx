@@ -3,7 +3,7 @@ import Link from "next/link";
 import TeamLogo from "@/components/teams/TeamLogo";
 import TodaysGames from "@/components/home/TodaysGames";
 import LatestNews from "@/components/home/LatestNews";
-import { SITE_URL, TOOLS } from "@/lib/tools";
+import { SITE_NAME, SITE_URL, TOOLS } from "@/lib/tools";
 import { INITIAL_TEAMS, LEAGUE } from "@/lib/salary-data";
 import { allPlayerSlugs } from "@/lib/player-profiles";
 import { GUIDES } from "@/lib/guides";
@@ -46,6 +46,17 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
+      "@type": "WebSite",
+      name: SITE_NAME,
+      url: `${SITE_URL}/`,
+      inLanguage: "en",
+      description:
+        "Free NBA salary cap, luxury tax, trade and fantasy tools, plus 30 team payroll pages and 355 player pages.",
+      // No SearchAction: the site has no search endpoint, and pointing at one
+      // that 404s is worse than omitting the property.
+      publisher: { "@id": `${SITE_URL}/#organization` },
+    },
+    {
       "@type": "WebApplication",
       name: "NBA Tools",
       url: `${SITE_URL}/`,
@@ -54,14 +65,17 @@ const jsonLd = {
       applicationCategory: "SportsApplication",
       operatingSystem: "Any",
       isAccessibleForFree: true,
-      publisher: { "@type": "Organization", name: "NBA Tools", url: `${SITE_URL}/` },
-      sameAs: "https://github.com/xushoulin/nba-tools",
+      publisher: { "@id": `${SITE_URL}/#organization` },
+      sameAs: ["https://github.com/xushoulin/nba-tools"],
     },
     {
       "@type": "Organization",
-      name: "NBA Tools",
+      "@id": `${SITE_URL}/#organization`,
+      name: SITE_NAME,
       url: `${SITE_URL}/`,
-      sameAs: "https://github.com/xushoulin/nba-tools",
+      description:
+        "An independent, fan-run set of free NBA salary cap, trade and fantasy tools. Not affiliated with the NBA or ESPN.",
+      sameAs: ["https://github.com/xushoulin/nba-tools"],
     },
     {
       "@type": "FAQPage",

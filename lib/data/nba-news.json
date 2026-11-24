@@ -4,16 +4,16 @@
     "url": "https://www.espn.com/nba/",
     "feed": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=50"
   },
-  "generatedAt": "2026-11-24T03:13:43.233Z",
-  "count": 38,
+  "generatedAt": "2026-11-24T07:12:46.788Z",
+  "count": 46,
   "items": [
     {
       "id": "50578664",
-      "slug": "spurs-rule-victor-wembanyama-deaaron-fox-out-90-minutes-before-tip-vs-ki-50578664",
-      "title": "Spurs rule Victor Wembanyama, De'Aaron Fox out 90 minutes before tip vs. Kings",
-      "summary": "Less than two hours prior to tipoff Monday, the San Antonio Spurs ruled Victor Wembanyama and De'Aaron Fox out of their game against the Sacramento Kings, but the club anticipates both will play in Wednesday's game against the Portland Trail Blazers.",
-      "published": "2026-11-24T02:52:57.000Z",
-      "updated": "2026-11-24T02:52:57.000Z",
+      "slug": "spurs-rule-victor-wembanyama-deaaron-fox-out-90-minutes-before-win-over-50578664",
+      "title": "Spurs rule Victor Wembanyama, De'Aaron Fox out 90 minutes before win over Kings",
+      "summary": "Less than two hours prior to tipoff Monday, the San Antonio Spurs ruled Victor Wembanyama and De'Aaron Fox out of their 123-107 win over the Sacramento Kings, but the club anticipates both will play in Wednesday's game against the Portland Trail Blazers.",
+      "published": "2026-11-24T07:01:00.000Z",
+      "updated": "2026-11-24T07:01:00.000Z",
       "kind": "HeadlineNews",
       "url": "https://www.espn.com/nba/story/_/id/50578664/spurs-victor-wembanyama-deaaron-fox-kings",
       "author": "Anthony Slater",
@@ -27,6 +27,162 @@
         "Sacramento Kings"
       ],
       "matchup": null
+    },
+    {
+      "id": "50580282",
+      "slug": "castle-helps-spurs-stay-unbeaten-on-road-with-123-107-win-over-kings-min-50580282",
+      "title": "Castle helps Spurs stay unbeaten on road with 123-107 win over Kings minus Wemby, Fox and Harper",
+      "summary": "Stephon Castle had 28 points, 11 assists and eight rebounds as the San Antonio Spurs beat the Sacramento Kings 123-107 on Monday night without Victor...",
+      "published": "2026-11-24T06:08:32.000Z",
+      "updated": "2026-11-24T06:08:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910045",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Sacramento Kings",
+        "San Antonio Spurs"
+      ],
+      "matchup": "San Antonio Spurs @ Sacramento Kings"
+    },
+    {
+      "id": "50580242",
+      "slug": "luka-doncic-scores-28-lakers-avenge-loss-to-jazz-last-week-with-109-94-v-50580242",
+      "title": "Luka Doncic scores 28, Lakers avenge loss to Jazz last week with 109-94 victory in rematch",
+      "summary": "Luka Doncic had 28 points and eight assists, Jake LaRavia added 15 points and 10 rebounds, and the Los Angeles Lakers avenged a surprising home loss to the Jazz five days earlier with a 109-94 victory over Utah on Monday night.",
+      "published": "2026-11-24T05:42:33.000Z",
+      "updated": "2026-11-24T05:42:33.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910044",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Los Angeles Lakers",
+        "Utah Jazz"
+      ],
+      "matchup": "Utah Jazz @ Los Angeles Lakers"
+    },
+    {
+      "id": "50579661",
+      "slug": "jalen-green-scores-25-and-devin-booker-adds-22-to-help-the-suns-top-the-50579661",
+      "title": "Jalen Green scores 25 and Devin Booker adds 22 to help the Suns top the Pelicans 123-119 in OT",
+      "summary": "Jalen Green scored 25 points, Devin Booker added 22, and the Phoenix Suns defeated the New Orleans Pelicans, 123-119 in overtime on Monday night.",
+      "published": "2026-11-24T04:27:34.000Z",
+      "updated": "2026-11-24T04:27:34.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910042",
+      "author": null,
+      "image": null,
+      "teams": [
+        "New Orleans Pelicans",
+        "Phoenix Suns"
+      ],
+      "matchup": "Phoenix Suns @ New Orleans Pelicans"
+    },
+    {
+      "id": "50579471",
+      "slug": "kevin-durant-scores-32-to-power-rockets-past-clippers-116-104-50579471",
+      "title": "Kevin Durant scores 32 to power Rockets past Clippers 116-104",
+      "summary": "Kevin Durant scored 32 points and Alperen Sengun and Amen Thompson each had 20 to lead the Houston Rockets to a 116-104 win over the Los Angeles Clippers on Monday night.",
+      "published": "2026-11-24T04:08:32.000Z",
+      "updated": "2026-11-24T04:08:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910043",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Houston Rockets",
+        "LA Clippers"
+      ],
+      "matchup": "LA Clippers @ Houston Rockets"
+    },
+    {
+      "id": "50579350",
+      "slug": "bulls-beat-cavaliers-122-108-behind-jordan-hawkins-19-points-and-63-off-50579350",
+      "title": "Bulls beat Cavaliers 122-108 behind Jordan Hawkins' 19 points and 63 off the bench",
+      "summary": "Jordan Hawkins scored a season-high 19 points, Buddy Hield had 17 and the Chicago Bulls got 63 points off the bench as they held on to beat the Cleveland Cavaliers 122-108 on Monday night.",
+      "published": "2026-11-24T03:58:33.000Z",
+      "updated": "2026-11-24T03:58:33.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910041",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Chicago Bulls",
+        "Cleveland Cavaliers"
+      ],
+      "matchup": "Cleveland Cavaliers @ Chicago Bulls"
+    },
+    {
+      "id": "50579271",
+      "slug": "jaden-mcdaniels-scores-career-best-34-for-timberwolves-in-142-116-rout-o-50579271",
+      "title": "Jaden McDaniels scores career-best 34 for Timberwolves in 142-116 rout of Nets",
+      "summary": "Jaden McDaniels scored a career-best 34 points and the Minnesota Timberwolves routed the Brooklyn Nets 142-116 on Monday night.",
+      "published": "2026-11-24T03:41:35.000Z",
+      "updated": "2026-11-24T03:41:35.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910040",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Minnesota Timberwolves",
+        "Brooklyn Nets"
+      ],
+      "matchup": "Brooklyn Nets @ Minnesota Timberwolves"
+    },
+    {
+      "id": "50577428",
+      "slug": "76ers-joel-embiid-illness-sits-out-loss-to-trail-blazers-50577428",
+      "title": "76ers' Joel Embiid (illness) sits out loss to Trail Blazers",
+      "summary": "76ers center Joel Embiid missed Monday's game against the Trail Blazers because of an illness.",
+      "published": "2026-11-24T03:27:49.000Z",
+      "updated": "2026-11-24T03:27:49.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1123/r1750407_600x400_3-2.jpg",
+        "alt": "Joel Embiid  [600x400]",
+        "credit": "Bill Streicher/Imagn Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50579074",
+      "slug": "siakam-scores-20-and-comes-up-big-late-as-pacers-snap-4-game-skid-with-1-50579074",
+      "title": "Siakam scores 20 and comes up big late as Pacers snap 4-game skid with 125-120 win over Thunder",
+      "summary": "Pascal Siakam scored 20 points, including a 3-pointer with 44.4 seconds to go, and Kelly Oubre Jr. added a season-high 20 points to help the Indiana Pacers snap a four-game losing streak with a 125-120 victory over the Oklahoma City Thunder on...",
+      "published": "2026-11-24T03:20:44.000Z",
+      "updated": "2026-11-24T03:20:44.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910038",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Indiana Pacers",
+        "Oklahoma City Thunder"
+      ],
+      "matchup": "Oklahoma City Thunder @ Indiana Pacers"
+    },
+    {
+      "id": "50579058",
+      "slug": "herro-scores-32-points-turner-adds-27-as-bucks-beat-raptors-116-111-to-s-50579058",
+      "title": "Herro scores 32 points, Turner adds 27 as Bucks beat Raptors 116-111 to snap 13-game losing streak",
+      "summary": "Tyler Herro scored 32 points, Myles Turner fouled out with a season-high 27 and the Milwaukee Bucks snapped a 13-game losing streak by beating the Toronto Raptors 116-111 on Monday night.",
+      "published": "2026-11-24T03:17:33.000Z",
+      "updated": "2026-11-24T03:17:33.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910039",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Toronto Raptors",
+        "Milwaukee Bucks"
+      ],
+      "matchup": "Milwaukee Bucks @ Toronto Raptors"
     },
     {
       "id": "50578774",
@@ -79,26 +235,6 @@
       },
       "teams": [
         "Memphis Grizzlies"
-      ],
-      "matchup": null
-    },
-    {
-      "id": "50577428",
-      "slug": "76ers-rule-out-joel-embiid-illness-for-game-vs-trail-blazers-50577428",
-      "title": "76ers rule out Joel Embiid (illness) for game vs. Trail Blazers",
-      "summary": "The 76ers said Joel Embiid will sit out Monday's game against the Trail Blazers because of an illness.",
-      "published": "2026-11-23T23:53:39.000Z",
-      "updated": "2026-11-23T23:53:39.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
-      "author": "Kris Rhim",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1123/r1750407_600x400_3-2.jpg",
-        "alt": "Joel Embiid  [600x400]",
-        "credit": "Bill Streicher/Imagn Images"
-      },
-      "teams": [
-        "Philadelphia 76ers"
       ],
       "matchup": null
     },
