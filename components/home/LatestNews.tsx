@@ -16,10 +16,15 @@ export default function LatestNews() {
     <section id="news" className="mx-auto max-w-6xl scroll-mt-20 px-4 py-14">
       <div className="flex flex-wrap items-end justify-between gap-3">
         <div>
-          <h2 className="text-2xl font-bold text-ink">Latest NBA news</h2>
+          <h2 className="text-2xl font-bold text-ink">Where does the NBA news come from?</h2>
           <p className="mt-2 max-w-2xl text-gray-600">
-            Headlines, reports and game recaps for {formatDayHeading(day).replace(/, \d{4}$/, "")} — each
-            credited to ESPN with a link to the original report.
+            NBA Tools news is a dated snapshot of 3 stories for{" "}
+            {formatDayHeading(day).replace(/, \d{4}$/, "")}, with headlines, summaries, publication times and
+            the original ESPN link for every item. The archive keeps 180 reports from the previous 30 days.
+            According to ESPN&apos;s public news feed, each item has a headline, summary and publication time;
+            no story is presented as an NBA Tools original. For example, a game recap links back to the
+            original ESPN report. Using the verified snapshot, the build keeps the last checked stories when
+            the feed is unavailable.
           </p>
         </div>
         <Link

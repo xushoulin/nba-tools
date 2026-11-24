@@ -256,6 +256,14 @@ export default function TodaysGames() {
               {timeZone ? ` · tip-off times in ${timeZone}` : ""}
               {phase === "ready" && snapshot ? " · auto-updates" : ""}
             </p>
+            <p className="mt-1 max-w-2xl text-xs text-gray-500">
+              Today&apos;s scoreboard is a live view of ESPN&apos;s public scoreboard feed in your browser, so
+              NBA Tools stores 0 game records. First, the widget groups games by your local date; then the
+              widget refreshes every 20 seconds during live games and every 60 seconds otherwise. According to
+              ESPN&apos;s feed, every game has a status of scheduled, live or final. For example, a matchup
+              without a local tip-off time still shows its status. We tested both refresh intervals in the
+              browser; using ESPN&apos;s public feed, the board stays current without a page reload.
+            </p>
           </div>
           <button
             type="button"

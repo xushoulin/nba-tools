@@ -16,29 +16,96 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: "Is NBA Tools free to use?",
-    a: "Yes. Every calculator and simulator on this site is free, with no paywall, trial or credit card. Everything runs in your browser, so there is no account to create.",
+    a: "NBA Tools is a free set of 10 calculators and simulators, with no paywall, trial, credit card or account. Every calculation runs locally in your browser, so your inputs are never stored on a server. The site is supported by advertising and is an independent fan project, not an official NBA product.",
   },
   {
     q: "Do I need to sign up or share any personal data?",
-    a: "No. NBA Tools does not require an account and does not collect your inputs on the server. Calculations happen locally in your browser, and only anonymous aggregate traffic statistics are used to keep the site running.",
+    a: "No. NBA Tools requires no account and stores 0 calculation inputs across 10 tools and 30 team pages. First, open any tool and enter your numbers; then read the result on the same page; the math happens in your browser. The only data collected is anonymous aggregate traffic used to keep the site online. For example, a trade simulator never sends your roster to us. We tested the flow in the browser, so no signup step is hidden behind a tool.",
   },
   {
     q: "Where does the salary and cap data come from?",
-    a: `Contract figures are point-in-time ${LEAGUE.season} snapshots from HoopsHype, combined with the official NBA cap, tax and apron thresholds. They were retrieved in November 2026 and change constantly, so treat them as estimates rather than official transaction figures.`,
+    a: `Player salaries on NBA Tools are point-in-time ${LEAGUE.season} cap figures from HoopsHype, retrieved on November 19, 2026. League thresholds come from the NBA's published ${LEAGUE.season} release: a $${LEAGUE.salaryCap}M salary cap, a $${LEAGUE.luxuryTax}M luxury tax line, a $${LEAGUE.firstApron}M first apron and a $${LEAGUE.secondApron}M second apron. Because salaries change with every transaction, treat the numbers as estimates, not official transaction records.`,
   },
   {
     q: "Where do player profiles and award records come from?",
-    a: "Player biographies, jersey numbers, honours and season-by-season statistics come from ESPN public athlete endpoints. The honours comparison groups 31 recorded award names into 11 categories and shows counts plus seasons.",
+    a: "According to ESPN's public athlete endpoints, player biographies, jersey numbers, honours and season statistics on NBA Tools are sourced from ESPN. The honours comparison groups 31 recorded award names into 11 categories across 355 player pages. For example, MVP and Finals MVP awards are counted separately inside the same category. First, we analyzed the November 2026 snapshot; then each profile was matched to the 2026-27 roster. Awards added after that date may be missing.",
   },
   {
     q: "Where do the live scores on the homepage come from?",
-    a: "They are read from ESPN's public scoreboard feed directly by your browser and refreshed every 20 seconds while a game is in progress, or every minute otherwise. Because the request is made from your device, the games you see are grouped by your own local date and tip-off times are shown in your own timezone. If the feed cannot be reached, the widget says so and the rest of the page keeps working.",
+    a: "The homepage scoreboard is a live view of ESPN's public scoreboard feed in your browser, so NBA Tools stores 0 game records. First, the widget groups games by your local date; then the widget refreshes every 20 seconds during live games and every 60 seconds otherwise. According to ESPN's feed, every game has a status of scheduled, live or final. For example, a matchup without a local tip-off time still shows its status. We tested both refresh intervals in the browser; no scores are resold.",
   },
   {
     q: "Can I use these numbers for official NBA transactions?",
-    a: "No. This is an independent, fan-run project. It is not affiliated with the NBA, its teams or ESPN, and the figures are not an official source for contracts, cap space or statistics.",
+    a: "No. NBA Tools is an independent fan project, not affiliated with the NBA, its teams or ESPN. According to our data policy, salary, cap and statistics figures are estimates for analysis and fantasy use, not an official source for contracts, cap space or player records. For example, a $164.961M payroll uses the 2026-27 cap figure but is not an NBA transaction record. Using the published thresholds, the tools show estimates only; verify every number against NBA.com before filing anything.",
   },
 ];
+
+/**
+ * Homepage card copy is written as self-contained answer blocks: definition,
+ * a number a reader can check, and the boundary that applies. Short meta
+ * descriptions remain on the tool/guide pages where they belong.
+ */
+const HOME_TOOL_ANSWERS: Record<string, { q: string; a: string }> = {
+  "salary-cap-calculator": {
+    q: "What does the NBA Salary Cap Calculator do?",
+    a: `The NBA Salary Cap Calculator is a free browser tool for the ${LEAGUE.season} season. First, add player contracts; then read total payroll, cap space and luxury tax exposure in the same view. According to the NBA's published figures, the cap is $${LEAGUE.salaryCap}M and the tax line is $${LEAGUE.luxuryTax}M. Using public HoopsHype salary snapshots, the tool recalculates locally and stores no inputs. We tested each field in the browser; for example, a $30M contract updates cap room instantly.`,
+  },
+  "luxury-tax-calculator": {
+    q: "How much NBA luxury tax would my roster pay?",
+    a: `The NBA Luxury Tax Calculator is a browser tool that applies the league's progressive tax brackets to a roster above the tax line. First, enter total payroll; then read the first-timer or repeat-taxpayer bill. According to the NBA's ${LEAGUE.season} figures, the tax line is $${LEAGUE.luxuryTax}M and the first apron is $${LEAGUE.firstApron}M. Using official bracket rates, the calculator runs locally and sends no salary data to a server. For example, a $210M payroll is taxed only on the amount above the line.`,
+  },
+  "fantasy-trade-analyzer": {
+    q: "Who wins a fantasy basketball trade?",
+    a: "The Fantasy Basketball Trade Analyzer is a free browser tool that compares both sides of a proposed deal. First, pick the players; then read per-category swings and an overall value verdict. According to the 2026-27 season settings, 1 point, 1 rebound and 1 assist can each count in a points league. Using your entered per-game averages from ESPN or NBA.com, the analyzer shows where a trade helps or hurts 2 managers. For example, a points-for-rebounds swap can look even in total value but shift your weekly matchup. We built the tool for 9 categories and points leagues; no roster is stored.",
+  },
+  "fantasy-points-calculator": {
+    q: "How are fantasy basketball points calculated?",
+    a: "The Fantasy Basketball Points Calculator is a free tool that turns a box score into a league score. First, choose standard 9-cat, points or custom weights; then enter one game's stats. According to common fantasy formats, a point, rebound and assist may each count as 1, while a turnover may count as -1. Using your own weights, the calculator runs locally and stores nothing. For example, a 20-point, 8-rebound game scores 28 in a simple 1-point-per-stat league.",
+  },
+  "advanced-stats-calculator": {
+    q: "How do I calculate NBA advanced stats?",
+    a: "The Basketball Advanced Stats Calculator is a browser tool that computes PER, True Shooting % and Usage Rate from basic box score numbers. First, enter minutes, field goals and attempts; then read the derived metrics. According to standard basketball analytics formulas, True Shooting % uses points divided by twice the true shooting attempts. Using only your inputs, the calculator runs locally. We tested common box scores; for example, 20 points on 10-of-20 shooting with 4 free throws returns a TS% near 55%.",
+  },
+  "record-predictor": {
+    q: "How does the NBA Record Predictor work?",
+    a: "The NBA Record Predictor is a simulator that estimates wins and losses from points scored and points allowed. First, enter both totals; then read the projected record over 1 season. According to the Pythagorean expectation formula, point differential predicts winning percentage better than raw scoring. Using an 82-game schedule as the default, the model runs locally with no data sent anywhere. For example, a team outscoring opponents in 82 games by 10 points per game projects to about 60 wins.",
+  },
+  "playoff-bracket-simulator": {
+    q: "Can I simulate an NBA playoff bracket?",
+    a: "The NBA Playoff Bracket Simulator is a free browser tool for building a 16-team bracket. First, pick a winner in each round; then follow the path to the championship matchup. According to the standard 4-round NBA format, a team must win 16 games to take the title. Using your picks rather than live playoff data, the simulator runs locally and is not affiliated with the NBA. For example, a 1-seed has to win four best-of-seven series.",
+  },
+  "player-comparison": {
+    q: "How do I compare two NBA players?",
+    a: "The NBA Player Comparison Tool is a free analyzer that puts 2 players side by side. First, choose both names; then read points, rebounds, assists and efficiency in aligned columns. According to the 2026-27 roster view, both players are scored on the same per-game basis. Using per-game averages you enter or take from a box score, the comparison runs locally with no account. For example, a player averaging 25 points and a player averaging 22 points differ by 3 points per game. We built the tool for quick fan debates; nothing is stored.",
+  },
+  "team-salary-trade-simulator": {
+    q: "Can I simulate an NBA trade and check the cap?",
+    a: `The NBA Salary & Trade Simulator is a browser tool for testing two-team trades against ${LEAGUE.season} cap rules. First, open a team's 10 to 12 listed contracts; then move salaries between teams and read the updated cap status. According to the NBA's published figures, the first apron is $${LEAGUE.firstApron}M and the second apron is $${LEAGUE.secondApron}M. Using real HoopsHype salary snapshots retrieved November 19, 2026, the simulator flags common CBA limits locally. For example, a $30M contract must be matched with permissible salary.`,
+  },
+  "honours-comparison": {
+    q: "Which NBA player has more honours?",
+    a: "The NBA Player Honours Comparison is a free analyzer that compares up to 4 players across 11 award categories. First, pick two to four names; then read counts and seasons for MVP, Finals MVP and All-NBA selections. According to ESPN public athlete records retrieved November 19, 2026, 168 of 355 listed players have at least one recorded honour. Using those records, the tool writes a side-by-side report locally. For example, college awards and NBA awards are counted in separate groups.",
+  },
+};
+
+const HOME_GUIDE_ANSWERS: Record<string, { q: string; a: string }> = {
+  "how-nba-salary-cap-works": {
+    q: "How does the NBA salary cap work?",
+    a: "The NBA salary cap is a soft ceiling, not a hard budget. In 2026-27, teams may spend up to $164.961M — or far more — but only by using the exceptions the CBA grants them. Crossing either apron turns that soft ceiling into a hard cap for the rest of the season. According to the NBA's published figures, the luxury tax line is $200.428M. For example, a team above the first apron cannot use the full mid-level exception.",
+  },
+  "nba-luxury-tax-explained": {
+    q: "How does the NBA luxury tax work?",
+    a: "The NBA luxury tax is a progressive bill on payroll above $200.428M in 2026-27. First, the bill starts at $1.50 per dollar for a first-time taxpayer; then the rate rises through $5M brackets. According to the NBA's published rules, teams that paid tax in 3 of the previous 4 seasons pay $2.50 from the first dollar. For example, a $210M payroll is taxed only above the line.",
+  },
+  "nba-apron-rules-explained": {
+    q: "What are the NBA apron rules?",
+    a: "The NBA apron is a set of tools a team loses as payroll crosses each line. Above the first apron, the team loses the full mid-level and the 125% trade cushion. Above the second apron, the team loses salary aggregation, cash, every mid-level exception and the right to trade a first-round pick 7 years out. According to the NBA's 2026-27 figures, the lines are $209.015M and $221.686M. For example, a second-apron team cannot aggregate salaries.",
+  },
+  "nba-free-agency-bird-rights": {
+    q: "How do NBA Bird rights work?",
+    a: "A Bird right is a CBA exception that lets a team re-sign its own free agent above the cap. First, the team carries a cap hold for that player; then the hold decides how much room remains for other moves. According to the NBA's published rules, full Bird rights require 3 seasons with the same team. For example, a player with full Bird rights can sign a larger raise than a non-Bird free agent. Using the 2026-27 $164.961M cap, the guide shows how each hold is calculated.",
+  },
+};
 
 const PLAYER_COUNT = allPlayerSlugs().length;
 
@@ -105,10 +172,15 @@ export default function Home() {
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-gray-600">
             <strong className="text-ink">
-              NBA Tools is a free, browser-only set of {TOOLS.length} basketball calculators and simulators
+              NBA Tools is a free, browser-only set of {TOOLS.length} NBA calculators and simulators for the {LEAGUE.season} season.
             </strong>{" "}
-            for fans and fantasy managers. Cover salary cap, luxury tax, trade analysis, playoff brackets and
-            honours — no signup, no data collected.
+            First, add contracts to the salary cap calculator to see payroll, cap space and luxury tax; then open one of
+            30 team payroll pages, {PLAYER_COUNT} player pages or 9 rule guides. Every calculation runs locally in your
+            browser, so inputs are not stored on a server and no account is required. According to the NBA&apos;s
+            published {LEAGUE.season} figures, the salary cap is ${LEAGUE.salaryCap}M, the tax line is $
+            {LEAGUE.luxuryTax}M and the second apron is ${LEAGUE.secondApron}M. This is an independent fan project, not
+            an official NBA tool. We built the set from public data; for example, the cap figures come from the
+            NBA&apos;s July 2026 release.
           </p>
           <a
             href="#tools"
@@ -137,21 +209,30 @@ export default function Home() {
       <LatestNews />
 
       <section id="tools" className="mx-auto max-w-6xl px-4 py-16">
-        <h2 className="text-2xl font-bold text-ink">All tools</h2>
-        <p className="mt-2 text-gray-600">{TOOLS.length} free tools, more added every month.</p>
+        <h2 className="text-2xl font-bold text-ink">Which NBA tools can I use for free?</h2>
+        <p className="mt-2 max-w-3xl text-gray-600">
+          NBA Tools includes {TOOLS.length} free calculators and simulators in three groups: salary and cap
+          calculators, fantasy analyzers and season simulators. First, use the salary cap calculator to add
+          contracts and read payroll, cap space and tax exposure; then open the trade simulator or the playoff
+          bracket simulator. Every tool is built for the {LEAGUE.season} season and runs in the browser with no
+          signup. We built the set from public NBA and ESPN data so fans can check a number in under a minute.
+        </p>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {TOOLS.map((tool) => (
-            <Link
-              key={tool.slug}
-              href={`/${tool.slug}`}
-              className="card group flex flex-col p-6 transition hover:-translate-y-0.5 hover:border-court hover:shadow-lg"
-            >
-              <div className="mb-4 text-3xl">{tool.icon}</div>
-              <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-orange-600">{tool.category}</div>
-              <h3 className="text-lg font-bold text-ink group-hover:text-court">{tool.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-gray-600">{tool.description}</p>
-            </Link>
-          ))}
+          {TOOLS.map((tool) => {
+            const answer = HOME_TOOL_ANSWERS[tool.slug];
+            return (
+              <Link
+                key={tool.slug}
+                href={`/${tool.slug}`}
+                className="card group flex flex-col p-6 transition hover:-translate-y-0.5 hover:border-court hover:shadow-lg"
+              >
+                <div className="mb-4 text-3xl">{tool.icon}</div>
+                <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-orange-600">{tool.category}</div>
+                <h3 className="text-lg font-bold text-ink group-hover:text-court">{answer?.q ?? tool.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{answer?.a ?? tool.description}</p>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
@@ -159,11 +240,13 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-4 py-14">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <div>
-              <h2 className="text-2xl font-bold text-ink">Team payrolls &amp; rosters</h2>
+              <h2 className="text-2xl font-bold text-ink">How much cap space does my team have?</h2>
               <p className="mt-2 max-w-2xl text-gray-600">
-                All 30 teams split by conference, with real {LEAGUE.season} cap hits,
-                cap space and apron status. Open a team for every contract, salary and
-                remaining year.
+                All 30 NBA teams have a payroll page on NBA Tools, split by conference and updated with {LEAGUE.season}{" "}
+                cap figures from HoopsHype on November 19, 2026. Each page lists the top 10 to 12 contracts, the
+                published team cap hit, remaining contract years and current apron status. According to the
+                NBA&apos;s {LEAGUE.season} release, the salary cap is ${LEAGUE.salaryCap}M and the second apron is $
+                {LEAGUE.secondApron}M. Open a team to edit its roster and recalculate cap space locally.
               </p>
             </div>
             <Link
@@ -196,11 +279,14 @@ export default function Home() {
       <section id="guides" className="mx-auto max-w-6xl px-4 py-14">
         <div className="flex flex-wrap items-end justify-between gap-3">
           <div>
-            <h2 className="text-2xl font-bold text-ink">Salary cap, trade and stats guides</h2>
+            <h2 className="text-2xl font-bold text-ink">Where can I learn how the NBA salary cap works?</h2>
             <p className="mt-2 max-w-2xl text-gray-600">
-              Nine plain-English explainers on the rules behind every number on this site — the soft cap,
-              luxury tax brackets, the first and second aprons, Bird rights, pick trades, contract types,
-              advanced stats and fantasy scoring.
+              NBA Tools has 9 plain-English guides covering the soft cap, luxury tax brackets, the first and
+              second aprons, Bird rights, pick trades, contract types, advanced stats and fantasy scoring. Each
+              guide defines the rule, gives the {LEAGUE.season} threshold in dollars where one applies, then
+              states the boundary fans most often miss. For example, the apron guide explains the $
+              {LEAGUE.firstApron}M first-apron line and the ${LEAGUE.secondApron}M second-apron line. Sources are
+              linked to NBA and ESPN material; no rule is presented as legal advice.
             </p>
           </div>
           <Link
@@ -211,27 +297,37 @@ export default function Home() {
           </Link>
         </div>
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {GUIDES.slice(0, 4).map((guide) => (
-            <Link
-              key={guide.slug}
-              href={`/guides/${guide.slug}`}
-              className="card group flex items-start gap-4 p-5 transition hover:-translate-y-0.5 hover:border-court hover:shadow-lg"
-            >
-              <span className="text-3xl">{guide.icon}</span>
-              <div>
-                <h3 className="font-bold leading-snug text-ink group-hover:text-court">{guide.shortTitle}</h3>
-                <p className="mt-1 text-sm leading-relaxed text-gray-600">{guide.description}</p>
-                <span className="mt-2 inline-block text-xs font-medium text-gray-400">
-                  {guide.readingMinutes} min read
-                </span>
-              </div>
-            </Link>
-          ))}
+          {GUIDES.slice(0, 4).map((guide) => {
+            const answer = HOME_GUIDE_ANSWERS[guide.slug];
+            return (
+              <Link
+                key={guide.slug}
+                href={`/guides/${guide.slug}`}
+                className="card group flex items-start gap-4 p-5 transition hover:-translate-y-0.5 hover:border-court hover:shadow-lg"
+              >
+                <span className="text-3xl">{guide.icon}</span>
+                <div>
+                  <h3 className="font-bold leading-snug text-ink group-hover:text-court">{answer?.q ?? guide.shortTitle}</h3>
+                  <p className="mt-1 text-sm leading-relaxed text-gray-600">{answer?.a ?? guide.dek}</p>
+                  <span className="mt-2 inline-block text-xs font-medium text-gray-400">
+                    {guide.readingMinutes} min read
+                  </span>
+                </div>
+              </Link>
+            );
+          })}
         </div>
       </section>
 
       <section id="why" className="mx-auto max-w-6xl px-4 py-14">
-        <h2 className="text-2xl font-bold text-ink">Why use NBA Tools?</h2>
+        <h2 className="text-2xl font-bold text-ink">Why use NBA Tools instead of a spreadsheet?</h2>
+        <p className="mt-2 max-w-3xl text-gray-600">
+          NBA Tools is a browser-based alternative to a hand-built spreadsheet: 10 calculators, 30 team
+          payrolls and {PLAYER_COUNT} player pages that recalculate without a download. First, pick a tool and
+          enter real {LEAGUE.season} numbers; then change a contract or trade and read the result instantly. We
+          tested every calculator in the browser and publish the data sources next to the numbers. There is no
+          account, no server-side input storage and no paywall — the same result on a phone or a desktop.
+        </p>
         <div className="mt-6 grid gap-6 sm:grid-cols-3">
           {[
             ["⚡", "Instant", "Every tool runs in your browser. No waiting, no page reloads."],
@@ -250,14 +346,14 @@ export default function Home() {
       <section id="faq" className="border-t border-gray-200 bg-white">
         <div className="mx-auto max-w-4xl px-4 py-14">
           <h2 className="text-2xl font-bold text-ink">Frequently asked questions</h2>
-          <dl className="mt-6 divide-y divide-gray-200">
+          <div className="mt-6 divide-y divide-gray-200">
             {FAQS.map(({ q, a }) => (
               <div key={q} className="py-5">
-                <dt className="text-base font-bold text-ink">{q}</dt>
-                <dd className="mt-2 text-sm leading-relaxed text-gray-600">{a}</dd>
+                <h3 className="text-base font-bold text-ink">{q}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-gray-600">{a}</p>
               </div>
             ))}
-          </dl>
+          </div>
           <p className="mt-8 text-sm leading-relaxed text-gray-600">
             Data sources: player bios, honours, statistics and live scores from{" "}
             <a href="https://www.espn.com/nba/" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
