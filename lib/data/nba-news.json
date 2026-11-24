@@ -4,9 +4,93 @@
     "url": "https://www.espn.com/nba/",
     "feed": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=50"
   },
-  "generatedAt": "2026-11-24T08:51:12.734Z",
-  "count": 46,
+  "generatedAt": "2026-11-24T20:57:39.432Z",
+  "count": 49,
   "items": [
+    {
+      "id": "50028196",
+      "slug": "nba-buzz-latest-on-trades-news-roster-moves-and-intel-for-the-2026-27-se-50028196",
+      "title": "NBA buzz: Latest on trades, news, roster moves and intel for the 2026-27 season",
+      "summary": "The NBA is back. The buzz never left. Bookmark this page for the latest news, rumblings and analysis from ESPN's insiders.",
+      "published": "2026-11-24T18:12:46.000Z",
+      "updated": "2026-11-24T18:12:46.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
+      "author": "ESPN staff",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1124/r1750646_608x342_16-9.jpg",
+        "alt": "Nikola Topic of the Oklahoma City Thunder grabs a rebound from Brook Lopez of the LA Clippers with Isaiah Hartenstein during the first half at Intuit Dome on Nov. 13, 2026, in Inglewood, California.",
+        "credit": "Photo by Harry How/Getty Images"
+      },
+      "teams": [],
+      "matchup": null
+    },
+    {
+      "id": "50584000",
+      "slug": "sources-wolves-donte-divincenzo-eyes-new-years-for-season-debut-50584000",
+      "title": "Sources: Wolves' Donte DiVincenzo eyes New Year's for season debut",
+      "summary": "The Timberwolves said Donte DiVincenzo has been cleared for basketball activities after Achilles surgery.",
+      "published": "2026-11-24T17:38:32.000Z",
+      "updated": "2026-11-24T17:38:32.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2024/1014/r1400281_600x400_3-2.jpg",
+        "alt": "Donte DiVincenzo [600x400]",
+        "credit": "Vincent Carchietta/Imagn Images"
+      },
+      "teams": [
+        "Minnesota Timberwolves"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50544296",
+      "slug": "nba-rookie-rankings-10-standouts-in-a-star-studded-class-50544296",
+      "title": "NBA Rookie Rankings: 10 standouts in a star-studded class",
+      "summary": "Our first edition of rookie rankings features 10 players standing out early from a strong 2026 draft class.",
+      "published": "2026-11-24T11:45:41.000Z",
+      "updated": "2026-11-24T11:45:41.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50544296/nba-rookie-rankings-early-stats",
+      "author": "Zach Kram",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1120/261124_nba_rookie-rankings_16x9_608x342.jpg",
+        "alt": "261124_nba_rookie-rankings",
+        "credit": "ESPN Illustration"
+      },
+      "teams": [
+        "LA Clippers",
+        "Cleveland Cavaliers",
+        "Atlanta Hawks",
+        "Oklahoma City Thunder",
+        "Sacramento Kings",
+        "Washington Wizards",
+        "Utah Jazz",
+        "Chicago Bulls",
+        "Golden State Warriors",
+        "Memphis Grizzlies"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50572252",
+      "slug": "brandin-podziemski-scores-18-points-as-warriors-hold-of-celtics-88-87-to-50572252",
+      "title": "Brandin Podziemski scores 18 points as Warriors hold of Celtics 88-87 to snap five-game losing skid",
+      "summary": "Brandin Podziemski had 18 points and seven rebounds and the Golden State Warriors snapped a five-game losing streak by holding off Boston for an 88-87 win Sunday night, sending the Celtics to their first four-game skid in five years.",
+      "published": "2026-11-24T09:15:35.000Z",
+      "updated": "2026-11-24T09:15:35.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910035",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Golden State Warriors",
+        "Boston Celtics"
+      ],
+      "matchup": "Boston Celtics @ Golden State Warriors"
+    },
     {
       "id": "50578664",
       "slug": "spurs-rule-victor-wembanyama-deaaron-fox-out-90-minutes-before-win-over-50578664",
@@ -402,23 +486,6 @@
         "San Antonio Spurs"
       ],
       "matchup": null
-    },
-    {
-      "id": "50572252",
-      "slug": "brandin-podziemski-scores-18-points-as-warriors-hold-of-celtics-88-87-to-50572252",
-      "title": "Brandin Podziemski scores 18 points as Warriors hold of Celtics 88-87 to snap five-game losing skid",
-      "summary": "Brandin Podziemski had 18 points and seven rebounds and the Golden State Warriors snapped a five-game losing streak by holding off Boston for an 88-87 win Sunday night, sending the Celtics to their first four-game skid in five years.",
-      "published": "2026-11-23T11:57:04.000Z",
-      "updated": "2026-11-23T11:57:04.000Z",
-      "kind": "Recap",
-      "url": "https://www.espn.com/nba/recap?gameId=401910035",
-      "author": null,
-      "image": null,
-      "teams": [
-        "Golden State Warriors",
-        "Boston Celtics"
-      ],
-      "matchup": "Boston Celtics @ Golden State Warriors"
     },
     {
       "id": "50570668",
