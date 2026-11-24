@@ -4,7 +4,7 @@ import TeamLogo from "@/components/teams/TeamLogo";
 import TodaysGames from "@/components/home/TodaysGames";
 import LatestNews from "@/components/home/LatestNews";
 import { SITE_NAME, SITE_URL, TOOLS } from "@/lib/tools";
-import { INITIAL_TEAMS, LEAGUE } from "@/lib/salary-data";
+import { INITIAL_TEAMS, LEAGUE, SOURCE_URLS } from "@/lib/salary-data";
 import { allPlayerSlugs } from "@/lib/player-profiles";
 import { GUIDES } from "@/lib/guides";
 
@@ -146,6 +146,24 @@ const jsonLd = {
     },
     {
       "@type": "FAQPage",
+      citation: [
+        {
+          "@type": "CreativeWork",
+          name: "NBA sets salary cap for 2026-27 season at $164.961 million",
+          url: SOURCE_URLS.nbaCapRelease,
+          datePublished: "2026-07-01",
+        },
+        {
+          "@type": "CreativeWork",
+          name: "NBA Team Payroll — HoopsHype",
+          url: SOURCE_URLS.hoopshypeTeams,
+        },
+        {
+          "@type": "CreativeWork",
+          name: "NBA — ESPN",
+          url: SOURCE_URLS.espnNba,
+        },
+      ],
       mainEntity: FAQS.map(({ q, a }) => ({
         "@type": "Question",
         name: q,
@@ -363,7 +381,17 @@ export default function Home() {
             <a href="https://www.hoopshype.com/salaries/" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
               HoopsHype
             </a>
-            ; cap thresholds from the NBA&apos;s published {LEAGUE.season} figures. Last retrieved November 2026.
+            ; cap, tax and apron thresholds from the{" "}
+            <a
+              href={SOURCE_URLS.nbaCapRelease}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-court hover:underline"
+            >
+              NBA&apos;s official {LEAGUE.season} salary cap release
+            </a>{" "}
+            ({SOURCE_URLS.nbaCapReleaseDate}). Salary snapshots retrieved November 19, 2026; league figures
+            published July 1, 2026.
           </p>
         </div>
       </section>

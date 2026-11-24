@@ -69,7 +69,8 @@ export default function SalaryBoard({ teams, onUpdatePlayer, onResetData }: Prop
 
       <p className="rounded-lg border border-gray-200 bg-gray-50 px-4 py-3 text-xs leading-relaxed text-gray-600">
         <strong className="text-ink">Data source:</strong> player salaries are real {DATA_META.season} cap figures from{" "}
-        {DATA_META.source}, pulled {DATA_META.retrieved}. League thresholds are the official {DATA_META.season} NBA numbers.
+        <a href={DATA_META.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">{DATA_META.source}</a>, pulled {DATA_META.retrieved}. League thresholds are from the{" "}
+        <a href={DATA_META.leagueSourceUrl} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">NBA&apos;s official {DATA_META.season} release</a> (July 1, 2026).
         Only the top contracts per team are listed, so the roster total you see runs slightly below the published team cap hit
         (shown on each card). Everything is editable — changing a salary re-runs the apron status instantly.
       </p>

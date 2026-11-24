@@ -19,7 +19,7 @@ export default function About() {
       </p>
       <h2 className="pt-2 text-xl font-bold text-ink">Where the data comes from</h2>
       <p>
-        Salary and contract figures are 2026-27 figures from HoopsHype together with official NBA league thresholds. Player bios, jersey numbers, awards and season-by-season stats come from ESPN&rsquo;s public athlete data. Figures are point-in-time snapshots used for estimation — see the <a href="/disclaimer" className="text-court hover:underline">disclaimer</a>.
+        League thresholds for 2026-27 — the $164.961M salary cap, $200.428M tax level, $209.015M first apron and $221.686M second apron — are from the <a href="https://www.nba.com/news/nba-salary-cap-2026-27-season" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">NBA&rsquo;s official salary cap release</a>, published July 1, 2026. Player and team salary snapshots were retrieved from <a href="https://hoopshype.com/salaries/teams/" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">HoopsHype&rsquo;s NBA team payrolls</a> on November 19, 2026. Player bios, jersey numbers, awards and season-by-season stats come from <a href="https://www.espn.com/nba/" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">ESPN&rsquo;s public NBA data</a>. Figures are point-in-time snapshots used for estimation — see the <a href="/disclaimer" className="text-court hover:underline">disclaimer</a>.
       </p>
       <h2 className="pt-2 text-xl font-bold text-ink">Independence</h2>
       <p>

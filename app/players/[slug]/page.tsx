@@ -7,6 +7,7 @@ import PlayerFormSection from "@/components/players/PlayerFormSection";
 import {
   INITIAL_TEAMS,
   LEAGUE,
+  SOURCE_URLS,
   STATUS_COLOR,
   STATUS_LABEL,
   type Team,
@@ -644,10 +645,19 @@ export default async function PlayerPage({ params }: Params) {
         </div>
 
         <p className="mt-6 text-xs leading-relaxed text-gray-400">
-          Bio, awards, jersey number and season stats: {PLAYER_META.source}, retrieved{" "}
-          {PLAYER_META.retrieved}. Salary and contract terms: HoopsHype 2026-27, retrieved{" "}
-          {PLAYER_META.retrieved}. Cap thresholds are official {LEAGUE.season} NBA figures. This
-          site is an independent fan project, not affiliated with the NBA or the {full}.
+          Bio, awards, jersey number and season stats:{" "}
+          <a href={SOURCE_URLS.espnNba} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            {PLAYER_META.source}
+          </a>
+          , retrieved {PLAYER_META.retrieved}. Salary and contract terms:{" "}
+          <a href={SOURCE_URLS.hoopshypeSalaries} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            HoopsHype {LEAGUE.season}
+          </a>
+          , retrieved {PLAYER_META.retrieved}. Cap, tax and apron thresholds are from the{" "}
+          <a href={SOURCE_URLS.nbaCapRelease} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            NBA&apos;s official {LEAGUE.season} release
+          </a>{" "}
+          (July 1, 2026). This site is an independent fan project, not affiliated with the NBA or the {full}.
         </p>
       </section>
     </main>

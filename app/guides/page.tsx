@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { GUIDES } from "@/lib/guides";
+import { SOURCE_URLS } from "@/lib/salary-data";
 import { SITE_URL } from "@/lib/tools";
 
 export const metadata: Metadata = {
@@ -133,8 +134,15 @@ export default function GuidesIndex() {
           can test a claim instead of trusting it.
         </p>
         <p className="mt-3 text-sm leading-7 text-gray-700">
-          Figures come from the NBA&rsquo;s published 2026-27 thresholds and payroll snapshots retrieved from
-          HoopsHype in November 2026. NBA Tools is an independent project and is not affiliated with the NBA or
+          Threshold figures come from the{" "}
+          <a href={SOURCE_URLS.nbaCapRelease} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            NBA&rsquo;s official 2026-27 salary cap release
+          </a>{" "}
+          (July 1, 2026); payroll snapshots were retrieved from{" "}
+          <a href={SOURCE_URLS.hoopshypeTeams} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            HoopsHype
+          </a>{" "}
+          on November 19, 2026. NBA Tools is an independent project and is not affiliated with the NBA or
           its teams; see the <Link href="/disclaimer" className="text-court hover:underline">disclaimer</Link>.
         </p>
       </section>

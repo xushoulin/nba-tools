@@ -1,6 +1,6 @@
 import { GUIDES } from "@/lib/guides";
 import { SITE_NAME, SITE_URL, TOOLS } from "@/lib/tools";
-import { INITIAL_TEAMS } from "@/lib/salary-data";
+import { INITIAL_TEAMS, SOURCE_URLS } from "@/lib/salary-data";
 import { allPlayerSlugs } from "@/lib/player-profiles";
 
 export const dynamic = "force-static";
@@ -55,10 +55,16 @@ ${GUIDES.map((g) => `- ${g.title}: ${SITE_URL}/guides/${g.slug}`).join("\n")}
 
 ## Data sources
 
-Contract and salary figures are point-in-time 2026-27 snapshots from HoopsHype and
-official NBA cap thresholds. Player bios, jersey numbers, awards and career stats
-come from ESPN public athlete endpoints. Data was retrieved in November 2026 and
-can change; figures are estimates, not official transactions.
+League salary cap, tax, minimum salary and apron thresholds for 2026-27 are from
+the NBA official release published July 1, 2026:
+${SOURCE_URLS.nbaCapRelease}
+Player salaries are point-in-time 2026-27 snapshots retrieved November 19, 2026
+from HoopsHype team payrolls:
+${SOURCE_URLS.hoopshypeTeams}
+Player bios, jersey numbers, awards and career stats come from ESPN public athlete
+endpoints: ${SOURCE_URLS.espnNba}
+Figures change with transactions and are estimates, not official transactions.
+Verify thresholds and salaries against the three sources above before reuse.
 
 ## Contact
 

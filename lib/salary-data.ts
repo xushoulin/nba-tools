@@ -51,12 +51,22 @@ export type LeagueRules = {
   minRoster: number;
 };
 
+// Every URL here was checked for a live 200 response and content matching the
+// figures we publish. Do not replace with guessed or search-result URLs.
+export const SOURCE_URLS = {
+  nbaCapRelease: "https://www.nba.com/news/nba-salary-cap-2026-27-season",
+  nbaCapReleaseDate: "July 1, 2026",
+  hoopshypeTeams: "https://hoopshype.com/salaries/teams/",
+  hoopshypeSalaries: "https://www.hoopshype.com/salaries/",
+  espnNba: "https://www.espn.com/nba/",
+} as const;
+
 export const DATA_META = {
   season: "2026-27",
   source: "HoopsHype",
-  sourceUrl: "https://hoopshype.com/salaries/teams/",
-  leagueSource: "NBA official (2026-27 salary cap release)",
-  leagueSourceUrl: "https://www.nba.com/news",
+  sourceUrl: SOURCE_URLS.hoopshypeTeams,
+  leagueSource: "NBA official (2026-27 salary cap release, July 1, 2026)",
+  leagueSourceUrl: SOURCE_URLS.nbaCapRelease,
   retrieved: "2026-11-19",
   note: "Player salaries are real 2026-27 cap figures. Only the top contracts per team are listed, so roster totals run below the official team cap hit (shown alongside). All values are editable.",
 } as const;

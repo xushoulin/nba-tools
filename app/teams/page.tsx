@@ -5,6 +5,7 @@ import {
   DATA_META,
   INITIAL_TEAMS,
   LEAGUE,
+  SOURCE_URLS,
   STATUS_COLOR,
   STATUS_LABEL,
 } from "@/lib/salary-data";
@@ -182,7 +183,8 @@ export default function TeamsPage() {
           <h2 className="mb-2 font-bold text-ink">About this data</h2>
           <p>
             Team cap hits and player salaries are real {DATA_META.season} figures sourced
-            from {DATA_META.source} ({DATA_META.retrieved}). Only the largest contracts
+            from <a href={DATA_META.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">{DATA_META.source}</a> ({DATA_META.retrieved}). Cap, tax and apron
+            thresholds come from the <a href={DATA_META.leagueSourceUrl} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">NBA&apos;s official release</a> (July 1, 2026). Only the largest contracts
             on each roster are listed, so the sum of listed salaries runs slightly below
             the official team cap hit shown on each card — the gap is made up of
             minimum-salary players, incomplete roster charges and dead money. All figures

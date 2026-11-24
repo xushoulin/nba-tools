@@ -3,6 +3,7 @@ import Link from "next/link";
 import NewsDayList from "@/components/news/NewsDayList";
 import { formatDateTimeET, formatTimeET, newsDays, NEWS_GENERATED_AT, NEWS_ITEMS, NEWS_SOURCE } from "@/lib/news";
 import { SITE_URL } from "@/lib/tools";
+import { SOURCE_URLS } from "@/lib/salary-data";
 
 export const metadata: Metadata = {
   title: "NBA News Today — Daily Headlines, Recaps and Sources",
@@ -130,8 +131,15 @@ export default function NewsIndex() {
               </li>
               <li>
                 <strong className="text-ink">Cap and payroll figures</strong> in the context boxes on story
-                pages come from the HoopsHype salary snapshot and the NBA&apos;s published 2026-27 thresholds —
-                the same numbers used by the{" "}
+                pages come from the{" "}
+                <a href={SOURCE_URLS.hoopshypeTeams} target="_blank" rel="noopener noreferrer" className="font-semibold text-court hover:underline">
+                  HoopsHype salary snapshot
+                </a>{" "}
+                (retrieved November 19, 2026) and the{" "}
+                <a href={SOURCE_URLS.nbaCapRelease} target="_blank" rel="noopener noreferrer" className="font-semibold text-court hover:underline">
+                  NBA&apos;s official 2026-27 thresholds
+                </a>{" "}
+                (published July 1, 2026) — the same numbers used by the{" "}
                 <Link href="/salary-cap-calculator" className="font-semibold text-court hover:underline">
                   salary cap calculator
                 </Link>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { relatedTools, SITE_URL } from "@/lib/tools";
 import { guidesForTool } from "@/lib/guides";
+import { DATA_META, SOURCE_URLS } from "@/lib/salary-data";
 
 type Faq = { q: string; a: string };
 type Step = { title: string; body: string };
@@ -91,6 +92,25 @@ export default function ToolShell({ title, description, icon, slug, children, st
             </details>
           ))}
         </div>
+      </section>
+
+      <section className="mt-10 border-t border-gray-200 pt-6">
+        <h2 className="text-lg font-bold text-ink">Sources and methodology</h2>
+        <p className="mt-2 text-xs leading-relaxed text-gray-500">
+          Where this tool uses league thresholds, those figures come from the{" "}
+          <a href={DATA_META.leagueSourceUrl} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            NBA&apos;s official 2026-27 salary cap release
+          </a>{" "}
+          (July 1, 2026). Salary snapshots come from{" "}
+          <a href={DATA_META.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            HoopsHype
+          </a>{" "}
+          (retrieved November 19, 2026). Player, news and box-score data come from{" "}
+          <a href={SOURCE_URLS.espnNba} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            ESPN
+          </a>
+          . Every calculation runs locally in your browser; results are estimates, not official figures.
+        </p>
       </section>
 
       {/* Related guides */}

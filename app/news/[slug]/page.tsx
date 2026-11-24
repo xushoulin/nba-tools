@@ -14,7 +14,7 @@ import {
   relatedNews,
   teamsForItem,
 } from "@/lib/news";
-import { LEAGUE, STATUS_COLOR, STATUS_LABEL } from "@/lib/salary-data";
+import { LEAGUE, SOURCE_URLS, STATUS_COLOR, STATUS_LABEL } from "@/lib/salary-data";
 import { teamSummary } from "@/lib/team-view";
 import { SITE_NAME, SITE_URL } from "@/lib/tools";
 
@@ -276,7 +276,16 @@ export default async function NewsArticlePage({ params }: { params: Promise<{ sl
                 <span aria-hidden> ↗</span>
                 <span className="sr-only"> (opens in a new tab)</span>
               </a>
-              , measured against the NBA&apos;s announced thresholds — the same numbers behind the{" "}
+              , measured against the{" "}
+              <a
+                href={SOURCE_URLS.nbaCapRelease}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-court hover:underline"
+              >
+                NBA&apos;s announced {LEAGUE.season} thresholds
+              </a>{" "}
+              — the same numbers behind the{" "}
               <Link href="/salary-cap-calculator" className="font-semibold text-court hover:underline">
                 salary cap calculator
               </Link>

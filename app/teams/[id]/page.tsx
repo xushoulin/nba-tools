@@ -384,9 +384,15 @@ export default async function TeamPage({ params }: Params) {
         </div>
 
         <p className="mt-6 text-xs leading-relaxed text-gray-400">
-          Source: {DATA_META.source}, retrieved {DATA_META.retrieved}. Cap and tax
-          thresholds are official {LEAGUE.season} NBA figures. This site is an independent
-          fan project, not affiliated with the NBA or the {full}.
+          Source:{" "}
+          <a href={DATA_META.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            {DATA_META.source}
+          </a>
+          , retrieved {DATA_META.retrieved}. Cap, tax and apron thresholds are from the{" "}
+          <a href={DATA_META.leagueSourceUrl} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            NBA&apos;s official {LEAGUE.season} release
+          </a>{" "}
+          (July 1, 2026). This site is an independent fan project, not affiliated with the NBA or the {full}.
         </p>
       </section>
     </main>
