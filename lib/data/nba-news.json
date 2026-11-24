@@ -4,9 +4,286 @@
     "url": "https://www.espn.com/nba/",
     "feed": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=50"
   },
-  "generatedAt": "2026-11-23T10:08:29.616Z",
-  "count": 30,
+  "generatedAt": "2026-11-24T03:13:43.233Z",
+  "count": 38,
   "items": [
+    {
+      "id": "50578664",
+      "slug": "spurs-rule-victor-wembanyama-deaaron-fox-out-90-minutes-before-tip-vs-ki-50578664",
+      "title": "Spurs rule Victor Wembanyama, De'Aaron Fox out 90 minutes before tip vs. Kings",
+      "summary": "Less than two hours prior to tipoff Monday, the San Antonio Spurs ruled Victor Wembanyama and De'Aaron Fox out of their game against the Sacramento Kings, but the club anticipates both will play in Wednesday's game against the Portland Trail Blazers.",
+      "published": "2026-11-24T02:52:57.000Z",
+      "updated": "2026-11-24T02:52:57.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50578664/spurs-victor-wembanyama-deaaron-fox-kings",
+      "author": "Anthony Slater",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1124/r1750458_600x600_1-1.jpg",
+        "alt": "De'Aaron Fox Victor Wembanyama [600x600]",
+        "credit": "Getty Images"
+      },
+      "teams": [
+        "San Antonio Spurs",
+        "Sacramento Kings"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50578774",
+      "slug": "ty-jerome-scores-29-cam-spencer-has-24-as-grizzlies-hand-hornets-their-5-50578774",
+      "title": "Ty Jerome scores 29, Cam Spencer has 24 as Grizzlies hand Hornets their 5th straight loss, 117-111",
+      "summary": "Ty Jerome made seven 3-pointers and finished with 29 points, and the Memphis Grizzlies handed the Charlotte Hornets their fifth straight loss, 117-111 on Monday night.",
+      "published": "2026-11-24T02:51:32.000Z",
+      "updated": "2026-11-24T02:51:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910036",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Charlotte Hornets",
+        "Memphis Grizzlies"
+      ],
+      "matchup": "Memphis Grizzlies @ Charlotte Hornets"
+    },
+    {
+      "id": "50578713",
+      "slug": "deni-avdija-hits-5-3s-and-scores-31-points-as-trail-blazers-hand-76ers-o-50578713",
+      "title": "Deni Avdija hits 5 3s and scores 31 points as Trail Blazers hand 76ers only their 4th loss, 128-111",
+      "summary": "Deni Avdija scored 31 points and hit five of Portland's 19 3-pointers to lead the Trail Blazers to a 128-111 win over the Philadelphia 76ers on Monday night.",
+      "published": "2026-11-24T02:41:33.000Z",
+      "updated": "2026-11-24T02:41:33.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910037",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Philadelphia 76ers",
+        "Portland Trail Blazers"
+      ],
+      "matchup": "Portland Trail Blazers @ Philadelphia 76ers"
+    },
+    {
+      "id": "50577588",
+      "slug": "grizzlies-cameron-boozer-ankle-to-be-reevaluated-in-4-weeks-50577588",
+      "title": "Grizzlies' Cameron Boozer (ankle) to be reevaluated in 4 weeks",
+      "summary": "Grizzlies rookie forward Cameron Boozer has a sprained right ankle that will sideline him for at least a month.",
+      "published": "2026-11-24T00:41:48.000Z",
+      "updated": "2026-11-24T00:41:48.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50577588/grizzlies-cameron-boozer-ankle-reevaluated-4-weeks",
+      "author": "Anthony Gharib",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1123/r1750412_600x400_3-2.jpg",
+        "alt": "Cam Boozer [600x400]",
+        "credit": "Joe Murphy/NBAE via Getty Images"
+      },
+      "teams": [
+        "Memphis Grizzlies"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50577428",
+      "slug": "76ers-rule-out-joel-embiid-illness-for-game-vs-trail-blazers-50577428",
+      "title": "76ers rule out Joel Embiid (illness) for game vs. Trail Blazers",
+      "summary": "The 76ers said Joel Embiid will sit out Monday's game against the Trail Blazers because of an illness.",
+      "published": "2026-11-23T23:53:39.000Z",
+      "updated": "2026-11-23T23:53:39.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1123/r1750407_600x400_3-2.jpg",
+        "alt": "Joel Embiid  [600x400]",
+        "credit": "Bill Streicher/Imagn Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50564924",
+      "slug": "veteran-guard-gabe-vincent-signs-deal-with-kings-50564924",
+      "title": "Veteran guard Gabe Vincent signs deal with Kings",
+      "summary": "Guard Gabe Vincent signed a deal with the Sacramento Kings to fill their 15th roster spot, it was announced on Monday.",
+      "published": "2026-11-23T21:49:52.000Z",
+      "updated": "2026-11-23T21:49:52.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50564924/sources-free-agent-gabe-vincent-kings-finalizing-deal",
+      "author": "Anthony Slater",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2024/0401/r1312689_600x600_1-1.jpg",
+        "alt": "Gabe Vincent [600x600]",
+        "credit": "David L. Nemec/NBAE via Getty Images"
+      },
+      "teams": [
+        "Sacramento Kings"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50559927",
+      "slug": "mikal-bridges-shakes-off-slump-hits-buzzer-beater-to-save-knicks-vs-blaz-50559927",
+      "title": "Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers",
+      "summary": "Mired in a shooting slump, Mikal Bridges delivered a buzzer-beating 3-pointer to lift the Knicks past the Trail Blazers after they squandered a 26-point lead.",
+      "published": "2026-11-23T19:59:26.000Z",
+      "updated": "2026-11-23T19:59:26.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50559927/knicks-mikal-bridges-shakes-slump-3-buzzer-tops-blazers",
+      "author": "Vincent Goodwill",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1122/r1749469_600x400_3-2.jpg",
+        "alt": "Mikal Bridges [600x400]",
+        "credit": "AP Photo/Yuki Iwamura"
+      },
+      "teams": [
+        "New York Knicks"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "49577473",
+      "slug": "2026-nba-cup-schedule-format-groups-updates-and-more-49577473",
+      "title": "2026 NBA Cup: Schedule, format, groups, updates and more",
+      "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent win by the Nuggets.",
+      "published": "2026-11-23T19:44:13.000Z",
+      "updated": "2026-11-23T19:44:13.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1121/r1748853_608x342_16-9.jpg",
+        "alt": "murray [608x342]",
+        "credit": "Ron Chenoy-Imagn Images"
+      },
+      "teams": [
+        "Atlanta Hawks",
+        "Boston Celtics",
+        "Brooklyn Nets",
+        "Charlotte Hornets",
+        "Chicago Bulls",
+        "Cleveland Cavaliers",
+        "Dallas Mavericks",
+        "Denver Nuggets",
+        "Detroit Pistons",
+        "Golden State Warriors",
+        "Houston Rockets",
+        "Indiana Pacers",
+        "LA Clippers",
+        "Los Angeles Lakers",
+        "Memphis Grizzlies",
+        "Miami Heat",
+        "Milwaukee Bucks",
+        "Minnesota Timberwolves",
+        "New Orleans Pelicans",
+        "New York Knicks",
+        "Oklahoma City Thunder",
+        "Orlando Magic",
+        "Philadelphia 76ers",
+        "Phoenix Suns",
+        "Portland Trail Blazers",
+        "Sacramento Kings",
+        "San Antonio Spurs",
+        "Toronto Raptors",
+        "Utah Jazz",
+        "Washington Wizards"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50568682",
+      "slug": "bam-adebayos-triple-double-ignites-heats-123-113-victory-over-thunder-50568682",
+      "title": "Bam Adebayo's triple-double ignites Heat's 123-113 victory over Thunder",
+      "summary": "In a game that did not feature Oklahoma City's Shai Gilgeous-Alexander or Miami's Giannis Antetokounmpo, Bam Adebayo swiped the spotlight, scoring 24 points en route to a triple-double, as the surging Heat defeated the Thunder 123-113 on Sunday night.",
+      "published": "2026-11-23T18:25:13.000Z",
+      "updated": "2026-11-23T18:25:13.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50568682/adebayo-triple-double-sparks-shorthanded-heat-victory",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1123/r1749970_600x600_1-1.jpg",
+        "alt": "Bam Adebayo [600x600]",
+        "credit": "Getty Images"
+      },
+      "teams": [
+        "Miami Heat",
+        "Oklahoma City Thunder"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50573732",
+      "slug": "nets-nolan-traore-has-hamstring-strain-to-be-reevaluated-in-8-10-weeks-50573732",
+      "title": "Nets' Nolan Traore has hamstring strain, to be reevaluated in 8-10 weeks",
+      "summary": "Nets guard Nolan Traore has been diagnosed with a right hamstring strain and will be reevaluated in eight to 10 weeks, the team announced Monday.",
+      "published": "2026-11-23T18:24:21.000Z",
+      "updated": "2026-11-23T18:24:21.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50573732/nets-nolan-traore-hamstring-reevaluated-8-10-weeks",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1107/r1742411_600x400_3-2.jpg",
+        "alt": "Nolan Traore handles the ball.",
+        "credit": "Nathaniel S. Butler/NBAE via Getty Images"
+      },
+      "teams": [
+        "Brooklyn Nets"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50558987",
+      "slug": "too-early-nba-all-star-picks-the-24-most-deserving-players-right-now-50558987",
+      "title": "Too-early NBA All-Star picks: The 24 most deserving players right now",
+      "summary": "So what if the All-Star Game is three months away? We're picking locks and position battles to watch across both conferences.",
+      "published": "2026-11-23T13:25:58.000Z",
+      "updated": "2026-11-23T13:25:58.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50558987/all-star-selections-wembanyama-giannis-maxey",
+      "author": "Ben Golliver",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1123/r1749989_1296x729_16-9.jpg",
+        "alt": "Jayson Tatum, Jaylen Brown [1296x729]",
+        "credit": "Mitchell Leff/Getty Images"
+      },
+      "teams": [
+        "Boston Celtics",
+        "Cleveland Cavaliers",
+        "Dallas Mavericks",
+        "Denver Nuggets",
+        "Detroit Pistons",
+        "Golden State Warriors",
+        "Houston Rockets",
+        "Los Angeles Lakers",
+        "Memphis Grizzlies",
+        "Miami Heat",
+        "Minnesota Timberwolves",
+        "New York Knicks",
+        "Oklahoma City Thunder",
+        "Orlando Magic",
+        "Philadelphia 76ers",
+        "San Antonio Spurs"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50572252",
+      "slug": "brandin-podziemski-scores-18-points-as-warriors-hold-of-celtics-88-87-to-50572252",
+      "title": "Brandin Podziemski scores 18 points as Warriors hold of Celtics 88-87 to snap five-game losing skid",
+      "summary": "Brandin Podziemski had 18 points and seven rebounds and the Golden State Warriors snapped a five-game losing streak by holding off Boston for an 88-87 win Sunday night, sending the Celtics to their first four-game skid in five years.",
+      "published": "2026-11-23T11:57:04.000Z",
+      "updated": "2026-11-23T11:57:04.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910035",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Golden State Warriors",
+        "Boston Celtics"
+      ],
+      "matchup": "Boston Celtics @ Golden State Warriors"
+    },
     {
       "id": "50570668",
       "slug": "draymond-green-swats-back-at-online-critics-fuels-warriors-win-over-celt-50570668",
@@ -117,27 +394,6 @@
       "matchup": null
     },
     {
-      "id": "50568682",
-      "slug": "bam-adebayos-triple-double-ignites-heats-123-113-victory-over-thunder-50568682",
-      "title": "Bam Adebayo's triple-double ignites Heat's 123-113 victory over Thunder",
-      "summary": "In a game that did not feature Oklahoma City's Shai Gilgeous-Alexander or Miami's Giannis Antetokounmpo, Bam Adebayo swiped the spotlight, scoring 24 points en route to a triple-double, as the surging Heat defeated the Thunder 123-113 on Sunday night.",
-      "published": "2026-11-23T02:47:08.000Z",
-      "updated": "2026-11-23T02:47:08.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50568682/adebayo-triple-double-sparks-shorthanded-heat-victory",
-      "author": null,
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1123/r1749970_600x600_1-1.jpg",
-        "alt": "Bam Adebayo [600x600]",
-        "credit": "Getty Images"
-      },
-      "teams": [
-        "Miami Heat",
-        "Oklahoma City Thunder"
-      ],
-      "matchup": null
-    },
-    {
       "id": "50568810",
       "slug": "wizards-rout-the-magic-116-96-to-win-their-3rd-straight-following-an-8-g-50568810",
       "title": "Wizards rout the Magic 116-96 to win their 3rd straight following an 8-game skid",
@@ -207,46 +463,6 @@
         "Detroit Pistons"
       ],
       "matchup": "Detroit Pistons @ Atlanta Hawks"
-    },
-    {
-      "id": "50564924",
-      "slug": "sources-free-agent-gabe-vincent-kings-finalizing-deal-50564924",
-      "title": "Sources: Free agent Gabe Vincent, Kings finalizing deal",
-      "summary": "Gabe Vincent is finalizing a deal with the Kings to fill their 15th roster spot, league sources told ESPN's Shams Charania.",
-      "published": "2026-11-22T21:12:48.000Z",
-      "updated": "2026-11-22T21:12:48.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50564924/sources-free-agent-gabe-vincent-kings-finalizing-deal",
-      "author": "Anthony Slater",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2024/0401/r1312689_600x600_1-1.jpg",
-        "alt": "Gabe Vincent [600x600]",
-        "credit": "David L. Nemec/NBAE via Getty Images"
-      },
-      "teams": [
-        "Sacramento Kings"
-      ],
-      "matchup": null
-    },
-    {
-      "id": "50559927",
-      "slug": "mikal-bridges-shakes-off-slump-hits-buzzer-beater-to-save-knicks-vs-blaz-50559927",
-      "title": "Mikal Bridges shakes off slump, hits buzzer-beater to save Knicks vs. Blazers",
-      "summary": "Mired in a shooting slump, Mikal Bridges delivered a buzzer-beating 3-pointer to lift the Knicks past the Trail Blazers after they squandered a 26-point lead.",
-      "published": "2026-11-22T17:52:36.000Z",
-      "updated": "2026-11-22T17:52:36.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50559927/knicks-mikal-bridges-shakes-slump-3-buzzer-tops-blazers",
-      "author": "Vincent Goodwill",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1122/r1749469_600x400_3-2.jpg",
-        "alt": "Mikal Bridges [600x400]",
-        "credit": "AP Photo/Yuki Iwamura"
-      },
-      "teams": [
-        "New York Knicks"
-      ],
-      "matchup": null
     },
     {
       "id": "50559763",
@@ -466,55 +682,6 @@
         "Toronto Raptors"
       ],
       "matchup": "Toronto Raptors @ Detroit Pistons"
-    },
-    {
-      "id": "49577473",
-      "slug": "2026-nba-cup-schedule-format-groups-updates-and-more-49577473",
-      "title": "2026 NBA Cup: Schedule, format, groups, updates and more",
-      "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent win by the Nuggets.",
-      "published": "2026-11-21T06:34:12.000Z",
-      "updated": "2026-11-21T06:34:12.000Z",
-      "kind": "Story",
-      "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
-      "author": null,
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1121/r1748853_608x342_16-9.jpg",
-        "alt": "murray [608x342]",
-        "credit": "Ron Chenoy-Imagn Images"
-      },
-      "teams": [
-        "Atlanta Hawks",
-        "Boston Celtics",
-        "Brooklyn Nets",
-        "Charlotte Hornets",
-        "Chicago Bulls",
-        "Cleveland Cavaliers",
-        "Dallas Mavericks",
-        "Denver Nuggets",
-        "Detroit Pistons",
-        "Golden State Warriors",
-        "Houston Rockets",
-        "Indiana Pacers",
-        "LA Clippers",
-        "Los Angeles Lakers",
-        "Memphis Grizzlies",
-        "Miami Heat",
-        "Milwaukee Bucks",
-        "Minnesota Timberwolves",
-        "New Orleans Pelicans",
-        "New York Knicks",
-        "Oklahoma City Thunder",
-        "Orlando Magic",
-        "Philadelphia 76ers",
-        "Phoenix Suns",
-        "Portland Trail Blazers",
-        "Sacramento Kings",
-        "San Antonio Spurs",
-        "Toronto Raptors",
-        "Utah Jazz",
-        "Washington Wizards"
-      ],
-      "matchup": null
     },
     {
       "id": "50547643",
