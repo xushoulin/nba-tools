@@ -1,0 +1,49 @@
+name: Refresh NBA news
+
+# The site is a static export, so the news desk is only as fresh as the last
+# build. This rebuilds the snapshot once a day and commits it, which is what
+# asks Vercel to redeploy.
+#
+# 11:00 UTC is 06:00/07:00 in the US depending on daylight saving: late enough
+# that every game from the previous night has a recap and an AP story up, early
+# enough that the list is current when US readers wake up.
+on:
+  schedule:
+    - cron: "0 11 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: news-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      # The script has no dependencies and exits 0 when ESPN is unreachable, so
+      # a bad morning leaves the previous snapshot in place instead of failing
+      # the run or deploying an empty page.
+      - name: Rebuild the news snapshot
+        run: node scripts/news/build-news.mjs
+
+      - name: Commit if the snapshot moved
+        run: |
+          if git diff --quiet -- lib/data/nba-news.json; then
+            echo "No new stories since the last run."
+            exit 0
+          fi
+          count=$(node -e "process.stdout.write(String(require('./lib/data/nba-news.json').count))")
+          git config user.name "nba-tools bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add lib/data/nba-news.json
+          git commit -m "Refresh the NBA news snapshot (${count} stories)"
+          git push
