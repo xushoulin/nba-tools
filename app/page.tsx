@@ -54,7 +54,7 @@ const jsonLd = {
         "Free NBA salary cap, luxury tax, trade and fantasy tools, plus 30 team payroll pages and 355 player pages.",
       // No SearchAction: the site has no search endpoint, and pointing at one
       // that 404s is worse than omitting the property.
-      publisher: { "@id": `${SITE_URL}/#organization` },
+      publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: SITE_NAME, url: `${SITE_URL}/` },
     },
     {
       "@type": "WebApplication",
@@ -65,7 +65,7 @@ const jsonLd = {
       applicationCategory: "SportsApplication",
       operatingSystem: "Any",
       isAccessibleForFree: true,
-      publisher: { "@id": `${SITE_URL}/#organization` },
+      publisher: { "@type": "Organization", "@id": `${SITE_URL}/#organization`, name: SITE_NAME, url: `${SITE_URL}/` },
       sameAs: ["https://github.com/xushoulin/nba-tools"],
     },
     {

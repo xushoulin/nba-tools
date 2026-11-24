@@ -4,7 +4,7 @@
     "url": "https://www.espn.com/nba/",
     "feed": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=50"
   },
-  "generatedAt": "2026-11-24T07:12:46.788Z",
+  "generatedAt": "2026-11-24T07:14:50.461Z",
   "count": 46,
   "items": [
     {
