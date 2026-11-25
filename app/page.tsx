@@ -40,6 +40,17 @@ const FAQS = [
   },
 ];
 
+/** Bold only the first sentence; the full plain text stays intact in JSON-LD. */
+function LeadAnswer({ text, className }: { text: string; className?: string }) {
+  const cut = text.indexOf(". ");
+  if (cut < 0) return <p className={className}>{text}</p>;
+  return (
+    <p className={className}>
+      <strong className="text-ink">{text.slice(0, cut + 1)}</strong> {text.slice(cut + 2)}
+    </p>
+  );
+}
+
 /**
  * Homepage card copy is written as self-contained answer blocks: definition,
  * a number a reader can check, and the boundary that applies. Short meta
@@ -202,11 +213,13 @@ export default function Home() {
             </strong>{" "}
             First, add contracts to the salary cap calculator to see payroll, cap space and luxury tax; then open one of
             30 team payroll pages, {PLAYER_COUNT} player pages or 9 rule guides. Every calculation runs locally in your
-            browser, so inputs are not stored on a server and no account is required. According to the NBA&apos;s
-            published {LEAGUE.season} figures, the salary cap is ${LEAGUE.salaryCap}M, the tax line is $
-            {LEAGUE.luxuryTax}M and the second apron is ${LEAGUE.secondApron}M. This is an independent fan project, not
-            an official NBA tool. We built the set from public data; for example, the cap figures come from the
-            NBA&apos;s July 2026 release.
+            browser, so inputs are not stored on a server and no account is required.
+          </p>
+          <p className="mx-auto mt-3 max-w-2xl text-lg leading-relaxed text-gray-600">
+            According to the NBA&apos;s published {LEAGUE.season} figures, the salary cap is ${LEAGUE.salaryCap}M, the tax
+            line is ${LEAGUE.luxuryTax}M and the second apron is ${LEAGUE.secondApron}M. This is an independent fan
+            project, not an official NBA tool. We built the set from public data; for example, the cap figures come from
+            the NBA&apos;s July 2026 release.
           </p>
           <a
             href="#tools"
@@ -255,7 +268,10 @@ export default function Home() {
                 <div className="mb-4 text-3xl">{tool.icon}</div>
                 <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-orange-600">{tool.category}</div>
                 <h3 className="text-lg font-bold text-ink group-hover:text-court">{answer?.q ?? tool.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600">{answer?.a ?? tool.description}</p>
+                <LeadAnswer
+                  text={answer?.a ?? tool.description}
+                  className="mt-2 text-sm leading-relaxed text-gray-600"
+                />
               </Link>
             );
           })}
@@ -274,6 +290,34 @@ export default function Home() {
                 NBA&apos;s {LEAGUE.season} release, the salary cap is ${LEAGUE.salaryCap}M and the second apron is $
                 {LEAGUE.secondApron}M. Open a team to edit its roster and recalculate cap space locally.
               </p>
+              <ol className="mt-4 max-w-2xl list-decimal space-y-1 pl-5 text-sm text-gray-600">
+                <li>Open a team page to see its {LEAGUE.season} salary snapshot.</li>
+                <li>Edit a contract and read the recalculated cap space.</li>
+                <li>Compare the result with the official thresholds below.</li>
+              </ol>
+              <table className="mt-4 w-full max-w-2xl border-collapse text-left text-sm">
+                <caption className="mb-1 text-xs text-gray-500">
+                  Official {LEAGUE.season} thresholds, published July 1, 2026 (source: NBA).
+                </caption>
+                <tbody>
+                  <tr className="border-b border-gray-200">
+                    <th scope="row" className="py-1 pr-4 font-semibold text-ink">Salary cap</th>
+                    <td className="py-1 text-gray-600">${LEAGUE.salaryCap}M</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <th scope="row" className="py-1 pr-4 font-semibold text-ink">Luxury tax</th>
+                    <td className="py-1 text-gray-600">${LEAGUE.luxuryTax}M</td>
+                  </tr>
+                  <tr className="border-b border-gray-200">
+                    <th scope="row" className="py-1 pr-4 font-semibold text-ink">First apron</th>
+                    <td className="py-1 text-gray-600">${LEAGUE.firstApron}M</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" className="py-1 pr-4 font-semibold text-ink">Second apron</th>
+                    <td className="py-1 text-gray-600">${LEAGUE.secondApron}M</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
             <Link
               href="/teams"
@@ -376,7 +420,7 @@ export default function Home() {
             {FAQS.map(({ q, a }) => (
               <div key={q} className="py-5">
                 <h3 className="text-base font-bold text-ink">{q}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-gray-600">{a}</p>
+                <LeadAnswer text={a} className="mt-2 text-sm leading-relaxed text-gray-600" />
               </div>
             ))}
           </div>
