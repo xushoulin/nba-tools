@@ -4,9 +4,375 @@
     "url": "https://www.espn.com/nba/",
     "feed": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=50"
   },
-  "generatedAt": "2026-11-24T08:51:12.734Z",
-  "count": 46,
+  "generatedAt": "2026-11-25T20:20:02.481Z",
+  "count": 62,
   "items": [
+    {
+      "id": "50595534",
+      "slug": "ex-bucks-guard-kevin-porter-jr-finalizing-2-year-deal-to-join-magic-agen-50595534",
+      "title": "Ex-Bucks guard Kevin Porter Jr. finalizing 2-year deal to join Magic, agent says",
+      "summary": "Free agent guard Kevin Porter Jr. is finalizing a two-year contract with the Magic, his agent told ESPN.",
+      "published": "2026-11-25T19:04:58.000Z",
+      "updated": "2026-11-25T19:04:58.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50595534/agent-kevin-porter-jr-finalizing-2-year-deal-magic",
+      "author": "Shams Charania",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2025/1023/r1564926_1296x729_16-9.jpg",
+        "alt": "Kevin Porter Jr. [1296x729]",
+        "credit": "Michael McLoone-Imagn Images"
+      },
+      "teams": [
+        "Orlando Magic"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50583781",
+      "slug": "nba-power-rankings-whom-is-each-team-most-thankful-for-this-year-50583781",
+      "title": "NBA Power Rankings: Whom is each team most thankful for this year?",
+      "summary": "Here's where all 30 teams rank this week -- and the one person each franchise should be thanking most.",
+      "published": "2026-11-25T17:23:35.000Z",
+      "updated": "2026-11-25T17:23:35.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50583781/nba-power-rankings-one-player-coach-exec-thanksgiving",
+      "author": "NBA Insiders",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1124/nba_power6_cr_16x9_576x324.jpg",
+        "alt": "Damian Lillard, AJ Dybantsa & Jonathan Kuminga",
+        "credit": "ESPN"
+      },
+      "teams": [
+        "Philadelphia 76ers",
+        "Boston Celtics",
+        "Detroit Pistons",
+        "Atlanta Hawks",
+        "New York Knicks",
+        "Toronto Raptors",
+        "Cleveland Cavaliers",
+        "Miami Heat",
+        "Charlotte Hornets",
+        "Washington Wizards",
+        "Indiana Pacers",
+        "Orlando Magic",
+        "Brooklyn Nets",
+        "Chicago Bulls",
+        "Milwaukee Bucks",
+        "Los Angeles Lakers",
+        "San Antonio Spurs",
+        "Oklahoma City Thunder",
+        "Golden State Warriors",
+        "Minnesota Timberwolves",
+        "Houston Rockets",
+        "Memphis Grizzlies",
+        "Portland Trail Blazers",
+        "Dallas Mavericks",
+        "Denver Nuggets",
+        "New Orleans Pelicans",
+        "Phoenix Suns",
+        "LA Clippers",
+        "Sacramento Kings",
+        "Utah Jazz"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50028196",
+      "slug": "nba-buzz-latest-on-trades-news-roster-moves-and-intel-for-the-2026-27-se-50028196",
+      "title": "NBA buzz: Latest on trades, news, roster moves and intel for the 2026-27 season",
+      "summary": "The NBA is back. The buzz never left. Bookmark this page for the latest news, rumblings and analysis from ESPN's insiders.",
+      "published": "2026-11-25T14:54:15.000Z",
+      "updated": "2026-11-25T14:54:15.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50028196/2026-27-nba-buzz-latest-live-updates-news-intel-trades-deals",
+      "author": "ESPN staff",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1124/r1750646_608x342_16-9.jpg",
+        "alt": "Nikola Topic of the Oklahoma City Thunder grabs a rebound from Brook Lopez of the LA Clippers with Isaiah Hartenstein during the first half at Intuit Dome on Nov. 13, 2026, in Inglewood, California.",
+        "credit": "Photo by Harry How/Getty Images"
+      },
+      "teams": [],
+      "matchup": null
+    },
+    {
+      "id": "50592672",
+      "slug": "nba-reveals-11b-arena-initiative-to-boost-efforts-for-europe-league-50592672",
+      "title": "NBA reveals $11B arena initiative to boost efforts for Europe league",
+      "summary": "The long-planned NBA-backed league in Europe took another step toward becoming reality with the unveiling of a plan that targets nearly $11 billion in funding for the development and renovation of arenas around the continent.",
+      "published": "2026-11-25T14:43:24.000Z",
+      "updated": "2026-11-25T14:43:24.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50592672/nba-reveals-11b-initiative-arena-development-europe",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1025/r1736092_1296x729_16-9.jpg",
+        "alt": "NBA logo [1296x729] - Copy20261106",
+        "credit": "Photo by Erica Denhoff/Icon Sportswire"
+      },
+      "teams": [],
+      "matchup": null
+    },
+    {
+      "id": "50577428",
+      "slug": "76ers-joel-embiid-illness-sits-out-loss-to-trail-blazers-50577428",
+      "title": "76ers' Joel Embiid (illness) sits out loss to Trail Blazers",
+      "summary": "76ers center Joel Embiid missed Monday's game against the Trail Blazers because of an illness.",
+      "published": "2026-11-25T12:42:13.000Z",
+      "updated": "2026-11-25T12:42:13.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1123/r1750407_600x400_3-2.jpg",
+        "alt": "Joel Embiid  [600x400]",
+        "credit": "Bill Streicher/Imagn Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50586890",
+      "slug": "jalen-duren-to-begin-rehab-assignment-in-next-step-to-return-from-injury-50586890",
+      "title": "Jalen Duren to begin rehab assignment in next step to return from injury",
+      "summary": "Pistons center Jalen Duren has taken a significant step toward returning from injury, practicing with the team Tuesday.",
+      "published": "2026-11-25T12:41:31.000Z",
+      "updated": "2026-11-25T12:41:31.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50586890/jalen-duren-begin-rehab-assignment-next-step-return-injury",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1124/r1750855_600x400_3-2.jpg",
+        "alt": "Jalen Duren [600x400]",
+        "credit": "Brian Sevald/NBAE via Getty Images"
+      },
+      "teams": [
+        "Detroit Pistons"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50586638",
+      "slug": "lakers-latest-in-nba-to-establish-partnership-with-kalshi-50586638",
+      "title": "Lakers latest in NBA to establish partnership with Kalshi",
+      "summary": "The Lakers on Tuesday announced a partnership with Kalshi, following similar deals announced last month by the 76ers and the league itself.",
+      "published": "2026-11-25T12:41:13.000Z",
+      "updated": "2026-11-25T12:41:13.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50586638/lakers-latest-nba-partnership-kalshi",
+      "author": "Dave McMenamin",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2020/0621/r710816_600x600_1-1.jpg",
+        "alt": "Lakers -- Staples Center [600x600]",
+        "credit": "Kirby Lee-USA TODAY Sports"
+      },
+      "teams": [
+        "Los Angeles Lakers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50584000",
+      "slug": "sources-wolves-donte-divincenzo-eyes-new-years-for-season-debut-50584000",
+      "title": "Sources: Wolves' Donte DiVincenzo eyes New Year's for season debut",
+      "summary": "The Timberwolves said Donte DiVincenzo has been cleared for basketball activities after Achilles surgery.",
+      "published": "2026-11-25T12:40:51.000Z",
+      "updated": "2026-11-25T12:40:51.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2024/1014/r1400281_600x400_3-2.jpg",
+        "alt": "Donte DiVincenzo [600x400]",
+        "credit": "Vincent Carchietta/Imagn Images"
+      },
+      "teams": [
+        "Minnesota Timberwolves"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50587249",
+      "slug": "kawhi-leonards-return-from-knee-swelling-still-at-least-week-away-50587249",
+      "title": "Kawhi Leonard's return from knee swelling still at least week away",
+      "summary": "The Raptors say Kawhi Leonard's status will be revisted in a week as he recovers from knee swelling.",
+      "published": "2026-11-25T12:40:12.000Z",
+      "updated": "2026-11-25T12:40:12.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50587249/kawhi-leonard-return-knee-swelling-least-week-away",
+      "author": "Anthony Gharib",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1025/r1736163_600x400_3-2.jpg",
+        "alt": "Kawhi Leonard [600x400]",
+        "credit": "Brad Mills-Imagn Images"
+      },
+      "teams": [
+        "Toronto Raptors"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50389727",
+      "slug": "inside-lebrons-first-game-in-philly-more-than-two-decades-ago-50389727",
+      "title": "Inside LeBron's first game in Philly -- more than two decades ago",
+      "summary": "Nearly 25 years ago, LeBron won over Philly for the first time -- inside one of the most iconic basketball arenas in the world.",
+      "published": "2026-11-25T12:39:15.000Z",
+      "updated": "2026-11-25T12:39:15.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50389727/lebron-james-palestra-maureece-rice-philadelphia",
+      "author": "Dave McMenamin",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1105/nba_james3_16x9.jpg",
+        "alt": "LeBon James",
+        "credit": "AP Photo, Imagn Images"
+      },
+      "teams": [
+        "Philadelphia 76ers",
+        "Cleveland Cavaliers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50587119",
+      "slug": "lamelo-ball-and-the-collective-carrying-minnesota-without-anthony-edward-50587119",
+      "title": "LaMelo Ball and the 'collective' carrying Minnesota without Anthony Edwards",
+      "summary": "Through \"giddiness,\" an enhanced focus on defense and an ensemble cast, LaMelo Ball and the Timberwolves are thriving.",
+      "published": "2026-11-25T12:34:20.000Z",
+      "updated": "2026-11-25T12:34:20.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50587119/lamelo-ball-minnesota-timberwolves-anthony-edwards",
+      "author": "Jamal Collier",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1125/r1750870_608x342_16-9.jpg",
+        "alt": "melo [608x342]",
+        "credit": "Jesse Johnson-Imagn Images"
+      },
+      "teams": [
+        "Minnesota Timberwolves"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50590300",
+      "slug": "cooper-flagg-has-24-points-and-12-assists-as-mavericks-beat-nuggets-120-50590300",
+      "title": "Cooper Flagg has 24 points and 12 assists as Mavericks beat Nuggets 120-101 in NBA Cup contest",
+      "summary": "Cooper Flagg scored 24 points and tied a career-high with 12 assists as the Dallas Mavericks beat the Denver Nuggets 120-101 on Tuesday night, moving into the driver's seat to win their NBA Cup group.",
+      "published": "2026-11-25T05:51:38.000Z",
+      "updated": "2026-11-25T05:51:38.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909316",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Denver Nuggets",
+        "Dallas Mavericks"
+      ],
+      "matchup": "Dallas Mavericks @ Denver Nuggets"
+    },
+    {
+      "id": "50589432",
+      "slug": "tatum-scores-41-to-help-celtics-snap-4-game-skid-with-a-131-116-win-over-50589432",
+      "title": "Tatum scores 41 to help Celtics snap 4-game skid with a 131-116 win over Wizards",
+      "summary": "Jayson Tatum scored 28 of his 41 points in the first half and the Boston Celtics snapped their four-game losing streak by beating the Washington Wizards 131-116 on Tuesday night.",
+      "published": "2026-11-25T03:48:34.000Z",
+      "updated": "2026-11-25T03:48:34.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909315",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Washington Wizards",
+        "Boston Celtics"
+      ],
+      "matchup": "Boston Celtics @ Washington Wizards"
+    },
+    {
+      "id": "50588896",
+      "slug": "without-cade-cunningham-pistons-get-21-from-isaiah-joe-to-hand-magic-the-50588896",
+      "title": "Without Cade Cunningham, Pistons get 21 from Isaiah Joe to hand Magic their first NBA Cup loss",
+      "summary": "Isaiah Joe had 21 points and Daniss Jenkins added 15 to spur the Detroit Pistons past the Orlando Magic 104-86 in an NBA Cup game on Tuesday night.",
+      "published": "2026-11-25T02:46:32.000Z",
+      "updated": "2026-11-25T02:46:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909314",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Orlando Magic",
+        "Detroit Pistons"
+      ],
+      "matchup": "Detroit Pistons @ Orlando Magic"
+    },
+    {
+      "id": "50586828",
+      "slug": "tyrese-jade-haliburton-announce-they-are-expecting-their-first-child-50586828",
+      "title": "Tyrese, Jade Haliburton announce they are expecting their first child",
+      "summary": "The couple wed in August after seven years of dating and announced the news that they're expecting on Instagram.",
+      "published": "2026-11-24T23:41:03.000Z",
+      "updated": "2026-11-24T23:41:03.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50586828/tyrese-jade-haliburton-expecting-first-child",
+      "author": "ESPN staff",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1124/r1750843_580x327_16-9.png",
+        "alt": "haliburton baby news [580x327]",
+        "credit": "jadehaliburton and tyresehaliburton / Instagram"
+      },
+      "teams": [
+        "Indiana Pacers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50585929",
+      "slug": "tracy-morgan-reveals-how-he-kept-knicks-title-celebration-ticking-50585929",
+      "title": "Tracy Morgan reveals how he kept Knicks' title celebration ticking",
+      "summary": "Morgan also discussed in an appearance on \"Live with Kelly and Mark\" his experience traveling to Knicks road playoff games -- seven private jets and all.",
+      "published": "2026-11-24T22:56:18.000Z",
+      "updated": "2026-11-24T22:56:18.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50585929/tracy-morgan-new-york-knicks-rolexes",
+      "author": "J.J. Post",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1124/r1750781_608x342_16-9.jpg",
+        "alt": "tracy morgan knicks [608x342]",
+        "credit": "Roy Rochlin/Getty Images"
+      },
+      "teams": [
+        "New York Knicks"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50544296",
+      "slug": "nba-rookie-rankings-10-standouts-in-a-star-studded-class-50544296",
+      "title": "NBA Rookie Rankings: 10 standouts in a star-studded class",
+      "summary": "Our first edition of rookie rankings features 10 players standing out early from a strong 2026 draft class.",
+      "published": "2026-11-24T11:45:41.000Z",
+      "updated": "2026-11-24T11:45:41.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50544296/nba-rookie-rankings-early-stats",
+      "author": "Zach Kram",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1120/261124_nba_rookie-rankings_16x9_608x342.jpg",
+        "alt": "261124_nba_rookie-rankings",
+        "credit": "ESPN Illustration"
+      },
+      "teams": [
+        "LA Clippers",
+        "Cleveland Cavaliers",
+        "Atlanta Hawks",
+        "Oklahoma City Thunder",
+        "Sacramento Kings",
+        "Washington Wizards",
+        "Utah Jazz",
+        "Chicago Bulls",
+        "Golden State Warriors",
+        "Memphis Grizzlies"
+      ],
+      "matchup": null
+    },
     {
       "id": "50578664",
       "slug": "spurs-rule-victor-wembanyama-deaaron-fox-out-90-minutes-before-win-over-50578664",
@@ -129,26 +495,6 @@
         "Brooklyn Nets"
       ],
       "matchup": "Brooklyn Nets @ Minnesota Timberwolves"
-    },
-    {
-      "id": "50577428",
-      "slug": "76ers-joel-embiid-illness-sits-out-loss-to-trail-blazers-50577428",
-      "title": "76ers' Joel Embiid (illness) sits out loss to Trail Blazers",
-      "summary": "76ers center Joel Embiid missed Monday's game against the Trail Blazers because of an illness.",
-      "published": "2026-11-24T03:27:49.000Z",
-      "updated": "2026-11-24T03:27:49.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
-      "author": "Kris Rhim",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1123/r1750407_600x400_3-2.jpg",
-        "alt": "Joel Embiid  [600x400]",
-        "credit": "Bill Streicher/Imagn Images"
-      },
-      "teams": [
-        "Philadelphia 76ers"
-      ],
-      "matchup": null
     },
     {
       "id": "50579074",
