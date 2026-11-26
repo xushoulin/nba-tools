@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import GuideBody from "@/components/guides/GuideBody";
 import { GUIDES, getGuide, guideSlugs } from "@/lib/guides";
-import { SITE_NAME, SITE_URL, getTool } from "@/lib/tools";
+import {SITE_NAME, SITE_URL, getTool, OG_IMAGE} from "@/lib/tools";
 
 export const dynamicParams = false;
 
@@ -24,17 +24,24 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return {};
+  // The layout template appends " | NBA Tools", so keep the visible title
+  // short enough that search engines do not cut it mid-word. The full title
+  // still appears as the page's h1 and in the article body.
+  const title = guide.title.length > 45 ? `${guide.title.slice(0, 42).trimEnd()}…` : guide.title;
+  const description = guide.description.slice(0, 155);
+
   return {
-    title: guide.title,
-    description: guide.description,
+    title,
+    description,
     alternates: { canonical: `/guides/${guide.slug}` },
     openGraph: {
       type: "article",
-      title: guide.title,
-      description: guide.description,
+      title,
+      description,
       url: `/guides/${guide.slug}`,
       publishedTime: guide.published,
-      modifiedTime: guide.updated,
+      modifiedTime: guide.updated ,
+      images: OG_IMAGE,
     },
   };
 }

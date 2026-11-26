@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: "Game box score",
   description:
     "Quarter-by-quarter line score, both rosters and a per-player rating for a single NBA game.",
+  alternates: { canonical: "/game" },
   // Live game pages are generated per event and carry no unique crawlable text,
   // so they stay out of the index while still passing link equity through.
   robots: { index: false, follow: true },

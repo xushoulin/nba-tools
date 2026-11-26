@@ -25,6 +25,7 @@ export default function SiteFooter() {
                 <Link href="/team-salary-trade-simulator" className="hover:text-court">Trade simulator</Link>
                 <Link href="/guides" className="hover:text-court">Cap &amp; contract guides</Link>
                 <Link href="/about" className="hover:text-court">About</Link>
+                <Link href="/editorial" className="hover:text-court">Editorial standards</Link>
                 <Link href="/privacy" className="hover:text-court">Privacy Policy</Link>
               </div>
             </div>
@@ -34,13 +35,19 @@ export default function SiteFooter() {
                 <Link href="/terms" className="hover:text-court">Terms</Link>
                 <Link href="/disclaimer" className="hover:text-court">Disclaimer</Link>
                 <Link href="/about" className="hover:text-court">About</Link>
+                <Link href="/editorial" className="hover:text-court">Data sources</Link>
                 <Link href="/contact" className="hover:text-court">Contact</Link>
               </div>
             </div>
           </div>
         </div>
         <p className="mt-8 text-xs text-gray-400">
-          © {new Date().getFullYear()} {SITE_NAME}. Not affiliated with the NBA. All trademarks belong to their respective owners.
+          Built and maintained by{" "}
+          <a href="https://github.com/xushoulin" target="_blank" rel="noopener noreferrer" className="hover:text-court">
+            xushoulin
+          </a>{" "}
+          · last data review November 26, 2026 · © {new Date().getFullYear()} {SITE_NAME}. Not affiliated with the NBA.
+          All trademarks belong to their respective owners.
         </p>
       </div>
     </footer>

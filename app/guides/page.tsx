@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { GUIDES } from "@/lib/guides";
 import { SOURCE_URLS } from "@/lib/salary-data";
-import { SITE_URL } from "@/lib/tools";
+import {SITE_URL, OG_IMAGE} from "@/lib/tools";
 
 export const metadata: Metadata = {
   title: "NBA Salary Cap, Trade & Stats Guides",
   description:
-    "Plain-English explainers on NBA salary cap rules, luxury tax brackets, the aprons, Bird rights, pick trades, advanced stats and fantasy scoring — written around the 2026-27 league figures.",
+    "Plain-English guides to the NBA salary cap, luxury tax, aprons, Bird rights and pick trades, using 2026-27 figures.",
   alternates: { canonical: "/guides" },
-  openGraph: { url: "/guides" },
+  openGraph: { url: "/guides", images: OG_IMAGE },
 };
 
 const jsonLd = {

@@ -3,14 +3,14 @@ import Link from "next/link";
 import TeamLogo from "@/components/teams/TeamLogo";
 import TodaysGames from "@/components/home/TodaysGames";
 import LatestNews from "@/components/home/LatestNews";
-import { SITE_NAME, SITE_URL, TOOLS } from "@/lib/tools";
+import {SITE_NAME, SITE_URL, TOOLS, OG_IMAGE} from "@/lib/tools";
 import { INITIAL_TEAMS, LEAGUE, SOURCE_URLS } from "@/lib/salary-data";
 import { allPlayerSlugs } from "@/lib/player-profiles";
 import { GUIDES } from "@/lib/guides";
 
 export const metadata: Metadata = {
   alternates: { canonical: "/" },
-  openGraph: { url: "/" },
+  openGraph: { url: "/", images: OG_IMAGE },
 };
 
 const FAQS = [
@@ -20,7 +20,7 @@ const FAQS = [
   },
   {
     q: "Do I need to sign up or share any personal data?",
-    a: "No. NBA Tools requires no account and stores 0 calculation inputs across 10 tools and 30 team pages. First, open any tool and enter your numbers; then read the result on the same page; the math happens in your browser. The only data collected is anonymous aggregate traffic used to keep the site online. For example, a trade simulator never sends your roster to us. We tested the flow in the browser, so no signup step is hidden behind a tool.",
+    a: "No. NBA Tools requires no account and stores 0 calculation inputs across 10 tools and 30 team pages. First, open any tool and enter your numbers; then read the result on the same page; the math happens in your browser. The only data collected is anonymous aggregate traffic used to keep the site online. For example, a trade simulator never sends your roster to us.",
   },
   {
     q: "Where does the salary and cap data come from?",
@@ -67,7 +67,7 @@ const HOME_TOOL_ANSWERS: Record<string, { q: string; a: string }> = {
   },
   "fantasy-trade-analyzer": {
     q: "Who wins a fantasy basketball trade?",
-    a: "The Fantasy Basketball Trade Analyzer is a free browser tool that compares both sides of a proposed deal. First, pick the players; then read per-category swings and an overall value verdict. According to the 2026-27 season settings, 1 point, 1 rebound and 1 assist can each count in a points league. Using your entered per-game averages from ESPN or NBA.com, the analyzer shows where a trade helps or hurts 2 managers. For example, a points-for-rebounds swap can look even in total value but shift your weekly matchup. We built the tool for 9 categories and points leagues; no roster is stored.",
+    a: "The Fantasy Basketball Trade Analyzer is a free browser tool that compares both sides of a proposed deal. First, pick the players; then read per-category swings and an overall value verdict. According to the 2026-27 season settings, 1 point, 1 rebound and 1 assist can each count in a points league. Using your entered per-game averages from ESPN or NBA.com, the analyzer shows where a trade helps or hurts 2 managers. For example, a points-for-rebounds swap can look even but shift your weekly matchup. It supports 9-category and points leagues; no roster is stored.",
   },
   "fantasy-points-calculator": {
     q: "How are fantasy basketball points calculated?",
@@ -87,7 +87,7 @@ const HOME_TOOL_ANSWERS: Record<string, { q: string; a: string }> = {
   },
   "player-comparison": {
     q: "How do I compare two NBA players?",
-    a: "The NBA Player Comparison Tool is a free analyzer that puts 2 players side by side. First, choose both names; then read points, rebounds, assists and efficiency in aligned columns. According to the 2026-27 roster view, both players are scored on the same per-game basis. Using per-game averages you enter or take from a box score, the comparison runs locally with no account. For example, a player averaging 25 points and a player averaging 22 points differ by 3 points per game. We built the tool for quick fan debates; nothing is stored.",
+    a: "The NBA Player Comparison Tool is a free analyzer that puts 2 players side by side. First, choose both names; then read points, rebounds, assists and efficiency in aligned columns. According to the 2026-27 roster view, both players are scored on the same per-game basis. Using per-game averages you enter or take from a box score, the comparison runs locally with no account. For example, a player averaging 25 points and one averaging 22 differ by 3 per game; nothing is stored.",
   },
   "team-salary-trade-simulator": {
     q: "Can I simulate an NBA trade and check the cap?",
@@ -114,7 +114,7 @@ const HOME_GUIDE_ANSWERS: Record<string, { q: string; a: string }> = {
   },
   "nba-free-agency-bird-rights": {
     q: "How do NBA Bird rights work?",
-    a: "A Bird right is a CBA exception that lets a team re-sign its own free agent above the cap. First, the team carries a cap hold for that player; then the hold decides how much room remains for other moves. According to the NBA's published rules, full Bird rights require 3 seasons with the same team. For example, a player with full Bird rights can sign a larger raise than a non-Bird free agent. Using the 2026-27 $164.961M cap, the guide shows how each hold is calculated.",
+    a: "A Bird right is a CBA exception that lets a team re-sign its own free agent above the cap. First, the team carries a cap hold for that player; then the hold decides how much room remains for other moves. According to the NBA's published rules, full Bird rights require 3 seasons with the same team. For example, a player with full Bird rights can sign a larger raise than a non-Bird free agent. The guide shows each hold against the $164.961M cap.",
   },
 };
 
@@ -209,7 +209,7 @@ export default function Home() {
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg leading-relaxed text-gray-600">
             <strong className="text-ink">
-              NBA Tools is a free, browser-only set of {TOOLS.length} NBA calculators and simulators for the {LEAGUE.season} season.
+              NBA Tools is a free, browser-only set of {TOOLS.length} NBA calculators and simulators for the {LEAGUE.season} season, built for fans and fantasy managers who want a checked number in under a minute.
             </strong>{" "}
             First, add contracts to the salary cap calculator to see payroll, cap space and luxury tax; then open one of
             30 team payroll pages, {PLAYER_COUNT} player pages or 9 rule guides. Every calculation runs locally in your
@@ -239,6 +239,27 @@ export default function Home() {
                 <span className="mt-1 block text-gray-600">{detail}</span>
               </li>
             ))}
+          </ul>
+        </div>
+      </section>
+
+      <section id="tldr" className="border-b border-gray-200 bg-orange-50/50">
+        <div className="mx-auto max-w-5xl px-4 py-8">
+          <h2 className="text-xl font-bold text-ink">TL;DR — key facts</h2>
+          <ul className="mt-4 grid gap-2 text-sm leading-relaxed text-gray-700 sm:grid-cols-2">
+            <li>
+              <strong className="text-ink">{TOOLS.length} free calculators and simulators</strong> for the{" "}
+              {LEAGUE.season} season, with no account and no stored inputs.
+            </li>
+            <li>
+              <strong className="text-ink">{PLAYER_COUNT} player pages and 30 team payrolls</strong>, plus 9 guides on cap and tax rules.
+            </li>
+            <li>
+              <strong className="text-ink">Cap ${LEAGUE.salaryCap}M and tax ${LEAGUE.luxuryTax}M</strong> — official NBA figures published July 2026.
+            </li>
+            <li>
+              <strong className="text-ink">Live scores and daily news</strong> come from ESPN and link to the original source.
+            </li>
           </ul>
         </div>
       </section>
@@ -445,6 +466,17 @@ export default function Home() {
             ({SOURCE_URLS.nbaCapReleaseDate}). Salary snapshots retrieved November 19, 2026; league figures
             published July 1, 2026.
           </p>
+          <div className="mt-8 rounded-xl border border-gray-200 bg-gray-50 p-5">
+            <h2 className="text-lg font-bold text-ink">In short</h2>
+            <p className="mt-2 text-sm leading-relaxed text-gray-700">
+              <strong className="text-ink">
+                NBA Tools is a free, browser-only way to check NBA salaries, cap space, trades and fantasy values for the {LEAGUE.season} season.
+              </strong>{" "}
+              Use the calculators for estimates, read the guides for the rules behind each number, and open a team or
+              player page for the underlying data. Every tool runs locally with no signup; figures are snapshots, not
+              official records, and each page links to its source.
+            </p>
+          </div>
         </div>
       </section>
     </main>

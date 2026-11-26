@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
 
-export const metadata: Metadata = { title: "Terms of Use" };
+export const metadata: Metadata = {
+  title: "Terms of Use",
+  description:
+    "The terms for using NBA Tools: free browser-based estimates, independent of the NBA, with no official or betting use.",
+  alternates: { canonical: "/terms" },
+};
 
 export default function Terms() {
   return (

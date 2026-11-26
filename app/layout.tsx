@@ -12,10 +12,16 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "A growing collection of free basketball tools for fans and fantasy managers: salary cap, luxury tax, trade analyzer, advanced stats, and more. No signup, runs in your browser.",
+    "Free NBA salary cap, tax, trade and fantasy calculators for fans. No signup, runs in your browser, no data stored.",
+  authors: [{ name: "xushoulin", url: "https://github.com/xushoulin" }],
   openGraph: {
     type: "website",
     siteName: SITE_NAME,
+    images: [{ url: "/logo-512.png", width: 512, height: 512, alt: `${SITE_NAME} basketball logo` }],
+  },
+  twitter: {
+    card: "summary",
+    images: ["/logo-512.png"],
   },
   robots: { index: true, follow: true },
   icons: {

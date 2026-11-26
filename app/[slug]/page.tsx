@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import ToolShell from "@/components/ToolShell";
-import { TOOLS, getTool, SITE_URL } from "@/lib/tools";
+import {TOOLS, getTool, SITE_URL, OG_IMAGE} from "@/lib/tools";
 import { TOOL_CONTENT } from "@/lib/tool-content";
 import SalaryCapCalculator from "@/components/tools/SalaryCapCalculator";
 import LuxuryTaxCalculator from "@/components/tools/LuxuryTaxCalculator";
@@ -35,15 +35,19 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const tool = getTool(slug);
   if (!tool) return {};
+  // Tool descriptions are full on-page copy; search snippets only show ~155
+  // characters, so trim the metadata without touching the visible text.
+  const description = tool.description.slice(0, 155);
   return {
     title: tool.title,
-    description: tool.description,
+    description,
     alternates: { canonical: `/${slug}` },
     openGraph: {
       title: tool.title,
-      description: tool.description,
+      description,
       url: `/${slug}`,
-      type: "website",
+      type: "website" ,
+      images: OG_IMAGE,
     },
   };
 }

@@ -5,6 +5,7 @@ import PlayerGameView from "@/components/scores/PlayerGameView";
 export const metadata: Metadata = {
   title: "Player game report",
   description: "A single-game rating, written evaluation and full stat line for an NBA player.",
+  alternates: { canonical: "/game/player" },
   robots: { index: false, follow: true },
 };
 

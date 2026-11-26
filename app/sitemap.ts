@@ -9,7 +9,7 @@ import { NEWS_GENERATED_AT, NEWS_ITEMS } from "@/lib/news";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const pages = ["", "/about", "/privacy", "/terms", "/contact", "/disclaimer"].map((path) => ({
+  const pages = ["", "/about", "/editorial", "/privacy", "/terms", "/contact", "/disclaimer"].map((path) => ({
     url: `${SITE_URL}${path}`,
     lastModified: now,
     changeFrequency: "monthly" as const,

@@ -25,7 +25,7 @@ import {
   profileBySlug,
   profileFor,
 } from "@/lib/player-profiles";
-import { SITE_URL } from "@/lib/tools";
+import {SITE_URL, OG_IMAGE} from "@/lib/tools";
 import { playerNarrative } from "@/lib/player-narrative";
 
 type Params = { params: Promise<{ slug: string }> };
@@ -52,8 +52,10 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!p) return {};
   const team = teamOf(p.team);
   const teamName = team ? `${team.city} ${team.name}` : "NBA";
-  const title = `${p.name} — Career, Contract & Stats (${LEAGUE.season})`;
-  const description = `${p.name}, ${p.pos} for the ${teamName}: No. ${p.jersey ?? "—"}, $${p.salary.toFixed(2)}M in ${LEAGUE.season} with ${p.years} year${p.years === 1 ? "" : "s"} left. Full career history, awards, team-by-team timeline and season-by-season stats.`;
+  const fullTitle = `${p.name} — Career, Contract & Stats (${LEAGUE.season})`;
+  // The layout appends " | NBA Tools"; keep the snippet within a search result.
+  const title = fullTitle.length > 45 ? `${fullTitle.slice(0, 42).trimEnd()}…` : fullTitle;
+  const description = `${p.name}, ${p.pos} for the ${teamName}: No. ${p.jersey ?? "—"}, $${p.salary.toFixed(2)}M in ${LEAGUE.season} with ${p.years} year${p.years === 1 ? "" : "s"} left. Career history, awards and season stats.`.slice(0, 155);
   return {
     title,
     description,
@@ -63,7 +65,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       description,
       url: `/players/${slug}`,
       type: "profile",
-      images: [`https://a.espncdn.com/i/headshots/nba/players/full/${p.id}.png`],
+      images: [{ url: `https://a.espncdn.com/i/headshots/nba/players/full/${p.id}.png` }, ...OG_IMAGE],
     },
   };
 }

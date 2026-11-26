@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import NewsDayList, { DayJumpList } from "@/components/news/NewsDayList";
 import { NEWS_ITEMS, NEWS_SOURCE, newsDays } from "@/lib/news";
-import { SITE_URL } from "@/lib/tools";
+import {SITE_URL, OG_IMAGE} from "@/lib/tools";
 
 export const metadata: Metadata = {
   title: "NBA News Archive — Every Story, With Its Source",
   description:
     "Every NBA headline, report and game recap kept by NBA Tools, grouped by publication date. Each entry is credited to ESPN and links to the original article.",
   alternates: { canonical: "/news/archive" },
-  openGraph: { url: "/news/archive" },
+  openGraph: { url: "/news/archive", images: OG_IMAGE },
 };
 
 export default function NewsArchive() {

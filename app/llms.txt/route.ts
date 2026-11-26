@@ -49,6 +49,7 @@ ${GUIDES.map((g) => `- ${g.title}: ${SITE_URL}/guides/${g.slug}`).join("\n")}
 - Team index: ${SITE_URL}/teams
 - Player index example: ${SITE_URL}/players/lebron-james
 - About: ${SITE_URL}/about
+- Editorial standards and data policy: ${SITE_URL}/editorial
 - Privacy: ${SITE_URL}/privacy
 - Contact: ${SITE_URL}/contact
 - Sitemap: ${SITE_URL}/sitemap.xml

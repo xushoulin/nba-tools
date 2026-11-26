@@ -10,7 +10,7 @@ import {
   STATUS_LABEL,
 } from "@/lib/salary-data";
 import { CONFERENCE_BLOCKS, byDivision, teamSummary } from "@/lib/team-view";
-import { SITE_NAME, SITE_URL } from "@/lib/tools";
+import {SITE_NAME, SITE_URL, OG_IMAGE} from "@/lib/tools";
 
 export const metadata: Metadata = {
   title: "NBA Team Payrolls & Rosters 2026-27 — All 30 Teams",
@@ -21,8 +21,9 @@ export const metadata: Metadata = {
     title: "NBA Team Payrolls & Rosters 2026-27",
     description:
       "All 30 NBA teams by conference: cap hit, cap space, tax and apron status, with player-by-player contracts.",
-    url: "/teams",
-  },
+    url: "/teams" ,
+      images: OG_IMAGE,
+    },
 };
 
 export default function TeamsPage() {

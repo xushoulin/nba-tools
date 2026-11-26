@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
 
-export const metadata: Metadata = { title: "Contact" };
+export const metadata: Metadata = {
+  title: "Contact",
+  description:
+    "Report a bug, request a tool or correct a salary figure: contact the independent developer of NBA Tools via GitHub.",
+  alternates: { canonical: "/contact" },
+};
 
 export default function Contact() {
   return (

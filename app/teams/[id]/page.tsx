@@ -14,7 +14,7 @@ import {
 import { statusSentence, teamSummary } from "@/lib/team-view";
 import { TEAM_ASSETS, teamColor, teamHeroColor } from "@/lib/team-assets";
 import { profileFor } from "@/lib/player-profiles";
-import { SITE_URL } from "@/lib/tools";
+import {SITE_URL, OG_IMAGE} from "@/lib/tools";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -34,13 +34,16 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!team) return {};
   const s = teamSummary(team);
   const full = `${team.city} ${team.name}`;
-  const title = `${full} Salary Cap 2026-27 — Payroll, Contracts & Roster`;
+  const longTitle = `${full} Salary Cap 2026-27 — Payroll, Contracts & Roster`;
+  const title = longTitle.length > 45 ? `${longTitle.slice(0, 42).trimEnd()}…` : longTitle;
   const description = `${full} ${LEAGUE.season} payroll: $${s.official.toFixed(1)}M cap hit, $${Math.abs(s.capDelta).toFixed(1)}M ${s.capDelta > 0 ? "over" : "under"} the $${LEAGUE.salaryCap.toFixed(1)}M cap (${STATUS_LABEL[s.status]}). Full roster salaries, contract length and remaining value.`;
   return {
     title,
     description,
     alternates: { canonical: `/teams/${id}` },
-    openGraph: { title, description, url: `/teams/${id}`, type: "article" },
+    openGraph: { title, description, url: `/teams/${id}`, type: "article" ,
+      images: OG_IMAGE,
+    },
   };
 }
 

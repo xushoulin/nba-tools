@@ -16,7 +16,7 @@ import {
 } from "@/lib/news";
 import { LEAGUE, SOURCE_URLS, STATUS_COLOR, STATUS_LABEL } from "@/lib/salary-data";
 import { teamSummary } from "@/lib/team-view";
-import { SITE_NAME, SITE_URL } from "@/lib/tools";
+import {SITE_NAME, SITE_URL, OG_IMAGE} from "@/lib/tools";
 
 export const dynamicParams = false;
 
@@ -29,22 +29,27 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const item = getNewsItem(slug);
   if (!item) return {};
 
+  // Search result titles are cut around 60 characters. Long ESPN headlines
+  // would be truncated mid-word by the engine, so shorten them here to a clean
+  // boundary; the full headline stays in the article body and in JSON-LD.
+  const title = item.title.length > 46 ? `${item.title.slice(0, 43).trimEnd()}…` : item.title;
+
   // The description has to say what this page is, not just repeat the headline,
   // so the snippet does not read like ESPN's own article.
-  const description = `${item.summary.split(/(?<=\.)\s/)[0]} — headline and summary from ESPN, with a link to the original report.`;
+  const description = `${item.summary.split(/(?<=\.)\s/)[0]} — headline and summary from ESPN, with a link to the original report.`.slice(0, 155);
 
   return {
-    title: item.title,
-    description: description.slice(0, 300),
+    title,
+    description,
     alternates: { canonical: `/news/${item.slug}` },
     openGraph: {
       type: "article",
-      title: item.title,
-      description: description.slice(0, 300),
+      title,
+      description,
       url: `/news/${item.slug}`,
       publishedTime: item.published,
       modifiedTime: item.updated,
-      images: item.image ? [item.image.url] : undefined,
+      images: item.image ? [{ url: item.image.url }, ...OG_IMAGE] : OG_IMAGE,
     },
     other: {
       // Makes the provenance explicit for anything that reads the head.

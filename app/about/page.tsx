@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
 
-export const metadata: Metadata = { title: "About Us" };
+export const metadata: Metadata = {
+  title: "About Us",
+  description:
+    "Who builds NBA Tools, why every calculation runs in your browser, and where the salary, cap and player data comes from.",
+  alternates: { canonical: "/about" },
+};
 
 export default function About() {
   return (

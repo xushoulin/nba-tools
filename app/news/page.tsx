@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import NewsDayList from "@/components/news/NewsDayList";
 import { formatDateTimeET, formatTimeET, newsDays, NEWS_GENERATED_AT, NEWS_ITEMS, NEWS_SOURCE } from "@/lib/news";
-import { SITE_URL } from "@/lib/tools";
+import {SITE_URL, OG_IMAGE} from "@/lib/tools";
 import { SOURCE_URLS } from "@/lib/salary-data";
 
 export const metadata: Metadata = {
@@ -15,8 +15,9 @@ export const metadata: Metadata = {
     url: "/news",
     title: "NBA News Today — Daily Headlines, Recaps and Sources",
     description:
-      "NBA headlines, reports and game recaps by date. Every story credited to ESPN with a link to the original.",
-  },
+      "NBA headlines, reports and game recaps by date. Every story credited to ESPN with a link to the original." ,
+      images: OG_IMAGE,
+    },
 };
 
 const INDEX_DAYS = 4;

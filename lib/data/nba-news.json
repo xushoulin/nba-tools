@@ -4,16 +4,191 @@
     "url": "https://www.espn.com/nba/",
     "feed": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=50"
   },
-  "generatedAt": "2026-11-25T20:20:02.481Z",
-  "count": 62,
+  "generatedAt": "2026-11-26T07:53:56.482Z",
+  "count": 78,
   "items": [
     {
+      "id": "49577473",
+      "slug": "2026-nba-cup-schedule-format-groups-updates-and-more-49577473",
+      "title": "2026 NBA Cup: Schedule, format, groups, updates and more",
+      "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent wins by the Celtics and Mavericks.",
+      "published": "2026-11-26T07:44:40.000Z",
+      "updated": "2026-11-26T07:44:40.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751533_608x342_16-9.jpg",
+        "alt": "BLAZERS-SPURS\n [608x342]",
+        "credit": "Photo by Cameron Browne/NBAE via Getty Images"
+      },
+      "teams": [
+        "Atlanta Hawks",
+        "Boston Celtics",
+        "Brooklyn Nets",
+        "Charlotte Hornets",
+        "Chicago Bulls",
+        "Cleveland Cavaliers",
+        "Dallas Mavericks",
+        "Denver Nuggets",
+        "Detroit Pistons",
+        "Golden State Warriors",
+        "Houston Rockets",
+        "Indiana Pacers",
+        "LA Clippers",
+        "Los Angeles Lakers",
+        "Memphis Grizzlies",
+        "Miami Heat",
+        "Milwaukee Bucks",
+        "Minnesota Timberwolves",
+        "New Orleans Pelicans",
+        "New York Knicks",
+        "Oklahoma City Thunder",
+        "Orlando Magic",
+        "Philadelphia 76ers",
+        "Phoenix Suns",
+        "Portland Trail Blazers",
+        "Sacramento Kings",
+        "San Antonio Spurs",
+        "Toronto Raptors",
+        "Utah Jazz",
+        "Washington Wizards"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50602186",
+      "slug": "avdija-lillard-lead-trail-blazers-to-116-111-win-over-spurs-in-nba-cup-p-50602186",
+      "title": "Avdija, Lillard lead Trail Blazers to 116-111 win over Spurs in NBA Cup play",
+      "summary": "Deni Avdija scored 33 points to lead the Portland Trail Blazers to a 116-111 win over the San Antonio Spurs in both teams’ third NBA Cup matchup of the group stage on Wednesday.",
+      "published": "2026-11-26T05:56:40.000Z",
+      "updated": "2026-11-26T05:56:40.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909325",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Portland Trail Blazers",
+        "San Antonio Spurs"
+      ],
+      "matchup": "San Antonio Spurs @ Portland Trail Blazers"
+    },
+    {
+      "id": "50601999",
+      "slug": "deanthony-melton-scores-24-points-matches-career-high-with-eight-3s-as-w-50601999",
+      "title": "De'Anthony Melton scores 24 points, matches career high with eight 3s as Warriors beat Kings 129-110",
+      "summary": "De'Anthony Melton scored 24 points and matched his career high with eight 3-pointers and the Golden State Warriors made 20 total 3s on the way to a 129-110 win over the Sacramento Kings in an NBA Cup game on Wednesday night.",
+      "published": "2026-11-26T05:33:42.000Z",
+      "updated": "2026-11-26T05:33:42.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909324",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Golden State Warriors",
+        "Sacramento Kings"
+      ],
+      "matchup": "Sacramento Kings @ Golden State Warriors"
+    },
+    {
+      "id": "50601570",
+      "slug": "timberwolves-lamelo-ball-limps-off-vs-okc-after-hurting-left-ankle-50601570",
+      "title": "Timberwolves' LaMelo Ball limps off vs. OKC after hurting left ankle",
+      "summary": "The Timberwolves did not have an update on the status of LaMelo Ball's left ankle after he was injured late Wednesday night's win over the Thunder.",
+      "published": "2026-11-26T04:47:36.000Z",
+      "updated": "2026-11-26T04:47:36.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50601570/timberwolves-lamelo-ball-limps-hurting-left-ankle",
+      "author": "Tim MacMahon",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751519_600x400_3-2.jpg",
+        "alt": "LaMelo Ball [600x400]",
+        "credit": "Alonzo Adams-Imagn Images"
+      },
+      "teams": [
+        "Minnesota Timberwolves"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "47987750",
+      "slug": "which-nba-players-have-the-most-triple-doubles-of-all-time-47987750",
+      "title": "Which NBA players have the most triple-doubles of all time?",
+      "summary": "Russell Westbrook holds the NBA record for most triple-doubles in a career. See who else joins him on the list.",
+      "published": "2026-11-26T04:43:10.000Z",
+      "updated": "2026-11-26T04:43:10.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/47987750/which-nba-players-most-triple-doubles-all",
+      "author": "Keith Jenkins",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/0220/r1617781_608x342_16-9.jpg",
+        "alt": "Russell Westbrook",
+        "credit": "Scott Audette/NBAE via Getty Images"
+      },
+      "teams": [],
+      "matchup": null
+    },
+    {
+      "id": "50601303",
+      "slug": "lebron-james-dusts-off-the-cape-to-save-76ers-with-triple-double-50601303",
+      "title": "LeBron James dusts 'off the cape' to save 76ers with triple-double",
+      "summary": "The soon-to-be 42-year-old LeBron James showed his ability to put the 76ers on his back with a 25-point triple-double in Wednesday's NBA Cup win over Miami.",
+      "published": "2026-11-26T04:39:33.000Z",
+      "updated": "2026-11-26T04:39:33.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50601303/lebron-dusts-cape-save-76ers-triple-double",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751501_600x400_3-2.jpg",
+        "alt": "LeBron James [600x400]",
+        "credit": "Photo by Mitchell Leff/Getty Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50601173",
+      "slug": "timberwolves-beat-the-thunder-113-106-to-improve-to-3-0-in-nba-cup-play-50601173",
+      "title": "Timberwolves beat the Thunder 113-106 to improve to 3-0 in NBA Cup play",
+      "summary": "Jaden McDaniels had 32 points and 10 rebounds, LaMelo Ball added 19 points before leaving with an ankle injury and the Minnesota Timberwolves improved to 3-0 in NBA Cup play with a 113-106 win over the Oklahoma City Thunder on Wednesday night.",
+      "published": "2026-11-26T04:34:32.000Z",
+      "updated": "2026-11-26T04:34:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909320",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Oklahoma City Thunder",
+        "Minnesota Timberwolves"
+      ],
+      "matchup": "Minnesota Timberwolves @ Oklahoma City Thunder"
+    },
+    {
+      "id": "50601463",
+      "slug": "kevin-durant-reaches-33-000-points-as-rockets-beat-suns-50601463",
+      "title": "Kevin Durant reaches 33,000 points as Rockets beat Suns",
+      "summary": "Kevin Durant scored 20 points and became the fifth player in NBA history to reach 33,000 points, helping the Houston Rockets beat the Phoenix Suns 116-104 on Wednesday night.",
+      "published": "2026-11-26T04:20:32.000Z",
+      "updated": "2026-11-26T04:20:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909323",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Houston Rockets",
+        "Phoenix Suns"
+      ],
+      "matchup": "Phoenix Suns @ Houston Rockets"
+    },
+    {
       "id": "50595534",
-      "slug": "ex-bucks-guard-kevin-porter-jr-finalizing-2-year-deal-to-join-magic-agen-50595534",
-      "title": "Ex-Bucks guard Kevin Porter Jr. finalizing 2-year deal to join Magic, agent says",
-      "summary": "Free agent guard Kevin Porter Jr. is finalizing a two-year contract with the Magic, his agent told ESPN.",
-      "published": "2026-11-25T19:04:58.000Z",
-      "updated": "2026-11-25T19:04:58.000Z",
+      "slug": "ex-bucks-guard-kevin-porter-jr-signs-with-magic-50595534",
+      "title": "Ex-Bucks guard Kevin Porter Jr. signs with Magic",
+      "summary": "Free agent guard Kevin Porter Jr. has signed with the Magic.",
+      "published": "2026-11-26T03:53:13.000Z",
+      "updated": "2026-11-26T03:53:13.000Z",
       "kind": "HeadlineNews",
       "url": "https://www.espn.com/nba/story/_/id/50595534/agent-kevin-porter-jr-finalizing-2-year-deal-magic",
       "author": "Shams Charania",
@@ -24,6 +199,191 @@
       },
       "teams": [
         "Orlando Magic"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50601237",
+      "slug": "randle-scores-28-points-to-lead-nets-past-bucks-104-97-in-nba-cup-action-50601237",
+      "title": "Randle scores 28 points to lead Nets past Bucks 104-97 in NBA Cup action",
+      "summary": "Julius Randle scored 28 points and Noah Clowney had 17 as the Brooklyn Nets beat the Milwaukee Bucks 104-97 to snap a five-game losing streak on Wednesday night in NBA Cup play.",
+      "published": "2026-11-26T03:45:32.000Z",
+      "updated": "2026-11-26T03:45:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909322",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Milwaukee Bucks",
+        "Brooklyn Nets"
+      ],
+      "matchup": "Brooklyn Nets @ Milwaukee Bucks"
+    },
+    {
+      "id": "50601186",
+      "slug": "wells-and-jerome-lead-the-grizzlies-to-a-115-97-win-over-the-clippers-wh-50601186",
+      "title": "Wells and Jerome lead the Grizzlies to a 115-97 win over the Clippers, who fall to 0-9 on the road",
+      "summary": "Jaylen Wells scored 19 points, Ty Jerome added 17 points and seven assists, and the Memphis Grizzles beat the Clippers 115-70 on Wednesday night in an NBA Cup game, dropping Los Angeles to 0-9 on the road.",
+      "published": "2026-11-26T03:42:32.000Z",
+      "updated": "2026-11-26T03:42:32.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909321",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Memphis Grizzlies",
+        "LA Clippers"
+      ],
+      "matchup": "LA Clippers @ Memphis Grizzlies"
+    },
+    {
+      "id": "50600879",
+      "slug": "knicks-blow-by-the-cavaliers-in-the-fourth-win-121-102-for-sixth-straigh-50600879",
+      "title": "Knicks blow by the Cavaliers in the fourth, win 121-102 for sixth straight victory",
+      "summary": "Jose Alvarado scored a season-high 21 points, Mikal Bridges had a season-best 19 and the New York Knicks rode a blitz by their bench to a 121-102 victory over the Cleveland Cavaliers on Wednesday night that extended their winning streak to six.",
+      "published": "2026-11-26T03:12:35.000Z",
+      "updated": "2026-11-26T03:12:35.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909319",
+      "author": null,
+      "image": null,
+      "teams": [
+        "New York Knicks",
+        "Cleveland Cavaliers"
+      ],
+      "matchup": "Cleveland Cavaliers @ New York Knicks"
+    },
+    {
+      "id": "50600508",
+      "slug": "knicks-assistant-coach-chris-jent-returns-to-team-50600508",
+      "title": "Knicks assistant coach Chris Jent returns to team",
+      "summary": "Chris Jent was back on New York's bench for Wednesday night's NBA Cup win against Cleveland after a monthlong absence.",
+      "published": "2026-11-26T03:03:21.000Z",
+      "updated": "2026-11-26T03:03:21.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50600508/knicks-assistant-coach-chris-jent-returns-team",
+      "author": "Vincent Goodwill",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1028/r1737300_600x400_3-2.jpg",
+        "alt": "Chris Jent [600x400]",
+        "credit": "Kirby Lee-Imagn Images"
+      },
+      "teams": [
+        "New York Knicks"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50599296",
+      "slug": "76ers-jaylen-brown-exits-with-recurrence-of-hamstring-issue-50599296",
+      "title": "76ers' Jaylen Brown exits with recurrence of hamstring issue",
+      "summary": "Jaylen Brown exited Philadelphia's NBA Cup game Wednesday night against Miami and was ruled out because of left hamstring tightness.",
+      "published": "2026-11-26T02:48:06.000Z",
+      "updated": "2026-11-26T02:48:06.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50599296/76ers-jaylen-brown-exits-recurrence-hamstring-issue",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751408_600x400_3-2.jpg",
+        "alt": "261125 Jaylen Brown [600x400]",
+        "credit": "Mitchell Leff/Getty Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50600620",
+      "slug": "matas-buzelis-scores-24-as-bulls-hold-on-to-beat-hornets-107-105-for-2nd-50600620",
+      "title": "Matas Buzelis scores 24 as Bulls hold on to beat Hornets 107-105 for 2nd straight win",
+      "summary": "Matas Buzelis scored 24 points, Josh Giddey added 12 points, 11 rebounds and seven assists, and the Chicago Bulls handed the Charlotte Hornets their seventh straight loss 107-105 on Wednesday night.",
+      "published": "2026-11-26T02:44:35.000Z",
+      "updated": "2026-11-26T02:44:35.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909318",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Charlotte Hornets",
+        "Chicago Bulls"
+      ],
+      "matchup": "Chicago Bulls @ Charlotte Hornets"
+    },
+    {
+      "id": "50599517",
+      "slug": "lebron-james-has-his-1st-triple-double-for-the-76ers-in-a-win-over-the-h-50599517",
+      "title": "LeBron James has his 1st triple-double for the 76ers in a win over the Heat",
+      "summary": "LeBron James had 25 points, 12 assists and 10 rebounds for his first triple-double with Philadelphia, and Tyrese Maxey scored 30 points to lead the 76ers to a 111-104 victory over the Miami Heat in an NBA Cup game Wednesday night.",
+      "published": "2026-11-26T00:42:33.000Z",
+      "updated": "2026-11-26T00:42:33.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401909317",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Philadelphia 76ers",
+        "Miami Heat"
+      ],
+      "matchup": "Miami Heat @ Philadelphia 76ers"
+    },
+    {
+      "id": "50597465",
+      "slug": "austin-reaves-rejoins-lakers-for-full-practice-no-call-yet-on-facing-spu-50597465",
+      "title": "Austin Reaves rejoins Lakers for full practice, no call yet on facing Spurs",
+      "summary": "Austin Reaves returned to his first full practice since suffering a left heel bruise, although his status for Friday's game vs. the Spurs is uncertain.",
+      "published": "2026-11-25T22:13:32.000Z",
+      "updated": "2026-11-25T22:13:32.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50597465/austin-reaves-rejoins-lakers-full-practice-tbd-face-spurs",
+      "author": "Dave McMenamin",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/0509/r1655741_600x600_1-1.jpg",
+        "alt": "Austin Reaves [600x600]",
+        "credit": "Alonzo Adams-Imagn Images"
+      },
+      "teams": [
+        "Los Angeles Lakers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50596747",
+      "slug": "76ers-joel-embiid-out-vs-heat-misses-second-straight-game-due-to-illness-50596747",
+      "title": "76ers' Joel Embiid out vs. Heat, misses second straight game due to illness",
+      "summary": "76ers center Joel Embiid will miss Wednesday night's game against the Heat with an illness.",
+      "published": "2026-11-25T20:53:38.000Z",
+      "updated": "2026-11-25T20:53:38.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50596747/76ers-star-joel-embiid-vs-heat-due-illness",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/0904/r1711559_1296x729_16-9.jpg",
+        "alt": "Embiid\n [1296x729]",
+        "credit": "Kyle Ross-Imagn Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50592935",
+      "slug": "where-to-watch-cade-cunningham-as-deuce-sangfroid-a-pistons-documentary-50592935",
+      "title": "Where to watch 'Cade Cunningham as Deuce Sangfroid,' a Pistons documentary",
+      "summary": "The documentary shows a behind-the-scenes look at the Detroit Pistons star.",
+      "published": "2026-11-25T20:46:52.000Z",
+      "updated": "2026-11-25T20:46:52.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50592935/watch-cade-cunningham-documentary-deuce-sangfroid",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/0516/r1658702_608x342_16-9.jpg",
+        "alt": "Cade Cunningham",
+        "credit": "Nathaniel S. Butler/NBA/Getty Images"
+      },
+      "teams": [
+        "Detroit Pistons"
       ],
       "matchup": null
     },
@@ -113,26 +473,6 @@
       "matchup": null
     },
     {
-      "id": "50577428",
-      "slug": "76ers-joel-embiid-illness-sits-out-loss-to-trail-blazers-50577428",
-      "title": "76ers' Joel Embiid (illness) sits out loss to Trail Blazers",
-      "summary": "76ers center Joel Embiid missed Monday's game against the Trail Blazers because of an illness.",
-      "published": "2026-11-25T12:42:13.000Z",
-      "updated": "2026-11-25T12:42:13.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
-      "author": "Kris Rhim",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1123/r1750407_600x400_3-2.jpg",
-        "alt": "Joel Embiid  [600x400]",
-        "credit": "Bill Streicher/Imagn Images"
-      },
-      "teams": [
-        "Philadelphia 76ers"
-      ],
-      "matchup": null
-    },
-    {
       "id": "50586890",
       "slug": "jalen-duren-to-begin-rehab-assignment-in-next-step-to-return-from-injury-50586890",
       "title": "Jalen Duren to begin rehab assignment in next step to return from injury",
@@ -169,26 +509,6 @@
       },
       "teams": [
         "Los Angeles Lakers"
-      ],
-      "matchup": null
-    },
-    {
-      "id": "50584000",
-      "slug": "sources-wolves-donte-divincenzo-eyes-new-years-for-season-debut-50584000",
-      "title": "Sources: Wolves' Donte DiVincenzo eyes New Year's for season debut",
-      "summary": "The Timberwolves said Donte DiVincenzo has been cleared for basketball activities after Achilles surgery.",
-      "published": "2026-11-25T12:40:51.000Z",
-      "updated": "2026-11-25T12:40:51.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
-      "author": null,
-      "image": {
-        "url": "https://a.espncdn.com/photo/2024/1014/r1400281_600x400_3-2.jpg",
-        "alt": "Donte DiVincenzo [600x400]",
-        "credit": "Vincent Carchietta/Imagn Images"
-      },
-      "teams": [
-        "Minnesota Timberwolves"
       ],
       "matchup": null
     },
@@ -345,6 +665,26 @@
       "matchup": null
     },
     {
+      "id": "50584000",
+      "slug": "sources-wolves-donte-divincenzo-eyes-new-years-for-season-debut-50584000",
+      "title": "Sources: Wolves' Donte DiVincenzo eyes New Year's for season debut",
+      "summary": "The Timberwolves said Donte DiVincenzo has been cleared for basketball activities after Achilles surgery.",
+      "published": "2026-11-24T17:38:32.000Z",
+      "updated": "2026-11-24T17:38:32.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50584000/wolves-dante-divincenzo-cleared-basketball-activities",
+      "author": null,
+      "image": {
+        "url": "https://a.espncdn.com/photo/2024/1014/r1400281_600x400_3-2.jpg",
+        "alt": "Donte DiVincenzo [600x400]",
+        "credit": "Vincent Carchietta/Imagn Images"
+      },
+      "teams": [
+        "Minnesota Timberwolves"
+      ],
+      "matchup": null
+    },
+    {
       "id": "50544296",
       "slug": "nba-rookie-rankings-10-standouts-in-a-star-studded-class-50544296",
       "title": "NBA Rookie Rankings: 10 standouts in a star-studded class",
@@ -372,6 +712,23 @@
         "Memphis Grizzlies"
       ],
       "matchup": null
+    },
+    {
+      "id": "50572252",
+      "slug": "brandin-podziemski-scores-18-points-as-warriors-hold-of-celtics-88-87-to-50572252",
+      "title": "Brandin Podziemski scores 18 points as Warriors hold of Celtics 88-87 to snap five-game losing skid",
+      "summary": "Brandin Podziemski had 18 points and seven rebounds and the Golden State Warriors snapped a five-game losing streak by holding off Boston for an 88-87 win Sunday night, sending the Celtics to their first four-game skid in five years.",
+      "published": "2026-11-24T09:15:35.000Z",
+      "updated": "2026-11-24T09:15:35.000Z",
+      "kind": "Recap",
+      "url": "https://www.espn.com/nba/recap?gameId=401910035",
+      "author": null,
+      "image": null,
+      "teams": [
+        "Golden State Warriors",
+        "Boston Celtics"
+      ],
+      "matchup": "Boston Celtics @ Golden State Warriors"
     },
     {
       "id": "50578664",
@@ -495,6 +852,26 @@
         "Brooklyn Nets"
       ],
       "matchup": "Brooklyn Nets @ Minnesota Timberwolves"
+    },
+    {
+      "id": "50577428",
+      "slug": "76ers-joel-embiid-illness-sits-out-loss-to-trail-blazers-50577428",
+      "title": "76ers' Joel Embiid (illness) sits out loss to Trail Blazers",
+      "summary": "76ers center Joel Embiid missed Monday's game against the Trail Blazers because of an illness.",
+      "published": "2026-11-24T03:27:49.000Z",
+      "updated": "2026-11-24T03:27:49.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50577428/76ers-rule-joel-embiid-vs-trail-blazers-illness",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1123/r1750407_600x400_3-2.jpg",
+        "alt": "Joel Embiid  [600x400]",
+        "credit": "Bill Streicher/Imagn Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
     },
     {
       "id": "50579074",
@@ -625,55 +1002,6 @@
       "matchup": null
     },
     {
-      "id": "49577473",
-      "slug": "2026-nba-cup-schedule-format-groups-updates-and-more-49577473",
-      "title": "2026 NBA Cup: Schedule, format, groups, updates and more",
-      "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent win by the Nuggets.",
-      "published": "2026-11-23T19:44:13.000Z",
-      "updated": "2026-11-23T19:44:13.000Z",
-      "kind": "Story",
-      "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
-      "author": null,
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1121/r1748853_608x342_16-9.jpg",
-        "alt": "murray [608x342]",
-        "credit": "Ron Chenoy-Imagn Images"
-      },
-      "teams": [
-        "Atlanta Hawks",
-        "Boston Celtics",
-        "Brooklyn Nets",
-        "Charlotte Hornets",
-        "Chicago Bulls",
-        "Cleveland Cavaliers",
-        "Dallas Mavericks",
-        "Denver Nuggets",
-        "Detroit Pistons",
-        "Golden State Warriors",
-        "Houston Rockets",
-        "Indiana Pacers",
-        "LA Clippers",
-        "Los Angeles Lakers",
-        "Memphis Grizzlies",
-        "Miami Heat",
-        "Milwaukee Bucks",
-        "Minnesota Timberwolves",
-        "New Orleans Pelicans",
-        "New York Knicks",
-        "Oklahoma City Thunder",
-        "Orlando Magic",
-        "Philadelphia 76ers",
-        "Phoenix Suns",
-        "Portland Trail Blazers",
-        "Sacramento Kings",
-        "San Antonio Spurs",
-        "Toronto Raptors",
-        "Utah Jazz",
-        "Washington Wizards"
-      ],
-      "matchup": null
-    },
-    {
       "id": "50568682",
       "slug": "bam-adebayos-triple-double-ignites-heats-123-113-victory-over-thunder-50568682",
       "title": "Bam Adebayo's triple-double ignites Heat's 123-113 victory over Thunder",
@@ -750,23 +1078,6 @@
       "matchup": null
     },
     {
-      "id": "50572252",
-      "slug": "brandin-podziemski-scores-18-points-as-warriors-hold-of-celtics-88-87-to-50572252",
-      "title": "Brandin Podziemski scores 18 points as Warriors hold of Celtics 88-87 to snap five-game losing skid",
-      "summary": "Brandin Podziemski had 18 points and seven rebounds and the Golden State Warriors snapped a five-game losing streak by holding off Boston for an 88-87 win Sunday night, sending the Celtics to their first four-game skid in five years.",
-      "published": "2026-11-23T11:57:04.000Z",
-      "updated": "2026-11-23T11:57:04.000Z",
-      "kind": "Recap",
-      "url": "https://www.espn.com/nba/recap?gameId=401910035",
-      "author": null,
-      "image": null,
-      "teams": [
-        "Golden State Warriors",
-        "Boston Celtics"
-      ],
-      "matchup": "Boston Celtics @ Golden State Warriors"
-    },
-    {
       "id": "50570668",
       "slug": "draymond-green-swats-back-at-online-critics-fuels-warriors-win-over-celt-50570668",
       "title": "Draymond Green swats back at online critics, fuels Warriors' win over Celtics",
@@ -784,24 +1095,6 @@
       "teams": [
         "Golden State Warriors"
       ],
-      "matchup": null
-    },
-    {
-      "id": "47987750",
-      "slug": "which-nba-players-have-the-most-triple-doubles-of-all-time-47987750",
-      "title": "Which NBA players have the most triple-doubles of all time?",
-      "summary": "Russell Westbrook holds the NBA record for most triple-doubles in a career. See who else joins him on the list.",
-      "published": "2026-11-23T04:20:20.000Z",
-      "updated": "2026-11-23T04:20:20.000Z",
-      "kind": "Story",
-      "url": "https://www.espn.com/nba/story/_/id/47987750/which-nba-players-most-triple-doubles-all",
-      "author": "Keith Jenkins",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/0220/r1617781_608x342_16-9.jpg",
-        "alt": "Russell Westbrook",
-        "credit": "Scott Audette/NBAE via Getty Images"
-      },
-      "teams": [],
       "matchup": null
     },
     {

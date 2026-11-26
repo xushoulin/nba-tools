@@ -109,7 +109,14 @@ export default function ToolShell({ title, description, icon, slug, children, st
           <a href={SOURCE_URLS.espnNba} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
             ESPN
           </a>
-          . Every calculation runs locally in your browser; results are estimates, not official figures.
+          . Every calculation runs locally in your browser; results are estimates, not official figures. Built by the
+          independent developer{" "}
+          <a href="https://github.com/xushoulin" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
+            xushoulin
+          </a>
+          ; see our{" "}
+          <a href="/editorial" className="text-court hover:underline">editorial standards</a> for sources, update cadence and
+          how to report a correction.
         </p>
       </section>
 

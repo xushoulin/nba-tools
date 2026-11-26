@@ -111,3 +111,8 @@ export function relatedTools(slug: string, count = 4): Tool[] {
 const DEFAULT_SITE_URL = "https://nba.shoulin.shop";
 export const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || DEFAULT_SITE_URL).replace(/\/$/, "");
 export const SITE_NAME = "NBA Tools";
+
+// Next.js does not deep-merge openGraph objects between layouts and pages: a
+// page that defines its own openGraph drops the layout's images. Every page
+// that sets openGraph must spread OG_IMAGE so the share card is not blank.
+export const OG_IMAGE = [{ url: "/logo-512.png", width: 512, height: 512, alt: `${SITE_NAME} basketball logo` }];

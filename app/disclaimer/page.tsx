@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
 import { DATA_META } from "@/lib/salary-data";
 
-export const metadata: Metadata = { title: "Disclaimer" };
+export const metadata: Metadata = {
+  title: "Disclaimer",
+  description:
+    "NBA Tools figures are estimates from public snapshots, not official NBA records or financial, legal and betting advice.",
+  alternates: { canonical: "/disclaimer" },
+};
 
 export default function Disclaimer() {
   return (

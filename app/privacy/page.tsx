@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
 import LegalPage from "@/components/LegalPage";
 
-export const metadata: Metadata = { title: "Privacy Policy" };
+export const metadata: Metadata = {
+  title: "Privacy Policy",
+  description:
+    "How NBA Tools handles your data: calculations run in your browser, no account is required, and only aggregate traffic is measured.",
+  alternates: { canonical: "/privacy" },
+};
 
 export default function Privacy() {
   return (
