@@ -38,7 +38,10 @@ export default function Privacy() {
       </p>
       <h2 className="pt-2 text-xl font-bold text-ink">Analytics</h2>
       <p>
-        We may use privacy-friendly analytics to understand aggregate traffic, such as which pages are visited most. This data is not used to identify individuals.
+        We use Google Analytics 4 to understand aggregate traffic &mdash; for example, which pages are visited most and how readers find the site. Google Analytics may set cookies or use similar identifiers to measure this activity, and Google may process the resulting data (including your IP address) on our behalf. GA4 reports are aggregated: we do not use them to identify individuals, and we do not use analytics data for advertising.
+      </p>
+      <p>
+        You can opt out of Google Analytics at any time with the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-court hover:underline">Google Analytics Opt-out Browser Add-on</a>, or by blocking cookies in your browser. Blocking analytics does not affect how the tools on this site work.
       </p>
       <h2 className="pt-2 text-xl font-bold text-ink">Children&rsquo;s privacy</h2>
       <p>

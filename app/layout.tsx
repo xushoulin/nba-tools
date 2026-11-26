@@ -3,6 +3,8 @@ import "./globals.css";
 import SiteHeader from "@/components/SiteHeader";
 import SiteFooter from "@/components/SiteFooter";
 import { AdSenseLoader } from "@/components/ads/AdSense";
+import { GoogleAnalytics } from "@/components/analytics/GoogleAnalytics";
+import { RouteTracker } from "@/components/analytics/RouteTracker";
 import { SITE_NAME, SITE_URL } from "@/lib/tools";
 
 export const metadata: Metadata = {
@@ -48,9 +50,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
+        <GoogleAnalytics />
         <AdSenseLoader />
       </head>
       <body className="min-h-screen">
+        <RouteTracker />
         <SiteHeader />
         {children}
         <SiteFooter />
