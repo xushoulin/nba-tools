@@ -4,16 +4,56 @@
     "url": "https://www.espn.com/nba/",
     "feed": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=50"
   },
-  "generatedAt": "2026-11-26T09:15:24.711Z",
+  "generatedAt": "2026-11-26T19:56:32.987Z",
   "count": 78,
   "items": [
     {
+      "id": "50599296",
+      "slug": "76ers-jaylen-brown-exits-with-recurrence-of-hamstring-issue-50599296",
+      "title": "76ers' Jaylen Brown exits with recurrence of hamstring issue",
+      "summary": "Jaylen Brown exited the 76ers' NBA Cup game against the Heat and was ruled out because of left hamstring tightness.",
+      "published": "2026-11-26T19:43:10.000Z",
+      "updated": "2026-11-26T19:43:10.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50599296/76ers-jaylen-brown-exits-recurrence-hamstring-issue",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751408_600x400_3-2.jpg",
+        "alt": "261125 Jaylen Brown [600x400]",
+        "credit": "Mitchell Leff/Getty Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50601570",
+      "slug": "timberwolves-lamelo-ball-limps-off-vs-okc-after-hurting-left-ankle-50601570",
+      "title": "Timberwolves' LaMelo Ball limps off vs. OKC after hurting left ankle",
+      "summary": "The Timberwolves did not have an update on the status of LaMelo Ball's left ankle after he was injured late in a win over the Thunder.",
+      "published": "2026-11-26T18:13:44.000Z",
+      "updated": "2026-11-26T18:13:44.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50601570/timberwolves-lamelo-ball-limps-hurting-left-ankle",
+      "author": "Tim MacMahon",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751519_600x400_3-2.jpg",
+        "alt": "LaMelo Ball [600x400]",
+        "credit": "Alonzo Adams-Imagn Images"
+      },
+      "teams": [
+        "Minnesota Timberwolves"
+      ],
+      "matchup": null
+    },
+    {
       "id": "49577473",
-      "slug": "2026-nba-cup-schedule-format-groups-updates-and-more-49577473",
-      "title": "2026 NBA Cup: Schedule, format, groups, updates and more",
+      "slug": "2026-nba-cup-schedule-scores-group-standings-and-updates-49577473",
+      "title": "2026 NBA Cup: Schedule, scores group standings and updates",
       "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent wins by the Celtics and Mavericks.",
-      "published": "2026-11-26T07:44:40.000Z",
-      "updated": "2026-11-26T07:44:40.000Z",
+      "published": "2026-11-26T14:50:01.000Z",
+      "updated": "2026-11-26T14:50:01.000Z",
       "kind": "Story",
       "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
       "author": null,
@@ -57,6 +97,46 @@
       "matchup": null
     },
     {
+      "id": "50601303",
+      "slug": "lebron-james-dusts-off-the-cape-to-save-76ers-with-triple-double-50601303",
+      "title": "LeBron James dusts 'off the cape' to save 76ers with triple-double",
+      "summary": "The soon-to-be 42-year-old LeBron James showed his ability to put the 76ers on his back with a 25-point triple-double in Wednesday's NBA Cup win over the Heat.",
+      "published": "2026-11-26T14:27:36.000Z",
+      "updated": "2026-11-26T14:27:36.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50601303/lebron-dusts-cape-save-76ers-triple-double",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751501_600x400_3-2.jpg",
+        "alt": "LeBron James [600x400]",
+        "credit": "Photo by Mitchell Leff/Getty Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50600508",
+      "slug": "knicks-assistant-coach-chris-jent-returns-to-team-50600508",
+      "title": "Knicks assistant coach Chris Jent returns to team",
+      "summary": "Chris Jent was back on New York's bench for Wednesday night's NBA Cup win against Cleveland after a monthlong absence.",
+      "published": "2026-11-26T12:03:45.000Z",
+      "updated": "2026-11-26T12:03:45.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50600508/knicks-assistant-coach-chris-jent-returns-team",
+      "author": "Vincent Goodwill",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1028/r1737300_600x400_3-2.jpg",
+        "alt": "Chris Jent [600x400]",
+        "credit": "Kirby Lee-Imagn Images"
+      },
+      "teams": [
+        "New York Knicks"
+      ],
+      "matchup": null
+    },
+    {
       "id": "50602186",
       "slug": "avdija-lillard-lead-trail-blazers-to-116-111-win-over-spurs-in-nba-cup-p-50602186",
       "title": "Avdija, Lillard lead Trail Blazers to 116-111 win over Spurs in NBA Cup play",
@@ -91,26 +171,6 @@
       "matchup": "Sacramento Kings @ Golden State Warriors"
     },
     {
-      "id": "50601570",
-      "slug": "timberwolves-lamelo-ball-limps-off-vs-okc-after-hurting-left-ankle-50601570",
-      "title": "Timberwolves' LaMelo Ball limps off vs. OKC after hurting left ankle",
-      "summary": "The Timberwolves did not have an update on the status of LaMelo Ball's left ankle after he was injured late Wednesday night's win over the Thunder.",
-      "published": "2026-11-26T04:47:36.000Z",
-      "updated": "2026-11-26T04:47:36.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50601570/timberwolves-lamelo-ball-limps-hurting-left-ankle",
-      "author": "Tim MacMahon",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1126/r1751519_600x400_3-2.jpg",
-        "alt": "LaMelo Ball [600x400]",
-        "credit": "Alonzo Adams-Imagn Images"
-      },
-      "teams": [
-        "Minnesota Timberwolves"
-      ],
-      "matchup": null
-    },
-    {
       "id": "47987750",
       "slug": "which-nba-players-have-the-most-triple-doubles-of-all-time-47987750",
       "title": "Which NBA players have the most triple-doubles of all time?",
@@ -126,26 +186,6 @@
         "credit": "Scott Audette/NBAE via Getty Images"
       },
       "teams": [],
-      "matchup": null
-    },
-    {
-      "id": "50601303",
-      "slug": "lebron-james-dusts-off-the-cape-to-save-76ers-with-triple-double-50601303",
-      "title": "LeBron James dusts 'off the cape' to save 76ers with triple-double",
-      "summary": "The soon-to-be 42-year-old LeBron James showed his ability to put the 76ers on his back with a 25-point triple-double in Wednesday's NBA Cup win over Miami.",
-      "published": "2026-11-26T04:39:33.000Z",
-      "updated": "2026-11-26T04:39:33.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50601303/lebron-dusts-cape-save-76ers-triple-double",
-      "author": "Kris Rhim",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1126/r1751501_600x400_3-2.jpg",
-        "alt": "LeBron James [600x400]",
-        "credit": "Photo by Mitchell Leff/Getty Images"
-      },
-      "teams": [
-        "Philadelphia 76ers"
-      ],
       "matchup": null
     },
     {
@@ -252,46 +292,6 @@
         "Cleveland Cavaliers"
       ],
       "matchup": "Cleveland Cavaliers @ New York Knicks"
-    },
-    {
-      "id": "50600508",
-      "slug": "knicks-assistant-coach-chris-jent-returns-to-team-50600508",
-      "title": "Knicks assistant coach Chris Jent returns to team",
-      "summary": "Chris Jent was back on New York's bench for Wednesday night's NBA Cup win against Cleveland after a monthlong absence.",
-      "published": "2026-11-26T03:03:21.000Z",
-      "updated": "2026-11-26T03:03:21.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50600508/knicks-assistant-coach-chris-jent-returns-team",
-      "author": "Vincent Goodwill",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1028/r1737300_600x400_3-2.jpg",
-        "alt": "Chris Jent [600x400]",
-        "credit": "Kirby Lee-Imagn Images"
-      },
-      "teams": [
-        "New York Knicks"
-      ],
-      "matchup": null
-    },
-    {
-      "id": "50599296",
-      "slug": "76ers-jaylen-brown-exits-with-recurrence-of-hamstring-issue-50599296",
-      "title": "76ers' Jaylen Brown exits with recurrence of hamstring issue",
-      "summary": "Jaylen Brown exited Philadelphia's NBA Cup game Wednesday night against Miami and was ruled out because of left hamstring tightness.",
-      "published": "2026-11-26T02:48:06.000Z",
-      "updated": "2026-11-26T02:48:06.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50599296/76ers-jaylen-brown-exits-recurrence-hamstring-issue",
-      "author": "Kris Rhim",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1126/r1751408_600x400_3-2.jpg",
-        "alt": "261125 Jaylen Brown [600x400]",
-        "credit": "Mitchell Leff/Getty Images"
-      },
-      "teams": [
-        "Philadelphia 76ers"
-      ],
-      "matchup": null
     },
     {
       "id": "50600620",
