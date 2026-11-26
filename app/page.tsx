@@ -252,7 +252,10 @@ export default function Home() {
               {LEAGUE.season} season, with no account and no stored inputs.
             </li>
             <li>
-              <strong className="text-ink">{PLAYER_COUNT} player pages and 30 team payrolls</strong>, plus 9 guides on cap and tax rules.
+              <strong className="text-ink">
+                <Link href="/players" className="text-court hover:underline">{PLAYER_COUNT} player pages</Link> and{" "}
+                <Link href="/teams" className="text-court hover:underline">30 team payrolls</Link>
+              </strong>, plus 9 guides on cap and tax rules.
             </li>
             <li>
               <strong className="text-ink">Cap ${LEAGUE.salaryCap}M and tax ${LEAGUE.luxuryTax}M</strong> — official NBA figures published July 2026.
@@ -353,12 +356,14 @@ export default function Home() {
               <Link
                 key={team.id}
                 href={`/teams/${team.id}`}
+                aria-label={`${team.city} ${team.name} salary cap and roster`}
                 title={`${team.city} ${team.name}`}
                 className="group flex aspect-square items-center justify-center rounded-xl border border-gray-100 bg-gray-50 p-2 transition hover:-translate-y-0.5 hover:border-court hover:bg-white hover:shadow"
               >
                 <TeamLogo
                   abbr={team.abbr}
                   size={40}
+                  label={`${team.city} ${team.name} logo`}
                   className="transition duration-200 group-hover:scale-110"
                 />
               </Link>

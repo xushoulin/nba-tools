@@ -10,6 +10,9 @@ export const metadata: Metadata = {
     "Every NBA headline, report and game recap kept by NBA Tools, grouped by publication date. Each entry is credited to ESPN and links to the original article.",
   alternates: { canonical: "/news/archive" },
   openGraph: { url: "/news/archive", images: OG_IMAGE },
+  // A convenience view of stories already listed on /news. Keep it linkable
+  // for readers, but let Google index a single copy of that content.
+  robots: { index: false, follow: true },
 };
 
 export default function NewsArchive() {

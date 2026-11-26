@@ -29,10 +29,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const item = getNewsItem(slug);
   if (!item) return {};
 
-  // Search result titles are cut around 60 characters. Long ESPN headlines
-  // would be truncated mid-word by the engine, so shorten them here to a clean
-  // boundary; the full headline stays in the article body and in JSON-LD.
-  const title = item.title.length > 46 ? `${item.title.slice(0, 43).trimEnd()}…` : item.title;
+  // Keep the original ESPN headline intact. Google truncates SERP titles
+  // itself at a natural boundary; a hand-cut one ends mid-word with "...".
+  const title = item.title;
 
   // The description has to say what this page is, not just repeat the headline,
   // so the snippet does not read like ESPN's own article.

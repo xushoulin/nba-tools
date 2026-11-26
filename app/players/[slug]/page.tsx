@@ -52,9 +52,9 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!p) return {};
   const team = teamOf(p.team);
   const teamName = team ? `${team.city} ${team.name}` : "NBA";
-  const fullTitle = `${p.name} — Career, Contract & Stats (${LEAGUE.season})`;
-  // The layout appends " | NBA Tools"; keep the snippet within a search result.
-  const title = fullTitle.length > 45 ? `${fullTitle.slice(0, 42).trimEnd()}…` : fullTitle;
+  // A natural, complete label: Google truncates SERP titles on its own, and a
+  // hand-cut headline with "..." reads as broken in search and browser tabs.
+  const title = `${p.name} — NBA Career Stats, Contract & Honours`;
   const description = `${p.name}, ${p.pos} for the ${teamName}: No. ${p.jersey ?? "—"}, $${p.salary.toFixed(2)}M in ${LEAGUE.season} with ${p.years} year${p.years === 1 ? "" : "s"} left. Career history, awards and season stats.`.slice(0, 155);
   return {
     title,
@@ -179,7 +179,7 @@ export default async function PlayerPage({ params }: Params) {
         )}
 
         <div className="relative mx-auto max-w-6xl px-4 py-10">
-          <nav className="mb-6 text-sm text-white/70">
+          <nav aria-label="Breadcrumb" className="mb-6 text-sm text-white/70">
             <Link href="/" className="hover:text-white">
               Home
             </Link>
@@ -651,11 +651,11 @@ export default async function PlayerPage({ params }: Params) {
           <a href={SOURCE_URLS.espnNba} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
             {PLAYER_META.source}
           </a>
-          , retrieved {PLAYER_META.retrieved}. Salary and contract terms:{" "}
+          , retrieved <time dateTime={PLAYER_META.retrieved}>{PLAYER_META.retrieved}</time>. Salary and contract terms:{" "}
           <a href={SOURCE_URLS.hoopshypeSalaries} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
             HoopsHype {LEAGUE.season}
           </a>
-          , retrieved {PLAYER_META.retrieved}. Cap, tax and apron thresholds are from the{" "}
+          , retrieved <time dateTime={PLAYER_META.retrieved}>{PLAYER_META.retrieved}</time>. Cap, tax and apron thresholds are from the{" "}
           <a href={SOURCE_URLS.nbaCapRelease} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
             NBA&apos;s official {LEAGUE.season} release
           </a>{" "}

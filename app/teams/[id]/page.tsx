@@ -34,8 +34,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!team) return {};
   const s = teamSummary(team);
   const full = `${team.city} ${team.name}`;
-  const longTitle = `${full} Salary Cap 2026-27 — Payroll, Contracts & Roster`;
-  const title = longTitle.length > 45 ? `${longTitle.slice(0, 42).trimEnd()}…` : longTitle;
+  const title = `${full} Salary Cap, Payroll & Roster`;
   const description = `${full} ${LEAGUE.season} payroll: $${s.official.toFixed(1)}M cap hit, $${Math.abs(s.capDelta).toFixed(1)}M ${s.capDelta > 0 ? "over" : "under"} the $${LEAGUE.salaryCap.toFixed(1)}M cap (${STATUS_LABEL[s.status]}). Full roster salaries, contract length and remaining value.`;
   return {
     title,
@@ -116,7 +115,7 @@ export default async function TeamPage({ params }: Params) {
           style={{ backgroundColor: accent }}
         />
         <div className="relative mx-auto max-w-6xl px-4 py-10">
-          <nav className="mb-6 text-sm text-white/70">
+          <nav aria-label="Breadcrumb" className="mb-6 text-sm text-white/70">
             <Link href="/" className="hover:text-white">
               Home
             </Link>
@@ -391,7 +390,7 @@ export default async function TeamPage({ params }: Params) {
           <a href={DATA_META.sourceUrl} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
             {DATA_META.source}
           </a>
-          , retrieved {DATA_META.retrieved}. Cap, tax and apron thresholds are from the{" "}
+          , retrieved <time dateTime={DATA_META.retrieved}>{DATA_META.retrieved}</time>. Cap, tax and apron thresholds are from the{" "}
           <a href={DATA_META.leagueSourceUrl} target="_blank" rel="noopener noreferrer" className="text-court hover:underline">
             NBA&apos;s official {LEAGUE.season} release
           </a>{" "}

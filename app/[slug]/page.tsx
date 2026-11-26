@@ -27,6 +27,8 @@ const COMPONENTS: Record<string, React.ComponentType> = {
   "honours-comparison": HonoursComparison,
 };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return TOOLS.map((t) => ({ slug: t.slug }));
 }

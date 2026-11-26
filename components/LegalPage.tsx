@@ -1,8 +1,21 @@
 import Link from "next/link";
+import { SITE_NAME } from "@/lib/tools";
 
 export default function LegalPage({ title, updated, children }: { title: string; updated: string; children: React.ReactNode }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: title,
+    inLanguage: "en",
+    isAccessibleForFree: true,
+    publisher: { "@type": "Organization", name: SITE_NAME },
+  };
   return (
     <main className="mx-auto max-w-3xl px-4 py-14">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       <h1 className="text-3xl font-extrabold text-ink">{title}</h1>
       <p className="mt-2 text-sm text-gray-500">Last updated: {updated}</p>
       <div className="prose mt-8 space-y-5 text-gray-700">{children}</div>

@@ -24,10 +24,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const { slug } = await params;
   const guide = getGuide(slug);
   if (!guide) return {};
-  // The layout template appends " | NBA Tools", so keep the visible title
-  // short enough that search engines do not cut it mid-word. The full title
-  // still appears as the page's h1 and in the article body.
-  const title = guide.title.length > 45 ? `${guide.title.slice(0, 42).trimEnd()}…` : guide.title;
+  // Google rewrites and truncates SERP titles itself. Give it a complete,
+  // accurate headline instead of a hand-cut one that ends mid-word with "...".
+  const title = guide.title;
   const description = guide.description.slice(0, 155);
 
   return {
@@ -71,7 +70,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
         publisher: { "@type": "Organization", name: SITE_NAME, url: SITE_URL },
         mainEntityOfPage: { "@type": "WebPage", "@id": url },
         isAccessibleForFree: true,
-        about: guide.takeaways[0],
+        about: { "@type": "Thing", name: guide.takeaways[0] },
       },
       {
         "@type": "FAQPage",
@@ -109,7 +108,8 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
 
       <header className="max-w-3xl">
         <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-700">
-          <span>{guide.icon}</span> Explainer · Updated {formatDate(guide.updated)}
+          <span>{guide.icon}</span> Explainer · Updated{" "}
+          <time dateTime={guide.updated}>{formatDate(guide.updated)}</time>
         </div>
         <h1 className="text-3xl font-extrabold leading-tight tracking-tight text-ink sm:text-4xl">
           {guide.title}
@@ -175,7 +175,7 @@ export default async function GuidePage({ params }: { params: Promise<{ slug: st
               >
                 GitHub
               </a>
-              . Last updated {formatDate(guide.updated)}. See the{" "}
+              . Last updated <time dateTime={guide.updated}>{formatDate(guide.updated)}</time>. See the{" "}
               <Link href="/disclaimer" className="text-court hover:underline">disclaimer</Link> — this is
               reference material, not an official league document.
             </p>

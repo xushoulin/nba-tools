@@ -34,6 +34,14 @@ export default function ToolShell({ title, description, icon, slug, children, st
         offers: { "@type": "Offer", price: "0", priceCurrency: "USD" },
       },
       {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE_URL}/` },
+          { "@type": "ListItem", position: 2, name: "Tools", item: `${SITE_URL}/#tools` },
+          { "@type": "ListItem", position: 3, name: title, item: `${SITE_URL}/${slug}` },
+        ],
+      },
+      {
         "@type": "FAQPage",
         mainEntity: faqs.map((f) => ({
           "@type": "Question",
@@ -50,6 +58,13 @@ export default function ToolShell({ title, description, icon, slug, children, st
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
+      <nav aria-label="Breadcrumb" className="mb-5 flex items-center gap-1.5 text-xs text-gray-500">
+        <Link href="/" className="hover:text-court">Home</Link>
+        <span aria-hidden>/</span>
+        <Link href="/#tools" className="hover:text-court">Tools</Link>
+        <span aria-hidden>/</span>
+        <span className="text-gray-700">{title}</span>
+      </nav>
       {/* Hero */}
       <div className="mb-8">
         <div className="mb-3 inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1 text-xs font-semibold text-orange-700">

@@ -22,6 +22,7 @@ export default function SiteFooter() {
                 <Link href="/" className="hover:text-court">Home</Link>
                 <Link href="/news" className="hover:text-court">NBA news</Link>
                 <Link href="/teams" className="hover:text-court">All 30 teams</Link>
+                <Link href="/players" className="hover:text-court">All player profiles</Link>
                 <Link href="/team-salary-trade-simulator" className="hover:text-court">Trade simulator</Link>
                 <Link href="/guides" className="hover:text-court">Cap &amp; contract guides</Link>
                 <Link href="/about" className="hover:text-court">About</Link>

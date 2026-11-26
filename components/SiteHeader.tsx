@@ -12,6 +12,7 @@ export default function SiteHeader() {
         <nav className="hidden gap-6 text-sm font-medium text-gray-600 sm:flex">
           <Link href="/news" className="hover:text-court">News</Link>
           <Link href="/teams" className="hover:text-court">Teams</Link>
+          <Link href="/players" className="hover:text-court">Players</Link>
           <Link href="/#tools" className="hover:text-court">Tools</Link>
           <Link href="/guides" className="hover:text-court">Guides</Link>
           <Link href="/#faq" className="hover:text-court">FAQ</Link>
@@ -26,6 +27,7 @@ export default function SiteHeader() {
       >
         <Link href="/news" className="whitespace-nowrap hover:text-court">News</Link>
         <Link href="/teams" className="whitespace-nowrap hover:text-court">Teams</Link>
+        <Link href="/players" className="whitespace-nowrap hover:text-court">Players</Link>
         <Link href="/#tools" className="whitespace-nowrap hover:text-court">Tools</Link>
         <Link href="/guides" className="whitespace-nowrap hover:text-court">Guides</Link>
         <Link href="/#faq" className="whitespace-nowrap hover:text-court">FAQ</Link>

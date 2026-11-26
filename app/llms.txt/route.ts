@@ -47,7 +47,8 @@ ${GUIDES.map((g) => `- ${g.title}: ${SITE_URL}/guides/${g.slug}`).join("\n")}
 - Salary & trade simulator: ${SITE_URL}/team-salary-trade-simulator
 - Player honours comparison: ${SITE_URL}/honours-comparison
 - Team index: ${SITE_URL}/teams
-- Player index example: ${SITE_URL}/players/lebron-james
+- All player profiles: ${SITE_URL}/players
+- Player profile example: ${SITE_URL}/players/lebron-james
 - About: ${SITE_URL}/about
 - Editorial standards and data policy: ${SITE_URL}/editorial
 - Privacy: ${SITE_URL}/privacy

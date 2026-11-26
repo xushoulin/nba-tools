@@ -9,20 +9,23 @@ type Props = {
   className?: string;
   /** Load immediately instead of waiting for the viewport. Use above the fold. */
   eager?: boolean;
+  /** Accessible label. Pass the full team name when the abbreviation alone is unclear. */
+  label?: string;
 };
 
 /**
  * Team crest from a public logo CDN. If the image fails to load, falls back to a
  * brand-coloured tile with the team abbreviation so the layout never collapses.
  */
-export default function TeamLogo({ abbr, size = 48, className = "", eager = false }: Props) {
+export default function TeamLogo({ abbr, size = 48, className = "", eager = false, label }: Props) {
   const [failed, setFailed] = useState(false);
+  const alt = label ?? `${abbr} logo`;
   const asset = TEAM_ASSETS[abbr.toLowerCase()];
 
   if (failed || !asset) {
     return (
       <span
-        aria-label={`${abbr} logo`}
+        aria-label={alt}
         className={`inline-flex shrink-0 items-center justify-center rounded-lg font-extrabold text-white ${className}`}
         style={{
           width: size,
@@ -40,7 +43,7 @@ export default function TeamLogo({ abbr, size = 48, className = "", eager = fals
     // eslint-disable-next-line @next/next/no-img-element
     <img
       src={teamLogoUrl(abbr)}
-      alt={`${abbr} logo`}
+      alt={alt}
       width={size}
       height={size}
       loading={eager ? "eager" : "lazy"}

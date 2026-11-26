@@ -33,6 +33,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: "weekly" as const,
     priority: 0.7,
   }));
+  const playersIndex = {
+    url: `${SITE_URL}/players`,
+    lastModified: now,
+    changeFrequency: "weekly" as const,
+    priority: 0.8,
+  };
   const playerPages = allPlayerSlugs().map((slug) => ({
     url: `${SITE_URL}/players/${slug}`,
     lastModified: now,
@@ -78,8 +84,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     ...pages,
     newsIndex,
-    newsArchive,
     teamsIndex,
+    playersIndex,
     guidesIndex,
     ...tools,
     ...guidePages,
