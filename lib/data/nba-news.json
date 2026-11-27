@@ -4,39 +4,19 @@
     "url": "https://www.espn.com/nba/",
     "feed": "https://site.api.espn.com/apis/site/v2/sports/basketball/nba/news?limit=50"
   },
-  "generatedAt": "2026-11-26T19:56:32.987Z",
-  "count": 78,
+  "generatedAt": "2026-11-27T19:45:27.773Z",
+  "count": 81,
   "items": [
     {
-      "id": "50599296",
-      "slug": "76ers-jaylen-brown-exits-with-recurrence-of-hamstring-issue-50599296",
-      "title": "76ers' Jaylen Brown exits with recurrence of hamstring issue",
-      "summary": "Jaylen Brown exited the 76ers' NBA Cup game against the Heat and was ruled out because of left hamstring tightness.",
-      "published": "2026-11-26T19:43:10.000Z",
-      "updated": "2026-11-26T19:43:10.000Z",
+      "id": "50613102",
+      "slug": "timberwolves-downgrade-star-lamelo-ball-to-out-with-ankle-sprain-50613102",
+      "title": "Timberwolves downgrade star LaMelo Ball to out with ankle sprain",
+      "summary": "The Minnesota Timberwolves downgraded star guard LaMelo Ball to out for Friday night's NBA Cup game vs. the Memphis Grizzlies due to a left ankle sprain.",
+      "published": "2026-11-27T19:06:33.000Z",
+      "updated": "2026-11-27T19:06:33.000Z",
       "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50599296/76ers-jaylen-brown-exits-recurrence-hamstring-issue",
-      "author": "Kris Rhim",
-      "image": {
-        "url": "https://a.espncdn.com/photo/2026/1126/r1751408_600x400_3-2.jpg",
-        "alt": "261125 Jaylen Brown [600x400]",
-        "credit": "Mitchell Leff/Getty Images"
-      },
-      "teams": [
-        "Philadelphia 76ers"
-      ],
-      "matchup": null
-    },
-    {
-      "id": "50601570",
-      "slug": "timberwolves-lamelo-ball-limps-off-vs-okc-after-hurting-left-ankle-50601570",
-      "title": "Timberwolves' LaMelo Ball limps off vs. OKC after hurting left ankle",
-      "summary": "The Timberwolves did not have an update on the status of LaMelo Ball's left ankle after he was injured late in a win over the Thunder.",
-      "published": "2026-11-26T18:13:44.000Z",
-      "updated": "2026-11-26T18:13:44.000Z",
-      "kind": "HeadlineNews",
-      "url": "https://www.espn.com/nba/story/_/id/50601570/timberwolves-lamelo-ball-limps-hurting-left-ankle",
-      "author": "Tim MacMahon",
+      "url": "https://www.espn.com/nba/story/_/id/50613102/timberwolves-downgrade-lamelo-ball-ankle-sprain",
+      "author": null,
       "image": {
         "url": "https://a.espncdn.com/photo/2026/1126/r1751519_600x400_3-2.jpg",
         "alt": "LaMelo Ball [600x400]",
@@ -48,12 +28,32 @@
       "matchup": null
     },
     {
+      "id": "50599642",
+      "slug": "why-walker-kessler-is-the-x-factor-for-luka-doncic-and-the-lakers-this-s-50599642",
+      "title": "Why Walker Kessler is the X factor for Luka Doncic and the Lakers this season",
+      "summary": "Doncic's first request when he became a Laker? Get an 'A-list' big man. It took a year, but Kessler is that man in Los Angeles.",
+      "published": "2026-11-27T14:40:36.000Z",
+      "updated": "2026-11-27T14:40:36.000Z",
+      "kind": "Story",
+      "url": "https://www.espn.com/nba/story/_/id/50599642/los-angeles-lakers-luka-doncic-walker-kessler-nba",
+      "author": "Dave McMenamin",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751451_576x324_16-9.jpg",
+        "alt": "Kessler -- McMenamin lede [576x324]",
+        "credit": "AP Photo/Mark J. Terrill"
+      },
+      "teams": [
+        "Los Angeles Lakers"
+      ],
+      "matchup": null
+    },
+    {
       "id": "49577473",
       "slug": "2026-nba-cup-schedule-scores-group-standings-and-updates-49577473",
       "title": "2026 NBA Cup: Schedule, scores group standings and updates",
       "summary": "Here's everything you need to know about the fourth annual in-season tournament, including the recent wins by the Celtics and Mavericks.",
-      "published": "2026-11-26T14:50:01.000Z",
-      "updated": "2026-11-26T14:50:01.000Z",
+      "published": "2026-11-27T14:31:38.000Z",
+      "updated": "2026-11-27T14:31:38.000Z",
       "kind": "Story",
       "url": "https://www.espn.com/nba/story/_/id/49577473/2026-nba-season-tournament-cup-format-highlights-updates",
       "author": null,
@@ -93,6 +93,66 @@
         "Toronto Raptors",
         "Utah Jazz",
         "Washington Wizards"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50606614",
+      "slug": "jaylen-brown-out-against-pacers-joel-embiid-illness-questionable-50606614",
+      "title": "Jaylen Brown out against Pacers; Joel Embiid (illness) questionable",
+      "summary": "The 76ers' Jaylen Brown (hamstring) is out for Friday's NBA Cup game against the Pacers. Joel Embiid (illness) is questionable.",
+      "published": "2026-11-26T22:45:16.000Z",
+      "updated": "2026-11-26T22:45:16.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50606614/76ers-jaylen-brown-hamstring-friday-pacers",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751810_2_600x400_3-2.jpg",
+        "alt": "Jaylen Brown Joel Embiid [600x400]",
+        "credit": "David Dow/NBAE via Getty Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50599296",
+      "slug": "76ers-jaylen-brown-exits-with-recurrence-of-hamstring-issue-50599296",
+      "title": "76ers' Jaylen Brown exits with recurrence of hamstring issue",
+      "summary": "Jaylen Brown exited the 76ers' NBA Cup game against the Heat and was ruled out because of left hamstring tightness.",
+      "published": "2026-11-26T19:43:10.000Z",
+      "updated": "2026-11-26T19:43:10.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50599296/76ers-jaylen-brown-exits-recurrence-hamstring-issue",
+      "author": "Kris Rhim",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751408_600x400_3-2.jpg",
+        "alt": "261125 Jaylen Brown [600x400]",
+        "credit": "Mitchell Leff/Getty Images"
+      },
+      "teams": [
+        "Philadelphia 76ers"
+      ],
+      "matchup": null
+    },
+    {
+      "id": "50601570",
+      "slug": "timberwolves-lamelo-ball-limps-off-vs-okc-after-hurting-left-ankle-50601570",
+      "title": "Timberwolves' LaMelo Ball limps off vs. OKC after hurting left ankle",
+      "summary": "The Timberwolves did not have an update on the status of LaMelo Ball's left ankle after he was injured late in a win over the Thunder.",
+      "published": "2026-11-26T18:13:44.000Z",
+      "updated": "2026-11-26T18:13:44.000Z",
+      "kind": "HeadlineNews",
+      "url": "https://www.espn.com/nba/story/_/id/50601570/timberwolves-lamelo-ball-limps-hurting-left-ankle",
+      "author": "Tim MacMahon",
+      "image": {
+        "url": "https://a.espncdn.com/photo/2026/1126/r1751519_600x400_3-2.jpg",
+        "alt": "LaMelo Ball [600x400]",
+        "credit": "Alonzo Adams-Imagn Images"
+      },
+      "teams": [
+        "Minnesota Timberwolves"
       ],
       "matchup": null
     },
